@@ -2,7 +2,7 @@
 
 Última atualização: 10/09/2026  
 Branch de trabalho: `normalizacao-localidades`  
-Último commit publicado localmente: `ed8fc0d feat: implementar visao macro de cobertura`
+Commit da implementação do plan 003: `bc6e848 feat: implementar visao macro de cobertura`
 
 ## Como usar este arquivo
 
@@ -38,7 +38,7 @@ Este é o ponto de retomada do projeto. Depois de cada plano implementado, regis
 
 ### Plan 003 — Visão macro de cobertura, regiões, cidades e pessoas
 
-- Estado: implementado e commitado localmente em `ed8fc0d`.
+- Estado: implementado e commitado localmente em `bc6e848`.
 - Entregas: contratos compartilhados e schemas Zod; rotas protegidas para árvore, detalhe de cidade e detalhe de dobrador; queries Prisma com cadastro único; acordeão mobile-first na sidebar; diálogo acessível com papéis, contatos e dobradas; visão agrupada por dobrador; documentação de API e fluxo atualizada.
 - Validação: `docker compose build api` e `docker compose build web` concluídos; containers PostgreSQL, API e web saudáveis; `/health` `200`; árvore autenticada `200`; rota sem JWT `401`; token sem `coverage:read` `403`; cidade inválida `422`; cidade válida `200`; dobrador inexistente `404`.
 - Pendências: as seis suposições de apresentação continuam explicitamente marcadas no plano para confirmação do gestor; nenhuma decisão histórica da base foi resolvida.
@@ -78,6 +78,6 @@ Antes de concluir o plan 003, validar manualmente em 375px e desktop: sidebar �
 Origem: planejamento Superpowers + documentação do projeto  
 Destino: Product manager, arquiteto, frontend, backend, QA e redator técnico  
 Objetivo: executar `plan-003-visao-macro-cobertura-regioes-pessoas.md` em etapas revisáveis  
-Evidências: commit `ed8fc0d`; builds Docker da API/web concluídos; containers saudáveis; smoke HTTP com 401/403/404/422/200; `git diff --check` sem apontamentos
+Evidências: commit `bc6e848`; builds Docker da API/web concluídos; containers saudáveis; smoke HTTP com 401/403/404/422/200; `git diff --check` sem apontamentos
 Pendências: decisões de raiz geográfica, rótulo Alliance/Dobrador, vínculos sem cidade, linhas por papel, política de contatos e posição do acordeão de dobradores  
 Próximo passo: confirmar as decisões de apresentação com o gestor e abrir a revisão visual em 375px e desktop
