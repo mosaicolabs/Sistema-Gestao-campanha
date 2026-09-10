@@ -25,4 +25,17 @@ describe('API HTTP', () => {
     const invalid = await request(app).get('/api/coverage/macro?regionId=').set('Authorization', `Bearer ${token}`)
     expect(invalid.status).toBe(422)
   })
+
+  it('protege a árvore e valida parâmetros de cidade antes do banco', async () => {
+    const unauthorized = await request(app).get('/api/coverage/tree')
+    expect(unauthorized.status).toBe(401)
+
+    const forbiddenToken = jwt.sign({ sub: 'test-user', username: 'test', permissions: ['people:read'], mustChangePassword: false }, env.JWT_SECRET)
+    const forbidden = await request(app).get('/api/coverage/tree').set('Authorization', `Bearer ${forbiddenToken}`)
+    expect(forbidden.status).toBe(403)
+
+    const token = jwt.sign({ sub: 'test-user', username: 'test', permissions: ['coverage:read'], mustChangePassword: false }, env.JWT_SECRET)
+    const invalid = await request(app).get('/api/coverage/cities/%20/detail').set('Authorization', `Bearer ${token}`)
+    expect(invalid.status).toBe(422)
+  })
 })

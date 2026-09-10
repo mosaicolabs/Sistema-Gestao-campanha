@@ -1,6 +1,7 @@
-import { useRef } from 'react'
-import { NavLink, Outlet, useLocation } from 'react-router-dom'
+import { useEffect, useRef, useState } from 'react'
+import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
+import { useQuery } from '@tanstack/react-query'
 import {
   CalendarDots,
   CaretRight,
@@ -18,6 +19,9 @@ import { gsap } from 'gsap'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from '@/components/ui/sheet'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
+import { CoverageNavigation } from '@/features/people/coverage-navigation'
+import { api } from '@/lib/api'
+import type { CoverageTreeRegion, ReferenceData } from '@/lib/types'
 import { useAuthStore } from '@/store/auth-store'
 import { useUiStore } from '@/store/ui-store'
 
@@ -60,6 +64,48 @@ function NavigationLink({ item, onClick }: { item: (typeof navItems)[number]; on
   )
 }
 
+function CoverageSidebarSection({ onNavigate }: { onNavigate?: () => void }) {
+  const location = useLocation()
+  const navigate = useNavigate()
+  const [expanded, setExpanded] = useState(location.pathname.startsWith('/cobertura'))
+  const params = new URLSearchParams(location.search)
+  const selectedCityId = params.get('cityId') ?? undefined
+  const selectedAllianceId = params.get('allianceId') ?? undefined
+  const tree = useQuery({
+    queryKey: ['coverage-tree'],
+    queryFn: async () => (await api.get<CoverageTreeRegion[]>('/coverage/tree')).data,
+    staleTime: 60_000,
+    enabled: expanded,
+  })
+  const references = useQuery({
+    queryKey: ['references'],
+    queryFn: async () => (await api.get<ReferenceData>('/references')).data,
+    staleTime: 60_000,
+    enabled: expanded,
+  })
+
+  useEffect(() => {
+    if (location.pathname.startsWith('/cobertura')) setExpanded(true)
+  }, [location.pathname])
+
+  const closeAfterNavigate = () => onNavigate?.()
+  return (
+    <div className="coverage-sidebar-section">
+      <button type="button" className={`nav-link coverage-nav-toggle ${location.pathname.startsWith('/cobertura') ? 'nav-link-active' : ''}`} aria-expanded={expanded} onClick={() => setExpanded((value) => !value)}>
+        <MapTrifold size={21} weight="duotone" aria-hidden /><span>Cobertura</span><CaretRight className="nav-link-caret coverage-nav-toggle-icon" size={15} aria-hidden />
+      </button>
+      {expanded ? <CoverageNavigation
+        regions={tree.data ?? []}
+        selectedCityId={selectedCityId}
+        selectedAllianceId={selectedAllianceId}
+        allianceItems={references.data?.alliances ?? []}
+        onSelectCity={(cityId) => { navigate(`/cobertura?cityId=${encodeURIComponent(cityId)}`); closeAfterNavigate() }}
+        onSelectAlliance={(allianceId) => { navigate(`/cobertura?allianceId=${encodeURIComponent(allianceId)}`); closeAfterNavigate() }}
+      /> : null}
+    </div>
+  )
+}
+
 export function AppShell() {
   const root = useRef<HTMLDivElement>(null)
   const location = useLocation()
@@ -85,7 +131,7 @@ export function AppShell() {
       <aside className="desktop-sidebar shell-reveal">
         <Brand />
         <nav aria-label="Navegação principal" className="sidebar-nav">
-          {navItems.map((item) => <NavigationLink key={item.to} item={item} />)}
+          {navItems.map((item) => item.to === '/cobertura' ? <CoverageSidebarSection key={item.to} /> : <NavigationLink key={item.to} item={item} />)}
         </nav>
         <div className="sidebar-account">
           <span className="account-avatar" aria-hidden>{user?.displayName.slice(0, 2).toUpperCase()}</span>
@@ -136,7 +182,7 @@ export function AppShell() {
             <SheetDescription>Acesse cobertura, entregas, importação e histórico.</SheetDescription>
           </SheetHeader>
           <nav className="sheet-nav" aria-label="Outros módulos">
-            {mobileSecondary.map((item) => <NavigationLink key={item.to} item={item} onClick={() => setMobileMenuOpen(false)} />)}
+            {mobileSecondary.map((item) => item.to === '/cobertura' ? <CoverageSidebarSection key={item.to} onNavigate={() => setMobileMenuOpen(false)} /> : <NavigationLink key={item.to} item={item} onClick={() => setMobileMenuOpen(false)} />)}
           </nav>
           <Button variant="outline" onClick={clearSession}><SignOut size={18} aria-hidden />Sair da conta</Button>
         </SheetContent>

@@ -2,7 +2,10 @@ import { Router } from 'express'
 import multer from 'multer'
 import {
   createDeliverySchema,
+  coverageAllianceParamSchema,
+  coverageCityParamSchema,
   coverageMacroQuerySchema,
+  coverageTreeQuerySchema,
   createEventSchema,
   createPersonSchema,
   createTaskSchema,
@@ -37,6 +40,9 @@ protectedRoutes.get('/dashboard', requirePermission('dashboard', 'read'), operat
 protectedRoutes.get('/references', operationsController.references)
 protectedRoutes.get('/coverage', requirePermission('coverage', 'read'), operationsController.coverage)
 protectedRoutes.get('/coverage/macro', requirePermission('coverage', 'read'), validate(coverageMacroQuerySchema, 'query'), operationsController.coverageMacro)
+protectedRoutes.get('/coverage/tree', requirePermission('coverage', 'read'), validate(coverageTreeQuerySchema, 'query'), operationsController.coverageTree)
+protectedRoutes.get('/coverage/cities/:cityId/detail', requirePermission('coverage', 'read'), validate(coverageCityParamSchema, 'params'), operationsController.coverageCityDetail)
+protectedRoutes.get('/coverage/alliances/:allianceId/detail', requirePermission('coverage', 'read'), validate(coverageAllianceParamSchema, 'params'), operationsController.coverageAllianceDetail)
 
 protectedRoutes.get('/people', requirePermission('people', 'read'), validate(peopleQuerySchema, 'query'), peopleController.list)
 protectedRoutes.get('/people/:id', requirePermission('people', 'read'), peopleController.get)

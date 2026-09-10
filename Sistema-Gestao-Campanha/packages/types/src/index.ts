@@ -104,3 +104,59 @@ export type MacroCoverageRow = {
   observedVariants: string[]
   pendingAliasCount: number
 }
+
+export type CoverageTreeCity = {
+  id: string
+  name: string
+  regionId: string
+  canonicalKey: string
+  articulatorCityRelations: number
+  peopleCount: number
+  pendingAliasCount: number
+}
+
+export type CoverageTreeRegion = {
+  id: string
+  name: string
+  cities: CoverageTreeCity[]
+}
+
+export type CoveragePersonContact = {
+  id: string
+  type: string
+  valueRaw: string
+  isPrimary: boolean
+}
+
+export type CoveragePersonRow = {
+  assignmentId: string
+  personId: string
+  roleCode: 'ARTICULATOR' | 'COORDINATOR' | 'LEADERSHIP'
+  roleName: string
+  displayName: string
+  contacts: CoveragePersonContact[]
+  alliances: Array<{
+    id: string
+    name: string
+    status: 'ACTIVE' | 'INACTIVE' | 'PENDING_REVIEW'
+    localityId: string | null
+  }>
+}
+
+export type CoverageCityDetail = {
+  city: { id: string; name: string; canonicalKey: string }
+  region: { id: string; name: string } | null
+  summary: { articulators: number; coordinators: number; leaderships: number; articulatorCityRelations: number }
+  rows: CoveragePersonRow[]
+  observedVariants: string[]
+}
+
+export type CoverageAllianceRow = {
+  city: { id: string; name: string; region: string }
+  people: CoveragePersonRow[]
+}
+
+export type CoverageAllianceDetail = {
+  alliance: { id: string; name: string }
+  rows: CoverageAllianceRow[]
+}

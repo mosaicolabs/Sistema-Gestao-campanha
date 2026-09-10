@@ -38,6 +38,9 @@ O seed marca a conta inicial para troca obrigatória. Enquanto `mustChangePasswo
 | `GET` | `/references` | Sessão válida |
 | `GET` | `/coverage` | `coverage:read` |
 | `GET` | `/coverage/macro` | `coverage:read` |
+| `GET` | `/coverage/tree` | `coverage:read` |
+| `GET` | `/coverage/cities/:cityId/detail` | `coverage:read` |
+| `GET` | `/coverage/alliances/:allianceId/detail` | `coverage:read` |
 | `GET` | `/people` | `people:read` |
 | `GET` | `/people/:id` | `people:read` |
 | `POST` | `/people` | `people:create` |
@@ -96,6 +99,38 @@ Envie a planilha como `multipart/form-data`, no campo `file`. O servidor aceita 
 ## Visão macro e aliases
 
 `GET /coverage/macro` agrupa por cidade canônica e aceita `regionId`. A resposta distingue `articulatorCityRelations` (relações únicas articulador–cidade), `uniqueArticulators`, `uniqueAssignments`, `uniqueAlliances`, `observedVariants` e `pendingAliasCount`. Aliases aprovados preservam a ocorrência original; pendências precisam de `POST /reconciliation-issues/:id/decisions` com justificativa e, para `CORRECT` ou `MERGE`, `targetEntityType=Locality` e `targetEntityId` de uma cidade ativa.
+
+### Árvore de cobertura
+
+`GET /coverage/tree?stateId=<id>` retorna as regiões e cidades ativas da localidade estadual informada. Sem `stateId`, a API usa a localidade `STATE` ativa de Rio de Janeiro do seed. Cada cidade possui a contagem de relações articulador–cidade, pessoas ativas e aliases pendentes.
+
+```json
+[
+  {
+    "id": "region-1",
+    "name": "Centro Sul",
+    "cities": [{
+      "id": "city-1",
+      "name": "Areal",
+      "regionId": "region-1",
+      "canonicalKey": "AREAL",
+      "articulatorCityRelations": 2,
+      "peopleCount": 4,
+      "pendingAliasCount": 0
+    }]
+  }
+]
+```
+
+### Detalhe de cidade
+
+`GET /coverage/cities/:cityId/detail` abre a leitura sob demanda da cidade. O payload lista uma linha por atribuição ativa (`ARTICULATOR`, `COORDINATOR` ou `LEADERSHIP`), contatos e alianças relacionadas. “Sem contato informado” e “Sem dobrada informada” são estados de dados, não confirmação de inexistência.
+
+### Detalhe de dobrador
+
+`GET /coverage/alliances/:allianceId/detail` reproduz a visão da aba de um dobrador, agrupando cada cidade por região e papel. Vínculos ativos sem `localityId` aparecem em uma linha “Localidade não informada”; eles não são associados a uma cidade por inferência.
+
+As três rotas são somente leitura, mantêm o cadastro único de pessoas e não resolvem aliases, duplicidades, índices históricos ou decisões pendentes do gestor. Uma Alliance pendente é exibida com o estado de revisão, sem ser contada como vínculo ativo confirmado.
 
 ## Formato de erro
 

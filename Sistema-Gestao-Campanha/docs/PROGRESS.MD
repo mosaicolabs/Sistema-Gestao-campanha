@@ -2,7 +2,7 @@
 
 Última atualização: 10/09/2026  
 Branch de trabalho: `normalizacao-localidades`  
-Último commit publicado localmente: `98d3b37 feat: normalizar localidades e exibir cobertura macro`
+Último commit publicado localmente: `ed8fc0d feat: implementar visao macro de cobertura`
 
 ## Como usar este arquivo
 
@@ -18,9 +18,9 @@ Este é o ponto de retomada do projeto. Depois de cada plano implementado, regis
 | Manifesto de localidades | Concluída | Commits `45e5c45` e `d1836e0`; hash do relatório preservado |
 | Normalização e aliases | Concluída | Commit `98d3b37`; migration `20260910150000_locality_alias_normalization` |
 | API de cobertura macro | Concluída | `GET /api/coverage/macro`, RBAC `coverage:read`, métrica principal articulador–cidade |
-| UI de visão macro hierárquica | Planejada | [plan-003-visao-macro-cobertura-regioes-pessoas.md](../plans/plan-003-visao-macro-cobertura-regioes-pessoas.md) |
-| Modal de pessoas por cidade | Planejada | Task 4 do plano 003 |
-| Visão por dobrador | Planejada | Task 5 do plano 003 |
+| UI de visão macro hierárquica | Implementada | `CoverageNavigation`, acordeão de regiões/cidades e seção de dobradores na sidebar desktop e mobile |
+| Modal de pessoas por cidade | Implementada | `CoverageCityDialog`, tabela responsiva e consulta sob demanda por cidade |
+| Visão por dobrador | Implementada | `CoverageAllianceView`, agrupamento por região/cidade/papel e retorno para a árvore |
 
 ## Planos e commits
 
@@ -38,9 +38,10 @@ Este é o ponto de retomada do projeto. Depois de cada plano implementado, regis
 
 ### Plan 003 — Visão macro de cobertura, regiões, cidades e pessoas
 
-- Estado: planejamento criado; implementação ainda não iniciada.
-- Objetivo: substituir a navegação da grande planilha por árvore de regiões/cidades, detalhe de pessoas por cidade e visão individual por dobrador.
-- Próximo passo: confirmar as seis decisões de produto listadas no plano ou registrar as escolhas do gestor; depois executar Tasks 1–6 com testes por etapa.
+- Estado: implementado e commitado localmente em `ed8fc0d`.
+- Entregas: contratos compartilhados e schemas Zod; rotas protegidas para árvore, detalhe de cidade e detalhe de dobrador; queries Prisma com cadastro único; acordeão mobile-first na sidebar; diálogo acessível com papéis, contatos e dobradas; visão agrupada por dobrador; documentação de API e fluxo atualizada.
+- Validação: `docker compose build api` e `docker compose build web` concluídos; containers PostgreSQL, API e web saudáveis; `/health` `200`; árvore autenticada `200`; rota sem JWT `401`; token sem `coverage:read` `403`; cidade inválida `422`; cidade válida `200`; dobrador inexistente `404`.
+- Pendências: as seis suposições de apresentação continuam explicitamente marcadas no plano para confirmação do gestor; nenhuma decisão histórica da base foi resolvida.
 
 ## Decisões confirmadas
 
@@ -77,6 +78,6 @@ Antes de concluir o plan 003, validar manualmente em 375px e desktop: sidebar �
 Origem: planejamento Superpowers + documentação do projeto  
 Destino: Product manager, arquiteto, frontend, backend, QA e redator técnico  
 Objetivo: executar `plan-003-visao-macro-cobertura-regioes-pessoas.md` em etapas revisáveis  
-Evidências: commit `98d3b37`, Docker saudável, testes direcionados aprovados  
+Evidências: commit `ed8fc0d`; builds Docker da API/web concluídos; containers saudáveis; smoke HTTP com 401/403/404/422/200; `git diff --check` sem apontamentos
 Pendências: decisões de raiz geográfica, rótulo Alliance/Dobrador, vínculos sem cidade, linhas por papel, política de contatos e posição do acordeão de dobradores  
-Próximo passo: confirmar as pendências e iniciar a Task 1 do plano 003
+Próximo passo: confirmar as decisões de apresentação com o gestor e abrir a revisão visual em 375px e desktop

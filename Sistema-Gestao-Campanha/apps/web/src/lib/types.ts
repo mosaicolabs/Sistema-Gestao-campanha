@@ -1,3 +1,13 @@
+export type {
+  CoverageAllianceDetail,
+  CoverageAllianceRow,
+  CoverageCityDetail,
+  CoveragePersonContact,
+  CoveragePersonRow,
+  CoverageTreeCity,
+  CoverageTreeRegion,
+} from '@campanha/types'
+
 export type ReferenceData = {
   localities: Array<{ id: string; name: string; type: 'STATE' | 'REGION' | 'CITY' | 'LOCAL_AREA'; parentId?: string }>
   businessRoles: Array<{ id: string; code: string; name: string }>

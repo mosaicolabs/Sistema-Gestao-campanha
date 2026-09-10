@@ -85,6 +85,18 @@ export const coverageMacroQuerySchema = z.object({
   regionId: entityId.optional(),
 })
 
+export const coverageTreeQuerySchema = z.object({
+  stateId: entityId.optional(),
+})
+
+export const coverageCityParamSchema = z.object({
+  cityId: entityId,
+})
+
+export const coverageAllianceParamSchema = z.object({
+  allianceId: entityId,
+})
+
 export const createTaskSchema = z.object({
   boardId: entityId,
   columnId: entityId,

@@ -6,6 +6,7 @@ import { referenceRepository } from '../repositories/reference.repository.js'
 import { calendarService } from '../services/calendar.service.js'
 import { deliveryService } from '../services/delivery.service.js'
 import { taskService } from '../services/task.service.js'
+import { AppError } from '../utils/app-error.js'
 
 export const operationsController = {
   async dashboard(_request: Request, response: Response) {
@@ -19,6 +20,19 @@ export const operationsController = {
   },
   async coverageMacro(request: Request, response: Response) {
     response.json(await coverageRepository.listMacro(request.query.regionId as string | undefined))
+  },
+  async coverageTree(request: Request, response: Response) {
+    response.json(await coverageRepository.listTree(request.query.stateId as string | undefined))
+  },
+  async coverageCityDetail(request: Request, response: Response) {
+    const detail = await coverageRepository.getCityDetail(String(request.params.cityId))
+    if (!detail) throw new AppError(404, 'CITY_NOT_FOUND', 'Cidade não encontrada na cobertura.')
+    response.json(detail)
+  },
+  async coverageAllianceDetail(request: Request, response: Response) {
+    const detail = await coverageRepository.getAllianceDetail(String(request.params.allianceId))
+    if (!detail) throw new AppError(404, 'ALLIANCE_NOT_FOUND', 'Dobrador não encontrado na cobertura.')
+    response.json(detail)
   },
   async boards(_request: Request, response: Response) {
     response.json(await taskService.list())

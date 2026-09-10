@@ -18,7 +18,9 @@ Use **Pessoas** para criar uma entidade uma vez e relacionar contatos, papel, lo
 
 ## Cobertura territorial
 
-Use **Cobertura** para ler cidades, regiões, coordenações, lideranças e vínculos encontrados. O selo **Informação ausente** significa que a base não informou o campo; ele não afirma que não existe atuação naquele local.
+Use **Cobertura** para abrir **Regiões e cidades** na sidebar. A árvore começa no estado do Rio de Janeiro e agrupa as cidades pelas regiões ativas da base; a contagem principal representa relações articulador–cidade. Selecione uma cidade para abrir o diálogo acessível com articuladores, coordenadores, lideranças, contatos e dobradas relacionadas. O selo **Informação ausente** significa que a base não informou o campo; ele não afirma que não existe atuação naquele local.
+
+Na seção **Dobradores / Deputados apoiados**, selecione uma Alliance para consultar sua visão agrupada por região e cidade, com as pessoas separadas por papel. Vínculos sem localidade aparecem como **Localidade não informada**. Use **Voltar para a árvore** para retornar à visão territorial.
 
 ## Tarefas
 
