@@ -1,0 +1,482 @@
+{
+  "sourceReport": "Campanha_EA_2026_articuladores_por_cidade.md",
+  "sourceSection": "Variações de nomes para revisão; Possíveis aliases para validação manual",
+  "sourceSha256": "edb5c2cbfb2449b0f5280f7d452d2e1e722e9f2302996b0c218dc0ab5676c260",
+  "entries": [
+    {
+      "sourceLine": 280,
+      "canonicalDisplayName": "Angra dos Reis",
+      "canonicalKey": "ANGRA DOS REIS",
+      "observedValues": [
+        "ANGRA DOS REIS",
+        "Angra dos Reis"
+      ]
+    },
+    {
+      "sourceLine": 281,
+      "canonicalDisplayName": "Araruama",
+      "canonicalKey": "ARARUAMA",
+      "observedValues": [
+        "ARARUAMA",
+        "Araruama"
+      ]
+    },
+    {
+      "sourceLine": 282,
+      "canonicalDisplayName": "Areal",
+      "canonicalKey": "AREAL",
+      "observedValues": [
+        "AREAL",
+        "Areal"
+      ]
+    },
+    {
+      "sourceLine": 283,
+      "canonicalDisplayName": "Barra do Piraí",
+      "canonicalKey": "BARRA DO PIRAI",
+      "observedValues": [
+        "BARRA DO PIRAÍ",
+        "Barra do Piraí"
+      ]
+    },
+    {
+      "sourceLine": 284,
+      "canonicalDisplayName": "Barra Mansa",
+      "canonicalKey": "BARRA MANSA",
+      "observedValues": [
+        "BARRA MANSA",
+        "Barra Mansa"
+      ]
+    },
+    {
+      "sourceLine": 285,
+      "canonicalDisplayName": "Belford Roxo",
+      "canonicalKey": "BELFORD ROXO",
+      "observedValues": [
+        "BELFORD ROXO",
+        "Belford Roxo"
+      ]
+    },
+    {
+      "sourceLine": 286,
+      "canonicalDisplayName": "Cabo Frio",
+      "canonicalKey": "CABO FRIO",
+      "observedValues": [
+        "CABO FRIO",
+        "Cabo Frio"
+      ]
+    },
+    {
+      "sourceLine": 287,
+      "canonicalDisplayName": "Carmo",
+      "canonicalKey": "CARMO",
+      "observedValues": [
+        "CARMO",
+        "Carmo"
+      ]
+    },
+    {
+      "sourceLine": 288,
+      "canonicalDisplayName": "Duque de Caxias",
+      "canonicalKey": "DUQUE DE CAXIAS",
+      "observedValues": [
+        "DUQUE DE CAXIAS",
+        "Duque de Caxias"
+      ]
+    },
+    {
+      "sourceLine": 289,
+      "canonicalDisplayName": "Engenheiro Paulo de Frontin",
+      "canonicalKey": "ENGENHEIRO PAULO DE FRONTIN",
+      "observedValues": [
+        "ENGENHEIRO PAULO DE FRONTIN",
+        "Engenheiro Paulo de Frontin"
+      ]
+    },
+    {
+      "sourceLine": 290,
+      "canonicalDisplayName": "Guapimirim",
+      "canonicalKey": "GUAPIMIRIM",
+      "observedValues": [
+        "GUAPIMIRIM",
+        "Guapimirim"
+      ]
+    },
+    {
+      "sourceLine": 291,
+      "canonicalDisplayName": "Iguaba Grande",
+      "canonicalKey": "IGUABA GRANDE",
+      "observedValues": [
+        "IGUABA GRANDE",
+        "Iguaba Grande"
+      ]
+    },
+    {
+      "sourceLine": 292,
+      "canonicalDisplayName": "Itaguaí",
+      "canonicalKey": "ITAGUAI",
+      "observedValues": [
+        "ITAGUAÍ",
+        "Itaguaí"
+      ]
+    },
+    {
+      "sourceLine": 293,
+      "canonicalDisplayName": "Japeri",
+      "canonicalKey": "JAPERI",
+      "observedValues": [
+        "JAPERÍ",
+        "Japeri"
+      ]
+    },
+    {
+      "sourceLine": 294,
+      "canonicalDisplayName": "Lídice",
+      "canonicalKey": "LIDICE",
+      "observedValues": [
+        "LÍDICE",
+        "Lídice"
+      ]
+    },
+    {
+      "sourceLine": 295,
+      "canonicalDisplayName": "Macaé",
+      "canonicalKey": "MACAE",
+      "observedValues": [
+        "MACAÉ",
+        "Macaé"
+      ]
+    },
+    {
+      "sourceLine": 296,
+      "canonicalDisplayName": "Magé",
+      "canonicalKey": "MAGE",
+      "observedValues": [
+        "MAGÉ",
+        "Magé"
+      ]
+    },
+    {
+      "sourceLine": 297,
+      "canonicalDisplayName": "Maricá",
+      "canonicalKey": "MARICA",
+      "observedValues": [
+        "MARICÁ",
+        "Maricá"
+      ]
+    },
+    {
+      "sourceLine": 298,
+      "canonicalDisplayName": "Mesquita",
+      "canonicalKey": "MESQUITA",
+      "observedValues": [
+        "MESQUITA",
+        "Mesquita"
+      ]
+    },
+    {
+      "sourceLine": 299,
+      "canonicalDisplayName": "Miguel Pereira",
+      "canonicalKey": "MIGUEL PEREIRA",
+      "observedValues": [
+        "MIGUEL PEREIRA",
+        "Miguel Pereira"
+      ]
+    },
+    {
+      "sourceLine": 300,
+      "canonicalDisplayName": "Niterói",
+      "canonicalKey": "NITEROI",
+      "observedValues": [
+        "NITERÓI",
+        "Niterói"
+      ]
+    },
+    {
+      "sourceLine": 301,
+      "canonicalDisplayName": "Nova Friburgo",
+      "canonicalKey": "NOVA FRIBURGO",
+      "observedValues": [
+        "NOVA FRIBURGO",
+        "Nova Friburgo"
+      ]
+    },
+    {
+      "sourceLine": 302,
+      "canonicalDisplayName": "Nova Iguaçu",
+      "canonicalKey": "NOVA IGUACU",
+      "observedValues": [
+        "NOVA IGUAÇU",
+        "NOVA IGUAÇÚ",
+        "Nova Iguaçu"
+      ]
+    },
+    {
+      "sourceLine": 303,
+      "canonicalDisplayName": "Paracambi",
+      "canonicalKey": "PARACAMBI",
+      "observedValues": [
+        "PARACAMBI",
+        "Paracambi"
+      ]
+    },
+    {
+      "sourceLine": 304,
+      "canonicalDisplayName": "Paraíba do Sul",
+      "canonicalKey": "PARAIBA DO SUL",
+      "observedValues": [
+        "PARAÍBA DO SUL",
+        "Paraíba do Sul"
+      ]
+    },
+    {
+      "sourceLine": 305,
+      "canonicalDisplayName": "Paraty",
+      "canonicalKey": "PARATY",
+      "observedValues": [
+        "PARATY",
+        "Paraty"
+      ]
+    },
+    {
+      "sourceLine": 306,
+      "canonicalDisplayName": "Paty do Alferes",
+      "canonicalKey": "PATY DO ALFERES",
+      "observedValues": [
+        "PATY DO ALFERES",
+        "Paty do Alferes"
+      ]
+    },
+    {
+      "sourceLine": 307,
+      "canonicalDisplayName": "Petrópolis",
+      "canonicalKey": "PETROPOLIS",
+      "observedValues": [
+        "PETROPOLIS",
+        "PETRÓPOLIS",
+        "Petrópolis"
+      ]
+    },
+    {
+      "sourceLine": 308,
+      "canonicalDisplayName": "Pinheiral",
+      "canonicalKey": "PINHEIRAL",
+      "observedValues": [
+        "PINHEIRAL",
+        "Pinheiral"
+      ]
+    },
+    {
+      "sourceLine": 309,
+      "canonicalDisplayName": "Piraí",
+      "canonicalKey": "PIRAI",
+      "observedValues": [
+        "PIRAÍ",
+        "Piraí"
+      ]
+    },
+    {
+      "sourceLine": 310,
+      "canonicalDisplayName": "Porto Real",
+      "canonicalKey": "PORTO REAL",
+      "observedValues": [
+        "PORTO REAL",
+        "Porto Real"
+      ]
+    },
+    {
+      "sourceLine": 311,
+      "canonicalDisplayName": "Quatis",
+      "canonicalKey": "QUATIS",
+      "observedValues": [
+        "QUATIS",
+        "Quatis"
+      ]
+    },
+    {
+      "sourceLine": 312,
+      "canonicalDisplayName": "Queimados",
+      "canonicalKey": "QUEIMADOS",
+      "observedValues": [
+        "QUEIMADOS",
+        "Queimados"
+      ]
+    },
+    {
+      "sourceLine": 313,
+      "canonicalDisplayName": "Resende",
+      "canonicalKey": "RESENDE",
+      "observedValues": [
+        "RESENDE",
+        "Resende"
+      ]
+    },
+    {
+      "sourceLine": 314,
+      "canonicalDisplayName": "Rio Claro",
+      "canonicalKey": "RIO CLARO",
+      "observedValues": [
+        "RIO CLARO",
+        "Rio Claro"
+      ]
+    },
+    {
+      "sourceLine": 315,
+      "canonicalDisplayName": "Rio das Ostras",
+      "canonicalKey": "RIO DAS OSTRAS",
+      "observedValues": [
+        "RIO DAS OSTRAS",
+        "Rio das Ostras"
+      ]
+    },
+    {
+      "sourceLine": 316,
+      "canonicalDisplayName": "Rio de Janeiro",
+      "canonicalKey": "RIO DE JANEIRO",
+      "observedValues": [
+        "RIO DE JANEIRO",
+        "Rio de Janeiro"
+      ]
+    },
+    {
+      "sourceLine": 317,
+      "canonicalDisplayName": "São Gonçalo",
+      "canonicalKey": "SAO GONCALO",
+      "observedValues": [
+        "SÃO GONÇALO",
+        "São Gonçalo"
+      ]
+    },
+    {
+      "sourceLine": 318,
+      "canonicalDisplayName": "São João de Meriti",
+      "canonicalKey": "SAO JOAO DE MERITI",
+      "observedValues": [
+        "SÃO JOÃO DE MERITI",
+        "São João de Meriti"
+      ]
+    },
+    {
+      "sourceLine": 319,
+      "canonicalDisplayName": "São José do Vale do Rio Preto",
+      "canonicalKey": "SAO JOSE DO VALE DO RIO PRETO",
+      "observedValues": [
+        "SÃO JOSÉ DO VALE DO RIO PRETO",
+        "São José do Vale do Rio Preto"
+      ]
+    },
+    {
+      "sourceLine": 320,
+      "canonicalDisplayName": "São Pedro da Aldeia",
+      "canonicalKey": "SAO PEDRO DA ALDEIA",
+      "observedValues": [
+        "SÃO PEDRO DA ALDEIA",
+        "São Pedro da Aldeia"
+      ]
+    },
+    {
+      "sourceLine": 321,
+      "canonicalDisplayName": "Sapucaia",
+      "canonicalKey": "SAPUCAIA",
+      "observedValues": [
+        "SAPUCAIA",
+        "Sapucaia"
+      ]
+    },
+    {
+      "sourceLine": 322,
+      "canonicalDisplayName": "Teresópolis",
+      "canonicalKey": "TERESOPOLIS",
+      "observedValues": [
+        "TERESÓPOLIS",
+        "Teresópolis"
+      ]
+    },
+    {
+      "sourceLine": 323,
+      "canonicalDisplayName": "Três Rios",
+      "canonicalKey": "TRES RIOS",
+      "observedValues": [
+        "TRÊS RIOS",
+        "Três Rios"
+      ]
+    },
+    {
+      "sourceLine": 324,
+      "canonicalDisplayName": "Valença",
+      "canonicalKey": "VALENCA",
+      "observedValues": [
+        "VALENÇA",
+        "Valença"
+      ]
+    },
+    {
+      "sourceLine": 325,
+      "canonicalDisplayName": "Vassouras",
+      "canonicalKey": "VASSOURAS",
+      "observedValues": [
+        "VASSOURAS",
+        "Vassouras"
+      ]
+    },
+    {
+      "sourceLine": 326,
+      "canonicalDisplayName": "Volta Redonda",
+      "canonicalKey": "VOLTA REDONDA",
+      "observedValues": [
+        "VOLTA REDONDA",
+        "Volta Redonda"
+      ]
+    }
+  ],
+  "manualCandidates": [
+    {
+      "sourceLine": 339,
+      "rawValue": "CACHOEIRA DE MACACU",
+      "normalizedKey": "CACHOEIRA DE MACACU",
+      "candidateDisplayName": "Cachoeiras de Macacu",
+      "similarity": 0.974,
+      "reviewRequired": true
+    },
+    {
+      "sourceLine": 340,
+      "rawValue": "CAMPOS DOS GOYTACASES",
+      "normalizedKey": "CAMPOS DOS GOYTACASES",
+      "candidateDisplayName": "Campos dos Goytacazes",
+      "similarity": 0.952,
+      "reviewRequired": true
+    },
+    {
+      "sourceLine": 341,
+      "rawValue": "CASEMIRO DE ABEU",
+      "normalizedKey": "CASEMIRO DE ABEU",
+      "candidateDisplayName": "Casemiro de Abreu",
+      "similarity": 0.97,
+      "reviewRequired": true
+    },
+    {
+      "sourceLine": 342,
+      "rawValue": "COMENDADOR LEVY GASPARIAM",
+      "normalizedKey": "COMENDADOR LEVY GASPARIAM",
+      "candidateDisplayName": "Comendador Levy Gasparian",
+      "similarity": 0.96,
+      "reviewRequired": true
+    },
+    {
+      "sourceLine": 343,
+      "rawValue": "ENGENHEIRO PAULO DE FRONTIM",
+      "normalizedKey": "ENGENHEIRO PAULO DE FRONTIM",
+      "candidateDisplayName": "Engenheiro Paulo de Frontin",
+      "similarity": 0.963,
+      "reviewRequired": true
+    },
+    {
+      "sourceLine": 344,
+      "rawValue": "Paty do Alferes",
+      "normalizedKey": "PATY DO ALFERES",
+      "candidateDisplayName": "PATY DO ALVERES",
+      "similarity": 0.933,
+      "reviewRequired": true
+    }
+  ]
+}
