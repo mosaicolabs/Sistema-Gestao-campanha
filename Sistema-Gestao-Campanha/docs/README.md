@@ -25,6 +25,7 @@ Este índice apresenta a documentação do monorepo `Sistema-Gestao-Campanha`. O
 | Alterar tabelas ou executar Prisma | [Dados e banco](dados-e-prisma.md) |
 | Importar ou revisar a planilha | [Importação e conciliação](importacao-e-conciliacao.md) |
 | Normalizar cidades e consultar a visão macro | [Normalização de localidades](normalizacao-de-localidades.md) |
+| Consultar o estado atual e retomar o trabalho | [PROGRESS](PROGRESS.MD) |
 | Entender login, permissões e auditoria | [Autenticação e RBAC](autenticacao-e-rbac.md) |
 | Aplicar controles de segurança | [Segurança](seguranca.md) |
 | Executar verificações antes de entregar | [Testes e qualidade](testes-e-qualidade.md) |
