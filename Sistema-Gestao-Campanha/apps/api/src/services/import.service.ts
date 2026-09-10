@@ -3,6 +3,7 @@ import ExcelJS from 'exceljs'
 import type { ImportCategory, IssueSeverity, IssueType, Prisma } from '@campanha/database'
 import { auditRepository } from '../repositories/audit.repository.js'
 import { importRepository } from '../repositories/import.repository.js'
+import { localityNormalizationService } from './locality-normalization.service.js'
 import { AppError } from '../utils/app-error.js'
 import { canonicalize } from '../utils/normalization.js'
 
@@ -162,9 +163,11 @@ export const importService = {
 
     for (const issue of issues) await importRepository.createIssue({ importBatchId: batch.id, ...issue })
 
+    const normalization = await localityNormalizationService.normalizeBatch(batch.id, { userId })
+
     const updated = await importRepository.updateBatch(batch.id, {
       filename: file.originalname,
-      status: issues.length ? 'REVIEW_REQUIRED' : 'CLOSED',
+      status: issues.length || normalization.openIssueIds.length ? 'REVIEW_REQUIRED' : 'CLOSED',
       workbookTabs: analysis.workbookTabs,
       territorialOccurrences: analysis.territorialOccurrences,
       allianceOccurrences: analysis.allianceOccurrences,
@@ -174,7 +177,7 @@ export const importService = {
       finishedAt: new Date(),
     })
     await auditRepository.record({ userId, action: 'IMPORT', entityType: 'ImportBatch', entityId: batch.id, afterData: { fileHash, workbookTabs: analysis.workbookTabs, territorialOccurrences: analysis.territorialOccurrences, allianceOccurrences: analysis.allianceOccurrences } })
-    return { batch: updated, idempotent: false, openIssues: issues.length }
+    return { batch: updated, idempotent: false, openIssues: issues.length + normalization.writes.issues, normalization }
   },
 
   listBatches: () => importRepository.listBatches(),
@@ -185,6 +188,12 @@ export const importService = {
     const issue = await importRepository.getIssue(issueId)
     if (!issue) throw new AppError(404, 'ISSUE_NOT_FOUND', 'Pendência não encontrada.')
     if (issue.status === 'RESOLVED' || issue.status === 'DISMISSED') throw new AppError(409, 'ISSUE_ALREADY_CLOSED', 'Esta pendência já recebeu uma decisão.')
+    if (issue.type === 'LOCALITY_ALIAS') {
+      if (data.targetEntityId && data.targetEntityType && data.targetEntityType !== 'Locality') {
+        throw new AppError(422, 'TARGET_ENTITY_TYPE_INVALID', 'Uma pendência de localidade só aceita uma cidade como alvo.')
+      }
+      return localityNormalizationService.applyAliasDecision({ issueId, userId, decision: data.decision, reason: data.reason, targetLocalityId: data.targetEntityId })
+    }
     const decision = await importRepository.decideIssue(issueId, userId, data)
     await auditRepository.record({ userId, action: 'RECONCILE', entityType: 'ImportIssue', entityId: issueId, afterData: { decision: data.decision, reason: data.reason } })
     return decision

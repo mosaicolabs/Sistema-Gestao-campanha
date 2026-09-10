@@ -98,6 +98,7 @@ export type MacroCoverageRow = {
   canonicalKey: string
   region: string
   uniqueArticulators: number
+  articulatorCityRelations: number
   uniqueAssignments: number
   uniqueAlliances: number
   observedVariants: string[]

@@ -194,12 +194,16 @@ model LocalityAlias {
   id                   String            @id @default(cuid())
   localityId           String
   value                String
+  valueNormalized      String
+  status               RecordStatus      @default(PENDING_REVIEW)
   sourceOccurrenceId   String?
   locality             Locality          @relation(fields: [localityId], references: [id], onDelete: Cascade)
   sourceOccurrence     SourceOccurrence? @relation(fields: [sourceOccurrenceId], references: [id], onDelete: SetNull)
   createdAt            DateTime          @default(now())
 
   @@unique([localityId, value])
+  @@unique([localityId, valueNormalized])
+  @@index([valueNormalized])
 }
 
 model BusinessRole {

@@ -37,6 +37,7 @@ O seed marca a conta inicial para troca obrigatória. Enquanto `mustChangePasswo
 | `GET` | `/dashboard` | `dashboard:read` |
 | `GET` | `/references` | Sessão válida |
 | `GET` | `/coverage` | `coverage:read` |
+| `GET` | `/coverage/macro` | `coverage:read` |
 | `GET` | `/people` | `people:read` |
 | `GET` | `/people/:id` | `people:read` |
 | `POST` | `/people` | `people:create` |
@@ -91,6 +92,10 @@ Authorization: Bearer your_access_token_here
 ## Importação de planilha
 
 Envie a planilha como `multipart/form-data`, no campo `file`. O servidor aceita `.xlsx` de até 25 MB, calcula SHA-256 e retorna o lote; uma reimportação com o mesmo hash é idempotente.
+
+## Visão macro e aliases
+
+`GET /coverage/macro` agrupa por cidade canônica e aceita `regionId`. A resposta distingue `articulatorCityRelations` (relações únicas articulador–cidade), `uniqueArticulators`, `uniqueAssignments`, `uniqueAlliances`, `observedVariants` e `pendingAliasCount`. Aliases aprovados preservam a ocorrência original; pendências precisam de `POST /reconciliation-issues/:id/decisions` com justificativa e, para `CORRECT` ou `MERGE`, `targetEntityType=Locality` e `targetEntityId` de uma cidade ativa.
 
 ## Formato de erro
 

@@ -36,7 +36,7 @@ O importador cria `SourceOccurrence` para cada aba e linha, sem transformar auto
 
 ## Localidades
 
-`Locality` usa hierarquia por `parentId` e diferencia `STATE`, `REGION`, `CITY` e `LOCAL_AREA`. O seed cria Rio de Janeiro, oito regiões e as cidades identificadas no diagnóstico. Grafias alternativas ficam em `LocalityAlias` até a normalização ser confirmada.
+`Locality` usa hierarquia por `parentId` e diferencia `STATE`, `REGION`, `CITY` e `LOCAL_AREA`. O seed cria Rio de Janeiro, oito regiões e as cidades identificadas no diagnóstico. `LocalityAlias` preserva `value`, guarda `valueNormalized` para busca e mantém `status`; a regra de aliases aprovados e o manifesto estão em [normalização de localidades](normalizacao-de-localidades.md).
 
 ## Estados e revisão
 

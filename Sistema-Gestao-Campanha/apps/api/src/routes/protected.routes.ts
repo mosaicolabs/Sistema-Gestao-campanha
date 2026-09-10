@@ -2,6 +2,7 @@ import { Router } from 'express'
 import multer from 'multer'
 import {
   createDeliverySchema,
+  coverageMacroQuerySchema,
   createEventSchema,
   createPersonSchema,
   createTaskSchema,
@@ -35,6 +36,7 @@ protectedRoutes.use(authenticate, requirePasswordChanged)
 protectedRoutes.get('/dashboard', requirePermission('dashboard', 'read'), operationsController.dashboard)
 protectedRoutes.get('/references', operationsController.references)
 protectedRoutes.get('/coverage', requirePermission('coverage', 'read'), operationsController.coverage)
+protectedRoutes.get('/coverage/macro', requirePermission('coverage', 'read'), validate(coverageMacroQuerySchema, 'query'), operationsController.coverageMacro)
 
 protectedRoutes.get('/people', requirePermission('people', 'read'), validate(peopleQuerySchema, 'query'), peopleController.list)
 protectedRoutes.get('/people/:id', requirePermission('people', 'read'), peopleController.get)

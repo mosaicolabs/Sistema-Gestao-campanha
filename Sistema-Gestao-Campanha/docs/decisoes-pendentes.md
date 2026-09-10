@@ -10,7 +10,7 @@ audience: Gestores, analistas, designers e desenvolvedores.
 
 # Revisar decisões pendentes do produto
 
-DP-001 a DP-020 são decisões abertas que o sistema exibe e persiste como `PENDING`. Não implemente uma automação definitiva com base nesses itens antes de registrar a confirmação do gestor.
+DP-001 a DP-020 são decisões abertas que o sistema exibe e persiste como `PENDING`. DP-021 foi confirmada pelo gestor em 10/09/2026 e passa a ser uma regra executável do fluxo de localidades.
 
 | ID | Decisão | Impacto |
 | --- | --- | --- |
@@ -34,6 +34,21 @@ DP-001 a DP-020 são decisões abertas que o sistema exibe e persiste como `PEND
 | DP-018 | Prazo, usuários, orçamento e prioridade | Define capacidade e sequência dos módulos |
 | DP-019 | Continuidade da planilha e integração com Drive | Define sincronização e conflitos de fonte |
 | DP-020 | Backup, retenção, exportação e exclusão | Define política operacional dos dados |
+
+## DP-021 confirmada: grafias de cidades e aliases canônicos
+
+O gestor autorizou ativar automaticamente como aliases seguros as diferenças de maiúsculas, acentos e espaços. Também autorizou usar o nome canônico correto para os seis pares de cidades listados nas linhas 339–344 do relatório `Campanha_EA_2026_articuladores_por_cidade.md`:
+
+| Grafia observada | Localidade canônica aprovada |
+| --- | --- |
+| CACHOEIRA DE MACACU | Cachoeiras de Macacu |
+| CAMPOS DOS GOYTACASES | Campos dos Goytacazes |
+| CASEMIRO DE ABEU | Casemiro de Abreu |
+| COMENDADOR LEVY GASPARIAM | Comendador Levy Gasparian |
+| ENGENHEIRO PAULO DE FRONTIM | Engenheiro Paulo de Frontin |
+| PATY DO ALVERES | Paty do Alferes |
+
+O valor bruto continua preservado em `SourceOccurrence`; o alias ativo aponta para `Locality` e a decisão é auditada. As grafias de articuladores continuam fora deste escopo e não geram fusão de pessoas.
 
 ## Como confirmar uma decisão
 

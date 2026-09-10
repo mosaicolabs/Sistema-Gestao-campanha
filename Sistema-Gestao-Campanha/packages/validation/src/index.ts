@@ -81,6 +81,10 @@ export const peopleQuerySchema = z.object({
   pageSize: z.coerce.number().int().min(1).max(100).default(20),
 })
 
+export const coverageMacroQuerySchema = z.object({
+  regionId: entityId.optional(),
+})
+
 export const createTaskSchema = z.object({
   boardId: entityId,
   columnId: entityId,

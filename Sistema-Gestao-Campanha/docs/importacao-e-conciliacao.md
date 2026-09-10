@@ -38,6 +38,8 @@ O parser aplica estas regras:
 
 O parser usa `ExcelJS`, preserva os oito primeiros valores da linha, normaliza valores para comparação e calcula um hash por aba, linha e conteúdo normalizado.
 
+Após a persistência das ocorrências, o serviço de normalização procura cidades do manifesto por chave determinística. Aliases seguros são gravados de forma idempotente; aproximações fora da lista aprovada viram pendências `LOCALITY_ALIAS`. O comando também pode ser executado em dry-run conforme o [runbook de normalização](normalizacao-de-localidades.md).
+
 ## Resultado esperado da base atual
 
 Para `Campanha_EA_2026_REV-006.xlsx`, o resultado validado é:

@@ -18,6 +18,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Textarea } from '@/components/ui/textarea'
 import { api, apiErrorMessage } from '@/lib/api'
 import type { ImportBatch, ImportIssue } from '@/lib/types'
+import { LocalityAliasReview } from './locality-alias-review'
 
 type ProductDecision = { id: string; title: string; impact: string; status: 'PENDING' | 'CONFIRMED'; source: string }
 type DecisionForm = z.infer<typeof reconciliationDecisionSchema>
@@ -49,6 +50,7 @@ export function ImportsPage() {
       queryClient.invalidateQueries({ queryKey: ['imports'] })
       queryClient.invalidateQueries({ queryKey: ['issues'] })
       queryClient.invalidateQueries({ queryKey: ['dashboard'] })
+      queryClient.invalidateQueries({ queryKey: ['coverage-macro'] })
     },
   })
 
@@ -92,11 +94,17 @@ export function ImportsPage() {
       <Tabs defaultValue="issues" className="review-tabs">
         <TabsList><TabsTrigger value="issues">Fila de revisão</TabsTrigger><TabsTrigger value="decisions">Decisões pendentes</TabsTrigger><TabsTrigger value="whatsapp">WhatsApp</TabsTrigger></TabsList>
         <TabsContent value="issues">
-          {issues.isLoading ? <LoadingState rows={6} /> : issues.isError ? <ErrorState message={apiErrorMessage(issues.error)} retry={() => issues.refetch()} /> : !issues.data?.length ? <EmptyState title="Fila sem pendências" description="Novas divergências de importação aparecerão aqui." /> : (
-            <section className="issue-list" aria-label="Pendências de importação">
-              {issues.data.map((issue) => <article key={issue.id} className={`issue-row severity-${issue.severity.toLowerCase()}`}><div className="issue-icon">{issue.status === 'RESOLVED' ? <CheckCircle size={24} weight="duotone" aria-hidden /> : <Warning size={24} weight="duotone" aria-hidden />}</div><div><div className="issue-title"><h3>{issue.title}</h3><Badge variant="outline">{issue.status === 'RESOLVED' ? 'Resolvida' : issue.severity === 'CRITICAL' ? 'Crítica' : issue.severity === 'WARNING' ? 'Atenção' : 'Informativa'}</Badge></div><p>{issueDetails(issue.details)}</p><span>Origem: {issue.importBatch.filename}</span></div>{issue.status === 'OPEN' ? <Button variant="outline" size="sm" onClick={() => setSelectedIssue(issue)}>Registrar decisão</Button> : null}</article>)}
-            </section>
-          )}
+          {issues.isLoading ? <LoadingState rows={6} /> : issues.isError ? <ErrorState message={apiErrorMessage(issues.error)} retry={() => issues.refetch()} /> : <>
+            <LocalityAliasReview issues={issues.data ?? []} onReview={setSelectedIssue} />
+            {(() => {
+              const generalIssues = issues.data?.filter((issue) => issue.type !== 'LOCALITY_ALIAS') ?? []
+              return !generalIssues.length ? <EmptyState title="Fila sem outras pendências" description="Novas divergências de importação aparecerão aqui." /> : (
+                <section className="issue-list" aria-label="Pendências de importação">
+                  {generalIssues.map((issue) => <article key={issue.id} className={`issue-row severity-${issue.severity.toLowerCase()}`}><div className="issue-icon">{issue.status === 'RESOLVED' ? <CheckCircle size={24} weight="duotone" aria-hidden /> : <Warning size={24} weight="duotone" aria-hidden />}</div><div><div className="issue-title"><h3>{issue.title}</h3><Badge variant="outline">{issue.status === 'RESOLVED' ? 'Resolvida' : issue.severity === 'CRITICAL' ? 'Crítica' : issue.severity === 'WARNING' ? 'Atenção' : 'Informativa'}</Badge></div><p>{issueDetails(issue.details)}</p><span>Origem: {issue.importBatch.filename}</span></div>{issue.status === 'OPEN' ? <Button variant="outline" size="sm" onClick={() => setSelectedIssue(issue)}>Registrar decisão</Button> : null}</article>)}
+                </section>
+              )
+            })()}
+          </>}
         </TabsContent>
         <TabsContent value="decisions">
           {decisions.isLoading ? <LoadingState rows={6} /> : decisions.isError ? <ErrorState message={apiErrorMessage(decisions.error)} retry={() => decisions.refetch()} /> : (

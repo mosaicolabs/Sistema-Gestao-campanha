@@ -17,6 +17,9 @@ export const operationsController = {
   async coverage(request: Request, response: Response) {
     response.json(await coverageRepository.list(request.query.regionId as string | undefined))
   },
+  async coverageMacro(request: Request, response: Response) {
+    response.json(await coverageRepository.listMacro(request.query.regionId as string | undefined))
+  },
   async boards(_request: Request, response: Response) {
     response.json(await taskService.list())
   },

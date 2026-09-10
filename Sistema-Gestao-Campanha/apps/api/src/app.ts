@@ -21,7 +21,7 @@ app.get('/api/docs', (_request, response) =>
   response.json({
     name: 'API Sistema de Gestão da Campanha',
     auth: 'Bearer JWT, validade de 15 minutos',
-    resources: ['/auth', '/dashboard', '/people', '/coverage', '/boards', '/tasks', '/calendar-events', '/deliveries', '/imports', '/reconciliation-issues', '/product-decisions', '/audit-logs'],
+    resources: ['/auth', '/dashboard', '/people', '/coverage', '/coverage/macro', '/boards', '/tasks', '/calendar-events', '/deliveries', '/imports', '/reconciliation-issues', '/product-decisions', '/audit-logs'],
     conditional: { whatsapp: 'Possibilidade mencionada. Integração desativada até decisão do gestor.' },
   }),
 )

@@ -46,6 +46,7 @@ const pendingDecisions = [
   ['DP-018', 'Prazo, usuários, orçamento e prioridade', 'Define capacidade, metas técnicas e sequência formal de módulos.'],
   ['DP-019', 'Continuidade da planilha e integração com Drive', 'Define sincronização e conflito de fonte após a migração.'],
   ['DP-020', 'Backup, retenção, exportação e exclusão', 'Define a política operacional dos dados.'],
+  ['DP-021', 'Grafias de cidades e aliases canônicos', 'Define quais aproximações do relatório podem virar LocalityAlias ativo e qual rótulo será exibido.'],
 ] as const
 
 async function main() {
@@ -171,8 +172,8 @@ async function main() {
   for (const [id, title, impact] of pendingDecisions) {
     await prisma.productDecision.upsert({
       where: { id },
-      update: { title, impact },
-      create: { id, title, impact, source: 'PRD seção 9' },
+      update: { title, impact, status: id === 'DP-021' ? 'CONFIRMED' : 'PENDING' },
+      create: { id, title, impact, source: 'PRD seção 9', status: id === 'DP-021' ? 'CONFIRMED' : 'PENDING' },
     })
   }
 
