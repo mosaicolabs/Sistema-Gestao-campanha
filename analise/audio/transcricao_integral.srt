@@ -1,0 +1,311 @@
+1
+00:00:00,000 --> 00:00:02,300
+João, tudo bem? Bom dia, amigo.
+
+2
+00:00:02,680 --> 00:00:05,280
+Estou com o Léo aqui, que falou com você agora cedo, né?
+
+3
+00:00:06,640 --> 00:00:09,200
+Então, essa é a planilha que a gente tem do Drive.
+
+4
+00:00:11,620 --> 00:00:15,640
+Na verdade, assim, a ideia era a gente até fazer um hub, né?
+
+5
+00:00:17,640 --> 00:00:25,540
+Com módulos aí de ferramentas, e uma delas é esse mapa.
+
+6
+00:00:26,020 --> 00:00:27,380
+Qual o nosso objetivo?
+
+7
+00:00:27,380 --> 00:00:30,680
+O nosso objetivo é mapear as cidades.
+
+8
+00:00:31,580 --> 00:00:41,360
+A gente tem um articulador político, que é o cara que tem uma visão mais macro de determinada região.
+
+9
+00:00:41,800 --> 00:00:43,100
+São poucos.
+
+10
+00:00:43,400 --> 00:00:48,700
+E aí, em cada cidade, geralmente, a gente tem um líder, desculpa, um coordenador.
+
+11
+00:00:48,980 --> 00:00:52,040
+E o coordenador tem os seus liderados.
+
+12
+00:00:52,040 --> 00:00:58,760
+Então a gente queria trazer isso tudo para dentro dessa planilha, desse material
+
+13
+00:00:59,660 --> 00:01:04,420
+E aí também a gente tem informação, aquele líder está com alguma dobrada
+
+14
+00:01:04,420 --> 00:01:10,560
+Eu não sei se você conhece o jargão político, dobrada é qual federal que está junto com o Edson
+
+15
+00:01:10,560 --> 00:01:19,680
+O cara fala assim, aquele líder está ajudando na dobrada com a Dani Cunha
+
+16
+00:01:19,680 --> 00:01:22,940
+Ah, ele está ajudando a dobrada do Hugo Leal
+
+17
+00:01:23,820 --> 00:01:26,720
+Então a gente teria essa informação também na planilha
+
+18
+00:01:26,720 --> 00:01:27,800
+Você vai ver os dados aí
+
+19
+00:01:27,800 --> 00:01:29,920
+Qual o objetivo da planilha?
+
+20
+00:01:30,000 --> 00:01:34,040
+O objetivo da planilha é a gente enxergar o estado como um todo
+
+21
+00:01:34,760 --> 00:01:37,980
+Ver as cidades que a gente tem carência
+
+22
+00:01:37,980 --> 00:01:40,160
+Que a gente não tem nenhuma liderança
+
+23
+00:01:40,160 --> 00:01:42,100
+Uma coordenação
+
+24
+00:01:42,100 --> 00:01:44,520
+Ah, ela também vai servir
+
+25
+00:01:44,520 --> 00:01:48,120
+Ah, eu tenho um evento na região tal
+
+26
+00:01:48,120 --> 00:01:53,480
+Então eu vou filtrar todas as pessoas daquela região ou daquela cidade
+
+27
+00:01:53,480 --> 00:01:59,920
+Vou comunicar, olha, o deputado vai estar fazendo aqui um evento nessa cidade
+
+28
+00:01:59,920 --> 00:02:02,740
+Eu preciso mobilizar vocês para participarem
+
+29
+00:02:03,780 --> 00:02:07,160
+Enfim, outras coisas também, rota de entrega de material
+
+30
+00:02:07,160 --> 00:02:10,480
+Ah, vai sair material gráfico aqui para uma região
+
+31
+00:02:10,480 --> 00:02:20,260
+Então eu posso tentar já fazer uma rota considerando as pessoas que estão ali naquela...
+
+32
+00:02:20,260 --> 00:02:22,200
+Isso vai fazer uma espécie de filtro, né?
+
+33
+00:02:23,060 --> 00:02:23,740
+Exatamente.
+
+34
+00:02:24,440 --> 00:02:28,720
+Enfim, a gente vai pensando ali as informações que a gente precisa.
+
+35
+00:02:29,240 --> 00:02:37,500
+E aí a ideia é que a gente, com a planilha pronta, a gente permitiria algumas pessoas também
+
+36
+00:02:39,500 --> 00:02:41,020
+selecionadas para alimentar.
+
+37
+00:02:41,320 --> 00:02:43,420
+Ah, tem uma liderança minha lá no Rio.
+
+38
+00:02:43,560 --> 00:02:44,280
+Lá ela já...
+
+39
+00:02:44,820 --> 00:02:46,540
+Uma pessoa já habilitada para
+
+40
+00:02:46,540 --> 00:02:48,100
+colocar na planilha
+
+41
+00:02:48,920 --> 00:02:50,840
+uma nova liderança que chegou.
+
+42
+00:02:51,260 --> 00:02:53,180
+Para a coisa ser muito dinâmica.
+
+43
+00:02:53,300 --> 00:02:54,620
+Aliás, a gente tem pouco tempo.
+
+44
+00:02:55,460 --> 00:02:55,700
+Então,
+
+45
+00:02:56,540 --> 00:02:58,440
+essa é a proposta da planilha.
+
+46
+00:02:59,900 --> 00:03:01,160
+Falar mais alguma coisa, Léo?
+
+47
+00:03:01,740 --> 00:03:03,000
+Não, acho que é isso.
+
+48
+00:03:03,740 --> 00:03:04,260
+E...
+
+49
+00:03:05,360 --> 00:03:06,880
+Essa questão que o Levi falou
+
+50
+00:03:06,880 --> 00:03:09,320
+Tipo de um braço, de uma ferramenta de gestão também
+
+51
+00:03:10,220 --> 00:03:12,720
+Que a gente tem que controlar até as tarefas
+
+52
+00:03:12,720 --> 00:03:14,940
+De repente, aquele usuário
+
+53
+00:03:14,940 --> 00:03:15,840
+[nome incerto: “Levi Carnela”]
+
+54
+00:03:15,840 --> 00:03:17,380
+E o usuário Léo
+
+55
+00:03:17,380 --> 00:03:19,700
+Eles tem o mesmo nível de acesso
+
+56
+00:03:19,700 --> 00:03:23,000
+Para ter acesso a um Kanban de tarefas pendentes
+
+57
+00:03:23,000 --> 00:03:23,740
+Sim, sim
+
+58
+00:03:23,740 --> 00:03:24,620
+Entendeu?
+
+59
+00:03:24,920 --> 00:03:27,180
+E um desdobramento maravilhoso também
+
+60
+00:03:27,180 --> 00:03:29,080
+Seria a gente ter uma agenda online
+
+61
+00:03:29,840 --> 00:03:31,600
+Onde o Edson consiga ali
+
+62
+00:03:31,600 --> 00:03:33,900
+Só através de um link simples
+
+63
+00:03:34,460 --> 00:03:36,300
+abrir a agenda e já atualiza, atualiza
+
+64
+00:03:36,300 --> 00:03:37,740
+pra todo mundo que é necessário aqui.
+
+65
+00:03:38,760 --> 00:03:39,720
+Aí seria legal,
+
+66
+00:03:40,280 --> 00:03:42,040
+que aí eu não sei o nível disso, né?
+
+67
+00:03:44,020 --> 00:03:44,880
+Até de repente
+
+68
+00:03:44,880 --> 00:03:45,940
+chegar um alerta
+
+69
+00:03:46,800 --> 00:03:47,940
+pelo nosso WhatsApp.
+
+70
+00:03:48,280 --> 00:03:50,240
+Eu sei que você tá com a API do WhatsApp também [termo “API” obtido na revisão automática; conferir no áudio].
+
+71
+00:03:50,820 --> 00:03:52,240
+De repente você consegue, poxa,
+
+72
+00:03:52,240 --> 00:03:53,980
+cada nova agenda cadastrada, chega
+
+73
+00:03:53,980 --> 00:03:56,140
+uma mensagem do nosso WhatsApp aqui
+
+74
+00:03:56,140 --> 00:03:58,700
+dos coordenadores geral da campanha.
+
+75
+00:03:59,720 --> 00:04:00,140
+Enfim,
+
+76
+00:04:00,440 --> 00:04:01,280
+deixa Deus te usar aí.
+
+77
+00:04:02,240 --> 00:04:03,220
+É isso aí, garoto.
+
+78
+00:04:04,240 --> 00:04:10,320
+Um abraço aí, sucesso aí nessa etapa aí, valeu!

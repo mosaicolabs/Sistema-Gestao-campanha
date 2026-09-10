@@ -1,0 +1,309 @@
+{
+  "text": " chegar um alerta pelo nosso WhatsApp. Eu sei que você está com a API do WhatsApp também, de repente você consegue, poxa, cada nova agenda cadastrada, chega uma mensagem do nosso WhatsApp.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 225.0,
+      "end": 227.88,
+      "text": " chegar um alerta pelo nosso WhatsApp.",
+      "tokens": [
+        50365,
+        25512,
+        1105,
+        9615,
+        64,
+        12167,
+        14347,
+        30513,
+        13,
+        50517
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3286137580871582,
+      "compression_ratio": 1.3450704225352113,
+      "no_speech_prob": 7.707598448369879e-12,
+      "words": [
+        {
+          "word": " chegar",
+          "start": 225.0,
+          "end": 225.18,
+          "probability": 0.257080078125
+        },
+        {
+          "word": " um",
+          "start": 225.18,
+          "end": 225.32,
+          "probability": 0.9267578125
+        },
+        {
+          "word": " alerta",
+          "start": 225.32,
+          "end": 226.24,
+          "probability": 0.98779296875
+        },
+        {
+          "word": " pelo",
+          "start": 226.24,
+          "end": 227.24,
+          "probability": 0.9423828125
+        },
+        {
+          "word": " nosso",
+          "start": 227.24,
+          "end": 227.5,
+          "probability": 0.9951171875
+        },
+        {
+          "word": " WhatsApp.",
+          "start": 227.5,
+          "end": 227.88,
+          "probability": 0.669921875
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 228.26,
+      "end": 230.22,
+      "text": " Eu sei que você está com a API do WhatsApp também,",
+      "tokens": [
+        50529,
+        2186,
+        10842,
+        631,
+        2723,
+        3192,
+        395,
+        257,
+        9362,
+        360,
+        30513,
+        6274,
+        11,
+        50631
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3286137580871582,
+      "compression_ratio": 1.3450704225352113,
+      "no_speech_prob": 7.707598448369879e-12,
+      "words": [
+        {
+          "word": " Eu",
+          "start": 228.26,
+          "end": 228.36,
+          "probability": 0.97412109375
+        },
+        {
+          "word": " sei",
+          "start": 228.36,
+          "end": 228.5,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " que",
+          "start": 228.5,
+          "end": 228.6,
+          "probability": 0.9951171875
+        },
+        {
+          "word": " você",
+          "start": 228.6,
+          "end": 228.64,
+          "probability": 0.9541015625
+        },
+        {
+          "word": " está",
+          "start": 228.64,
+          "end": 228.76,
+          "probability": 0.76708984375
+        },
+        {
+          "word": " com",
+          "start": 228.76,
+          "end": 228.9,
+          "probability": 0.62353515625
+        },
+        {
+          "word": " a",
+          "start": 228.9,
+          "end": 229.22,
+          "probability": 0.37646484375
+        },
+        {
+          "word": " API",
+          "start": 229.22,
+          "end": 229.42,
+          "probability": 0.79248046875
+        },
+        {
+          "word": " do",
+          "start": 229.42,
+          "end": 229.56,
+          "probability": 0.98876953125
+        },
+        {
+          "word": " WhatsApp",
+          "start": 229.56,
+          "end": 229.9,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " também,",
+          "start": 229.9,
+          "end": 230.22,
+          "probability": 0.89306640625
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 231.06,
+      "end": 233.7,
+      "text": " de repente você consegue, poxa, cada nova agenda cadastrada,",
+      "tokens": [
+        50671,
+        368,
+        42884,
+        2723,
+        27179,
+        11,
+        714,
+        36852,
+        11,
+        8411,
+        28265,
+        9829,
+        12209,
+        525,
+        19120,
+        11,
+        50801
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3286137580871582,
+      "compression_ratio": 1.3450704225352113,
+      "no_speech_prob": 7.707598448369879e-12,
+      "words": [
+        {
+          "word": " de",
+          "start": 231.06,
+          "end": 231.22,
+          "probability": 0.97265625
+        },
+        {
+          "word": " repente",
+          "start": 231.22,
+          "end": 231.5,
+          "probability": 1.0
+        },
+        {
+          "word": " você",
+          "start": 231.5,
+          "end": 231.64,
+          "probability": 0.9423828125
+        },
+        {
+          "word": " consegue,",
+          "start": 231.64,
+          "end": 232.0,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " poxa,",
+          "start": 232.14,
+          "end": 232.24,
+          "probability": 0.64453125
+        },
+        {
+          "word": " cada",
+          "start": 232.44,
+          "end": 232.5,
+          "probability": 0.79638671875
+        },
+        {
+          "word": " nova",
+          "start": 232.5,
+          "end": 232.74,
+          "probability": 0.9052734375
+        },
+        {
+          "word": " agenda",
+          "start": 232.74,
+          "end": 233.02,
+          "probability": 0.97998046875
+        },
+        {
+          "word": " cadastrada,",
+          "start": 233.02,
+          "end": 233.7,
+          "probability": 0.982421875
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 233.72,
+      "end": 235.86,
+      "text": " chega uma mensagem do nosso WhatsApp.",
+      "tokens": [
+        50807,
+        40157,
+        2772,
+        10923,
+        14767,
+        360,
+        14347,
+        30513,
+        13,
+        50913
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3286137580871582,
+      "compression_ratio": 1.3450704225352113,
+      "no_speech_prob": 7.707598448369879e-12,
+      "words": [
+        {
+          "word": " chega",
+          "start": 233.72,
+          "end": 233.98,
+          "probability": 0.8505859375
+        },
+        {
+          "word": " uma",
+          "start": 233.98,
+          "end": 234.18,
+          "probability": 0.97314453125
+        },
+        {
+          "word": " mensagem",
+          "start": 234.18,
+          "end": 235.16,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " do",
+          "start": 235.16,
+          "end": 235.3,
+          "probability": 0.6376953125
+        },
+        {
+          "word": " nosso",
+          "start": 235.3,
+          "end": 235.48,
+          "probability": 1.0
+        },
+        {
+          "word": " WhatsApp.",
+          "start": 235.48,
+          "end": 235.86,
+          "probability": 0.99951171875
+        }
+      ]
+    }
+  ],
+  "language": "pt"
+}

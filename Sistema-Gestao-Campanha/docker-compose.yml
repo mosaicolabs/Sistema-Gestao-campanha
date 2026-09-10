@@ -1,0 +1,71 @@
+name: sistema-campanha
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: SistemaCampanha_Postgree
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-campanha}
+      POSTGRES_USER: ${POSTGRES_USER:-campanha}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-campanha}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - campanha_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
+
+  api:
+    container_name: SistemaCampanha_Api
+    build:
+      context: .
+      dockerfile: docker/api.Dockerfile
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgresql://${POSTGRES_USER:-campanha}:${POSTGRES_PASSWORD:-campanha}@postgres:5432/${POSTGRES_DB:-campanha}?schema=public
+      JWT_SECRET: ${JWT_SECRET:-desenvolvimento-local-troque-este-segredo}
+      JWT_EXPIRES_IN: ${JWT_EXPIRES_IN:-15m}
+      BCRYPT_ROUNDS: ${BCRYPT_ROUNDS:-12}
+      PORT: 3333
+      CORS_ORIGIN: ${DOCKER_CORS_ORIGIN:-http://localhost:8080}
+      SEED_ADMIN_USERNAME: ${SEED_ADMIN_USERNAME:-admin}
+      SEED_ADMIN_PASSWORD: ${SEED_ADMIN_PASSWORD:-TroqueAgora@2026}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "${API_PORT:-3333}:3333"
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3333/health').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 20s
+
+  web:
+    container_name: SistemaCampanha_Web
+    build:
+      context: .
+      dockerfile: docker/web.Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL:-http://localhost:3333/api}
+    restart: unless-stopped
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "${WEB_PORT:-8080}:80"
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://127.0.0.1/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  campanha_postgres_data:

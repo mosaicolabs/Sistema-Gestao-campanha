@@ -1,0 +1,5493 @@
+{
+  "text": " João, tudo bem? Bom dia, amigo. Estou com o Léo aqui, que falou com você agora cedo, né? Então, essa é a planilha que a gente tem do Drive. Na verdade, assim, a ideia era a gente até fazer um hub, né? Com módulos aí de ferramentas, e uma delas é esse mapa. Qual o nosso objetivo? O nosso objetivo é mapear as cidades. A gente tem um articulador político, que é o cara que tem uma visão mais macro de determinada região. São poucos. E aí, em cada cidade, geralmente, a gente tem um líder, desculpa, um coordenador. E o coordenador tem os seus liderados. Então a gente queria trazer isso tudo para dentro dessa planilha, desse material E aí também a gente tem informação, aquele líder está com alguma dobrada Eu não sei se você conhece o jargão político, dobrada é qual federal que está junto com o Edson O cara fala assim, aquele líder está ajudando na dobrada com a Dani Cunha Ah, ele está ajudando a dobrada do Hugo Leal Então a gente teria essa informação também na planilha Você vai ver os dados aí Qual o objetivo da planilha? O objetivo da planilha é a gente enxergar o estado como um todo Ver as cidades que a gente tem carência Que a gente não tem nenhuma liderança Uma coordenação Ah, ela também vai servir Ah, eu tenho um evento na região tal Então eu vou filtrar todas as pessoas daquela região ou daquela cidade Vou comunicar, olha, o deputado vai estar fazendo aqui um evento nessa cidade Eu preciso mobilizar vocês para participarem Enfim, outras coisas também, rota de entrega de material Ah, vai sair material gráfico aqui para uma região Então eu posso tentar já fazer uma rota considerando as pessoas que estão ali naquela... Isso vai fazer uma espécie de filtro, né? Exatamente. Enfim, a gente vai pensando ali as informações que a gente precisa. E aí a ideia é que a gente, com a planilha pronta, a gente permitiria algumas pessoas também selecionadas para alimentar. Ah, tem uma liderança minha lá no Rio. Lá ela já... Uma pessoa já habilitada para colocar na planilha uma nova liderança que chegou. Para a coisa ser muito dinâmica. Aliás, a gente tem pouco tempo. Então, essa é a proposta da planilha. Falar mais alguma coisa, Léo? Não, acho que é isso. E... Essa questão que o Levi falou Tipo de um braço, de uma ferramenta de gestão também Que a gente tem que controlar até as tarefas De repente, aquele usuário Levi Carnela E o usuário Léo Eles tem o mesmo nível de acesso Para ter acesso a um Kanban de tarefas pendentes Sim, sim Entendeu? E um desdobramento maravilhoso também Seria a gente ter uma agenda online Onde o Edson consiga ali Só através de um link simples abrir a agenda e já atualiza, atualiza pra todo mundo que é necessário aqui. Aí seria legal, que aí eu não sei o nível disso, né? Até de repente chegar um alerta pelo nosso WhatsApp. Eu sei que você tá com o de papo aí do WhatsApp também. De repente você consegue, poxa, cada nova agenda cadastrada, chega uma mensagem do nosso WhatsApp aqui dos coordenadores geral da campanha. Enfim, deixa Deus te usar aí. É isso aí, garoto. Um abraço aí, sucesso aí nessa etapa aí, valeu!",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.3,
+      "text": " João, tudo bem? Bom dia, amigo.",
+      "tokens": [
+        50365,
+        21302,
+        11,
+        9379,
+        7577,
+        30,
+        19812,
+        6801,
+        11,
+        24671,
+        13,
+        50481
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18503515499154316,
+      "compression_ratio": 1.3679245283018868,
+      "no_speech_prob": 4.604827370108255e-12,
+      "words": [
+        {
+          "word": " João,",
+          "start": 0.0,
+          "end": 0.3,
+          "probability": 0.7119140625
+        },
+        {
+          "word": " tudo",
+          "start": 0.52,
+          "end": 0.6,
+          "probability": 0.9912109375
+        },
+        {
+          "word": " bem?",
+          "start": 0.6,
+          "end": 0.92,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " Bom",
+          "start": 1.24,
+          "end": 1.6,
+          "probability": 0.99609375
+        },
+        {
+          "word": " dia,",
+          "start": 1.6,
+          "end": 1.88,
+          "probability": 1.0
+        },
+        {
+          "word": " amigo.",
+          "start": 2.06,
+          "end": 2.3,
+          "probability": 0.99853515625
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 2.68,
+      "end": 5.28,
+      "text": " Estou com o Léo aqui, que falou com você agora cedo, né?",
+      "tokens": [
+        50497,
+        4410,
+        263,
+        395,
+        277,
+        441,
+        45805,
+        3871,
+        11,
+        631,
+        28443,
+        395,
+        2723,
+        9851,
+        269,
+        26351,
+        11,
+        7024,
+        30,
+        50631
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18503515499154316,
+      "compression_ratio": 1.3679245283018868,
+      "no_speech_prob": 4.604827370108255e-12,
+      "words": [
+        {
+          "word": " Estou",
+          "start": 2.68,
+          "end": 2.84,
+          "probability": 0.86328125
+        },
+        {
+          "word": " com",
+          "start": 2.84,
+          "end": 2.98,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " o",
+          "start": 2.98,
+          "end": 3.04,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " Léo",
+          "start": 3.04,
+          "end": 3.22,
+          "probability": 0.90771484375
+        },
+        {
+          "word": " aqui,",
+          "start": 3.22,
+          "end": 3.48,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " que",
+          "start": 3.64,
+          "end": 3.76,
+          "probability": 0.35498046875
+        },
+        {
+          "word": " falou",
+          "start": 3.76,
+          "end": 3.94,
+          "probability": 0.99462890625
+        },
+        {
+          "word": " com",
+          "start": 3.94,
+          "end": 4.08,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " você",
+          "start": 4.08,
+          "end": 4.4,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " agora",
+          "start": 4.4,
+          "end": 4.68,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " cedo,",
+          "start": 4.68,
+          "end": 5.1,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " né?",
+          "start": 5.14,
+          "end": 5.28,
+          "probability": 0.986328125
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 6.64,
+      "end": 9.2,
+      "text": " Então, essa é a planilha que a gente tem do Drive.",
+      "tokens": [
+        50697,
+        6469,
+        11,
+        7208,
+        1136,
+        257,
+        1393,
+        388,
+        1641,
+        631,
+        257,
+        3788,
+        1383,
+        360,
+        15622,
+        13,
+        50830
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18503515499154316,
+      "compression_ratio": 1.3679245283018868,
+      "no_speech_prob": 4.604827370108255e-12,
+      "words": [
+        {
+          "word": " Então,",
+          "start": 6.64,
+          "end": 7.08,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " essa",
+          "start": 7.18,
+          "end": 7.36,
+          "probability": 0.99560546875
+        },
+        {
+          "word": " é",
+          "start": 7.36,
+          "end": 7.4,
+          "probability": 1.0
+        },
+        {
+          "word": " a",
+          "start": 7.4,
+          "end": 7.56,
+          "probability": 1.0
+        },
+        {
+          "word": " planilha",
+          "start": 7.56,
+          "end": 8.0,
+          "probability": 1.0
+        },
+        {
+          "word": " que",
+          "start": 8.0,
+          "end": 8.12,
+          "probability": 1.0
+        },
+        {
+          "word": " a",
+          "start": 8.12,
+          "end": 8.22,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " gente",
+          "start": 8.22,
+          "end": 8.38,
+          "probability": 1.0
+        },
+        {
+          "word": " tem",
+          "start": 8.38,
+          "end": 8.62,
+          "probability": 1.0
+        },
+        {
+          "word": " do",
+          "start": 8.62,
+          "end": 8.8,
+          "probability": 0.98046875
+        },
+        {
+          "word": " Drive.",
+          "start": 8.8,
+          "end": 9.2,
+          "probability": 0.9453125
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 11.620000000000001,
+      "end": 15.64,
+      "text": " Na verdade, assim, a ideia era a gente até fazer um hub, né?",
+      "tokens": [
+        50947,
+        6056,
+        15203,
+        11,
+        8249,
+        11,
+        257,
+        26409,
+        4249,
+        257,
+        3788,
+        8784,
+        6736,
+        1105,
+        11838,
+        11,
+        7024,
+        30,
+        51148
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18503515499154316,
+      "compression_ratio": 1.3679245283018868,
+      "no_speech_prob": 4.604827370108255e-12,
+      "words": [
+        {
+          "word": " Na",
+          "start": 11.620000000000001,
+          "end": 12.06,
+          "probability": 0.9375
+        },
+        {
+          "word": " verdade,",
+          "start": 12.06,
+          "end": 12.4,
+          "probability": 1.0
+        },
+        {
+          "word": " assim,",
+          "start": 12.62,
+          "end": 12.74,
+          "probability": 0.58740234375
+        },
+        {
+          "word": " a",
+          "start": 12.86,
+          "end": 12.98,
+          "probability": 1.0
+        },
+        {
+          "word": " ideia",
+          "start": 12.98,
+          "end": 13.22,
+          "probability": 1.0
+        },
+        {
+          "word": " era",
+          "start": 13.22,
+          "end": 13.4,
+          "probability": 0.974609375
+        },
+        {
+          "word": " a",
+          "start": 13.4,
+          "end": 13.5,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " gente",
+          "start": 13.5,
+          "end": 13.66,
+          "probability": 1.0
+        },
+        {
+          "word": " até",
+          "start": 13.66,
+          "end": 13.86,
+          "probability": 0.943359375
+        },
+        {
+          "word": " fazer",
+          "start": 13.86,
+          "end": 14.12,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " um",
+          "start": 14.12,
+          "end": 14.26,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " hub,",
+          "start": 14.26,
+          "end": 14.62,
+          "probability": 0.81884765625
+        },
+        {
+          "word": " né?",
+          "start": 14.66,
+          "end": 15.64,
+          "probability": 0.8662109375
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 17.639999999999997,
+      "end": 25.54,
+      "text": " Com módulos aí de ferramentas, e uma delas é esse mapa.",
+      "tokens": [
+        51224,
+        2432,
+        275,
+        17081,
+        28348,
+        7461,
+        368,
+        7202,
+        44764,
+        296,
+        11,
+        308,
+        2772,
+        1103,
+        296,
+        1136,
+        6755,
+        44025,
+        13,
+        51643
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18503515499154316,
+      "compression_ratio": 1.3679245283018868,
+      "no_speech_prob": 4.604827370108255e-12,
+      "words": [
+        {
+          "word": " Com",
+          "start": 17.639999999999997,
+          "end": 18.08,
+          "probability": 0.050689697265625
+        },
+        {
+          "word": " módulos",
+          "start": 18.08,
+          "end": 18.52,
+          "probability": 0.9814453125
+        },
+        {
+          "word": " aí",
+          "start": 18.52,
+          "end": 18.78,
+          "probability": 0.927734375
+        },
+        {
+          "word": " de",
+          "start": 18.78,
+          "end": 19.32,
+          "probability": 0.96630859375
+        },
+        {
+          "word": " ferramentas,",
+          "start": 19.32,
+          "end": 23.86,
+          "probability": 0.896484375
+        },
+        {
+          "word": " e",
+          "start": 23.96,
+          "end": 24.2,
+          "probability": 1.0
+        },
+        {
+          "word": " uma",
+          "start": 24.2,
+          "end": 24.4,
+          "probability": 1.0
+        },
+        {
+          "word": " delas",
+          "start": 24.4,
+          "end": 24.78,
+          "probability": 1.0
+        },
+        {
+          "word": " é",
+          "start": 24.78,
+          "end": 24.92,
+          "probability": 1.0
+        },
+        {
+          "word": " esse",
+          "start": 24.92,
+          "end": 25.1,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " mapa.",
+          "start": 25.1,
+          "end": 25.54,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 26.02,
+      "end": 27.38,
+      "text": " Qual o nosso objetivo?",
+      "tokens": [
+        51679,
+        13616,
+        277,
+        14347,
+        29809,
+        30,
+        51734
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18503515499154316,
+      "compression_ratio": 1.3679245283018868,
+      "no_speech_prob": 4.604827370108255e-12,
+      "words": [
+        {
+          "word": " Qual",
+          "start": 26.02,
+          "end": 26.46,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " o",
+          "start": 26.46,
+          "end": 26.62,
+          "probability": 0.986328125
+        },
+        {
+          "word": " nosso",
+          "start": 26.62,
+          "end": 26.8,
+          "probability": 1.0
+        },
+        {
+          "word": " objetivo?",
+          "start": 26.8,
+          "end": 27.38,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 2738,
+      "start": 27.38,
+      "end": 30.68,
+      "text": " O nosso objetivo é mapear as cidades.",
+      "tokens": [
+        50365,
+        422,
+        14347,
+        29809,
+        1136,
+        463,
+        494,
+        289,
+        382,
+        269,
+        10284,
+        13,
+        50531
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.14317874250740842,
+      "compression_ratio": 1.5217391304347827,
+      "no_speech_prob": 4.292489540896893e-12,
+      "words": [
+        {
+          "word": " O",
+          "start": 27.38,
+          "end": 28.36,
+          "probability": 0.7138671875
+        },
+        {
+          "word": " nosso",
+          "start": 28.36,
+          "end": 28.54,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " objetivo",
+          "start": 28.54,
+          "end": 29.04,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " é",
+          "start": 29.04,
+          "end": 29.26,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " mapear",
+          "start": 29.26,
+          "end": 29.8,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " as",
+          "start": 29.8,
+          "end": 30.1,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " cidades.",
+          "start": 30.1,
+          "end": 30.68,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "seek": 2738,
+      "start": 31.58,
+      "end": 41.36,
+      "text": " A gente tem um articulador político, que é o cara que tem uma visão mais macro de determinada região.",
+      "tokens": [
+        50577,
+        316,
+        3788,
+        1383,
+        1105,
+        15228,
+        425,
+        5409,
+        48641,
+        11,
+        631,
+        1136,
+        277,
+        10962,
+        631,
+        1383,
+        2772,
+        49949,
+        2420,
+        18887,
+        368,
+        15957,
+        1538,
+        45697,
+        13,
+        51065
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.14317874250740842,
+      "compression_ratio": 1.5217391304347827,
+      "no_speech_prob": 4.292489540896893e-12,
+      "words": [
+        {
+          "word": " A",
+          "start": 31.58,
+          "end": 31.7,
+          "probability": 0.99169921875
+        },
+        {
+          "word": " gente",
+          "start": 31.7,
+          "end": 31.9,
+          "probability": 1.0
+        },
+        {
+          "word": " tem",
+          "start": 31.9,
+          "end": 32.28,
+          "probability": 1.0
+        },
+        {
+          "word": " um",
+          "start": 32.28,
+          "end": 34.12,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " articulador",
+          "start": 34.12,
+          "end": 35.06,
+          "probability": 1.0
+        },
+        {
+          "word": " político,",
+          "start": 35.06,
+          "end": 35.8,
+          "probability": 1.0
+        },
+        {
+          "word": " que",
+          "start": 36.16,
+          "end": 36.54,
+          "probability": 1.0
+        },
+        {
+          "word": " é",
+          "start": 36.54,
+          "end": 36.58,
+          "probability": 1.0
+        },
+        {
+          "word": " o",
+          "start": 36.58,
+          "end": 36.64,
+          "probability": 0.998046875
+        },
+        {
+          "word": " cara",
+          "start": 36.64,
+          "end": 36.86,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " que",
+          "start": 36.86,
+          "end": 37.16,
+          "probability": 1.0
+        },
+        {
+          "word": " tem",
+          "start": 37.16,
+          "end": 37.78,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " uma",
+          "start": 37.78,
+          "end": 37.88,
+          "probability": 0.9169921875
+        },
+        {
+          "word": " visão",
+          "start": 37.88,
+          "end": 38.26,
+          "probability": 1.0
+        },
+        {
+          "word": " mais",
+          "start": 38.26,
+          "end": 39.12,
+          "probability": 1.0
+        },
+        {
+          "word": " macro",
+          "start": 39.12,
+          "end": 39.64,
+          "probability": 0.97021484375
+        },
+        {
+          "word": " de",
+          "start": 39.64,
+          "end": 40.1,
+          "probability": 0.98291015625
+        },
+        {
+          "word": " determinada",
+          "start": 40.1,
+          "end": 40.84,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " região.",
+          "start": 40.84,
+          "end": 41.36,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "seek": 2738,
+      "start": 41.8,
+      "end": 43.1,
+      "text": " São poucos.",
+      "tokens": [
+        51107,
+        22401,
+        5043,
+        6877,
+        13,
+        51152
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.14317874250740842,
+      "compression_ratio": 1.5217391304347827,
+      "no_speech_prob": 4.292489540896893e-12,
+      "words": [
+        {
+          "word": " São",
+          "start": 41.8,
+          "end": 42.5,
+          "probability": 0.99267578125
+        },
+        {
+          "word": " poucos.",
+          "start": 42.5,
+          "end": 43.1,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "seek": 2738,
+      "start": 43.4,
+      "end": 48.7,
+      "text": " E aí, em cada cidade, geralmente, a gente tem um líder, desculpa, um coordenador.",
+      "tokens": [
+        51185,
+        462,
+        7461,
+        11,
+        846,
+        8411,
+        27882,
+        11,
+        35412,
+        4082,
+        11,
+        257,
+        3788,
+        1383,
+        1105,
+        44190,
+        11,
+        730,
+        2444,
+        4306,
+        11,
+        1105,
+        14230,
+        268,
+        5409,
+        13,
+        51432
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.14317874250740842,
+      "compression_ratio": 1.5217391304347827,
+      "no_speech_prob": 4.292489540896893e-12,
+      "words": [
+        {
+          "word": " E",
+          "start": 43.4,
+          "end": 43.8,
+          "probability": 0.89794921875
+        },
+        {
+          "word": " aí,",
+          "start": 43.8,
+          "end": 43.92,
+          "probability": 0.87353515625
+        },
+        {
+          "word": " em",
+          "start": 43.96,
+          "end": 44.06,
+          "probability": 0.998046875
+        },
+        {
+          "word": " cada",
+          "start": 44.06,
+          "end": 44.24,
+          "probability": 1.0
+        },
+        {
+          "word": " cidade,",
+          "start": 44.24,
+          "end": 44.6,
+          "probability": 1.0
+        },
+        {
+          "word": " geralmente,",
+          "start": 44.72,
+          "end": 45.2,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " a",
+          "start": 45.32,
+          "end": 45.34,
+          "probability": 1.0
+        },
+        {
+          "word": " gente",
+          "start": 45.34,
+          "end": 45.5,
+          "probability": 1.0
+        },
+        {
+          "word": " tem",
+          "start": 45.5,
+          "end": 45.68,
+          "probability": 1.0
+        },
+        {
+          "word": " um",
+          "start": 45.68,
+          "end": 45.8,
+          "probability": 1.0
+        },
+        {
+          "word": " líder,",
+          "start": 45.8,
+          "end": 46.14,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " desculpa,",
+          "start": 47.26,
+          "end": 47.82,
+          "probability": 0.98046875
+        },
+        {
+          "word": " um",
+          "start": 47.82,
+          "end": 47.94,
+          "probability": 1.0
+        },
+        {
+          "word": " coordenador.",
+          "start": 47.94,
+          "end": 48.7,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "seek": 2738,
+      "start": 48.98,
+      "end": 52.04,
+      "text": " E o coordenador tem os seus liderados.",
+      "tokens": [
+        51468,
+        462,
+        277,
+        14230,
+        268,
+        5409,
+        1383,
+        3003,
+        17004,
+        45341,
+        4181,
+        13,
+        51598
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.14317874250740842,
+      "compression_ratio": 1.5217391304347827,
+      "no_speech_prob": 4.292489540896893e-12,
+      "words": [
+        {
+          "word": " E",
+          "start": 48.98,
+          "end": 49.62,
+          "probability": 1.0
+        },
+        {
+          "word": " o",
+          "start": 49.62,
+          "end": 49.76,
+          "probability": 1.0
+        },
+        {
+          "word": " coordenador",
+          "start": 49.76,
+          "end": 50.58,
+          "probability": 1.0
+        },
+        {
+          "word": " tem",
+          "start": 50.58,
+          "end": 50.92,
+          "probability": 1.0
+        },
+        {
+          "word": " os",
+          "start": 50.92,
+          "end": 51.08,
+          "probability": 0.958984375
+        },
+        {
+          "word": " seus",
+          "start": 51.08,
+          "end": 51.24,
+          "probability": 1.0
+        },
+        {
+          "word": " liderados.",
+          "start": 51.24,
+          "end": 52.04,
+          "probability": 0.9990234375
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "seek": 5204,
+      "start": 52.04,
+      "end": 58.76,
+      "text": " Então a gente queria trazer isso tudo para dentro dessa planilha, desse material",
+      "tokens": [
+        50365,
+        6469,
+        257,
+        3788,
+        27955,
+        44776,
+        4616,
+        9379,
+        1690,
+        10856,
+        18554,
+        1393,
+        388,
+        1641,
+        11,
+        17864,
+        2527,
+        50706
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.11623403885785272,
+      "compression_ratio": 1.5504587155963303,
+      "no_speech_prob": 3.5310046987008237e-12,
+      "words": [
+        {
+          "word": " Então",
+          "start": 52.04,
+          "end": 52.76,
+          "probability": 0.8447265625
+        },
+        {
+          "word": " a",
+          "start": 52.76,
+          "end": 52.9,
+          "probability": 0.72314453125
+        },
+        {
+          "word": " gente",
+          "start": 52.9,
+          "end": 53.02,
+          "probability": 1.0
+        },
+        {
+          "word": " queria",
+          "start": 53.02,
+          "end": 53.28,
+          "probability": 0.998046875
+        },
+        {
+          "word": " trazer",
+          "start": 53.28,
+          "end": 53.78,
+          "probability": 0.9912109375
+        },
+        {
+          "word": " isso",
+          "start": 53.78,
+          "end": 54.14,
+          "probability": 0.95263671875
+        },
+        {
+          "word": " tudo",
+          "start": 54.14,
+          "end": 54.8,
+          "probability": 0.859375
+        },
+        {
+          "word": " para",
+          "start": 54.8,
+          "end": 55.06,
+          "probability": 0.79248046875
+        },
+        {
+          "word": " dentro",
+          "start": 55.06,
+          "end": 55.46,
+          "probability": 1.0
+        },
+        {
+          "word": " dessa",
+          "start": 55.46,
+          "end": 57.3,
+          "probability": 0.8056640625
+        },
+        {
+          "word": " planilha,",
+          "start": 57.3,
+          "end": 57.94,
+          "probability": 1.0
+        },
+        {
+          "word": " desse",
+          "start": 58.04,
+          "end": 58.2,
+          "probability": 0.98779296875
+        },
+        {
+          "word": " material",
+          "start": 58.2,
+          "end": 58.76,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "seek": 5204,
+      "start": 59.660000000000004,
+      "end": 64.42,
+      "text": " E aí também a gente tem informação, aquele líder está com alguma dobrada",
+      "tokens": [
+        50706,
+        462,
+        7461,
+        6274,
+        257,
+        3788,
+        1383,
+        48403,
+        11,
+        23640,
+        44190,
+        3192,
+        395,
+        20259,
+        23067,
+        1538,
+        50985
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.11623403885785272,
+      "compression_ratio": 1.5504587155963303,
+      "no_speech_prob": 3.5310046987008237e-12,
+      "words": [
+        {
+          "word": " E",
+          "start": 59.660000000000004,
+          "end": 60.28,
+          "probability": 0.0819091796875
+        },
+        {
+          "word": " aí",
+          "start": 60.28,
+          "end": 60.84,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " também",
+          "start": 60.84,
+          "end": 61.14,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " a",
+          "start": 61.14,
+          "end": 61.3,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " gente",
+          "start": 61.3,
+          "end": 61.42,
+          "probability": 1.0
+        },
+        {
+          "word": " tem",
+          "start": 61.42,
+          "end": 61.6,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " informação,",
+          "start": 61.6,
+          "end": 62.1,
+          "probability": 0.9853515625
+        },
+        {
+          "word": " aquele",
+          "start": 62.28,
+          "end": 62.54,
+          "probability": 0.99609375
+        },
+        {
+          "word": " líder",
+          "start": 62.54,
+          "end": 62.88,
+          "probability": 0.998046875
+        },
+        {
+          "word": " está",
+          "start": 62.88,
+          "end": 63.2,
+          "probability": 0.92431640625
+        },
+        {
+          "word": " com",
+          "start": 63.2,
+          "end": 63.42,
+          "probability": 1.0
+        },
+        {
+          "word": " alguma",
+          "start": 63.42,
+          "end": 63.74,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " dobrada",
+          "start": 63.74,
+          "end": 64.42,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "seek": 5204,
+      "start": 64.42,
+      "end": 70.56,
+      "text": " Eu não sei se você conhece o jargão político, dobrada é qual federal que está junto com o Edson",
+      "tokens": [
+        50985,
+        2186,
+        2431,
+        10842,
+        369,
+        2723,
+        15440,
+        384,
+        277,
+        15181,
+        70,
+        1076,
+        48641,
+        11,
+        23067,
+        1538,
+        1136,
+        4101,
+        6019,
+        631,
+        3192,
+        24663,
+        395,
+        277,
+        3977,
+        3015,
+        51293
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.11623403885785272,
+      "compression_ratio": 1.5504587155963303,
+      "no_speech_prob": 3.5310046987008237e-12,
+      "words": [
+        {
+          "word": " Eu",
+          "start": 64.42,
+          "end": 65.18,
+          "probability": 0.84619140625
+        },
+        {
+          "word": " não",
+          "start": 65.18,
+          "end": 65.3,
+          "probability": 1.0
+        },
+        {
+          "word": " sei",
+          "start": 65.3,
+          "end": 65.44,
+          "probability": 1.0
+        },
+        {
+          "word": " se",
+          "start": 65.44,
+          "end": 65.58,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " você",
+          "start": 65.58,
+          "end": 65.7,
+          "probability": 0.962890625
+        },
+        {
+          "word": " conhece",
+          "start": 65.7,
+          "end": 66.04,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " o",
+          "start": 66.04,
+          "end": 66.22,
+          "probability": 0.890625
+        },
+        {
+          "word": " jargão",
+          "start": 66.22,
+          "end": 66.62,
+          "probability": 0.99609375
+        },
+        {
+          "word": " político,",
+          "start": 66.62,
+          "end": 67.12,
+          "probability": 1.0
+        },
+        {
+          "word": " dobrada",
+          "start": 67.2,
+          "end": 67.84,
+          "probability": 0.98876953125
+        },
+        {
+          "word": " é",
+          "start": 67.84,
+          "end": 67.98,
+          "probability": 0.98291015625
+        },
+        {
+          "word": " qual",
+          "start": 67.98,
+          "end": 68.18,
+          "probability": 0.9775390625
+        },
+        {
+          "word": " federal",
+          "start": 68.18,
+          "end": 68.74,
+          "probability": 0.65771484375
+        },
+        {
+          "word": " que",
+          "start": 68.74,
+          "end": 69.44,
+          "probability": 0.95654296875
+        },
+        {
+          "word": " está",
+          "start": 69.44,
+          "end": 69.6,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " junto",
+          "start": 69.6,
+          "end": 69.9,
+          "probability": 1.0
+        },
+        {
+          "word": " com",
+          "start": 69.9,
+          "end": 70.12,
+          "probability": 1.0
+        },
+        {
+          "word": " o",
+          "start": 70.12,
+          "end": 70.2,
+          "probability": 0.7275390625
+        },
+        {
+          "word": " Edson",
+          "start": 70.2,
+          "end": 70.56,
+          "probability": 0.970703125
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "seek": 5204,
+      "start": 70.56,
+      "end": 79.68,
+      "text": " O cara fala assim, aquele líder está ajudando na dobrada com a Dani Cunha",
+      "tokens": [
+        51293,
+        422,
+        10962,
+        21580,
+        8249,
+        11,
+        23640,
+        44190,
+        3192,
+        16126,
+        1806,
+        1667,
+        23067,
+        1538,
+        395,
+        257,
+        42136,
+        383,
+        409,
+        1641,
+        51748
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.11623403885785272,
+      "compression_ratio": 1.5504587155963303,
+      "no_speech_prob": 3.5310046987008237e-12,
+      "words": [
+        {
+          "word": " O",
+          "start": 70.56,
+          "end": 71.5,
+          "probability": 0.701171875
+        },
+        {
+          "word": " cara",
+          "start": 71.5,
+          "end": 71.76,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " fala",
+          "start": 71.76,
+          "end": 72.02,
+          "probability": 0.96923828125
+        },
+        {
+          "word": " assim,",
+          "start": 72.02,
+          "end": 72.2,
+          "probability": 0.98046875
+        },
+        {
+          "word": " aquele",
+          "start": 72.2,
+          "end": 74.16,
+          "probability": 0.97802734375
+        },
+        {
+          "word": " líder",
+          "start": 74.16,
+          "end": 74.58,
+          "probability": 1.0
+        },
+        {
+          "word": " está",
+          "start": 74.58,
+          "end": 74.88,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " ajudando",
+          "start": 74.88,
+          "end": 76.12,
+          "probability": 1.0
+        },
+        {
+          "word": " na",
+          "start": 76.12,
+          "end": 76.28,
+          "probability": 0.98583984375
+        },
+        {
+          "word": " dobrada",
+          "start": 76.28,
+          "end": 76.8,
+          "probability": 1.0
+        },
+        {
+          "word": " com",
+          "start": 76.8,
+          "end": 77.18,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " a",
+          "start": 77.18,
+          "end": 78.92,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " Dani",
+          "start": 78.92,
+          "end": 79.12,
+          "probability": 0.9794921875
+        },
+        {
+          "word": " Cunha",
+          "start": 79.12,
+          "end": 79.68,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "seek": 7968,
+      "start": 79.68,
+      "end": 82.94,
+      "text": " Ah, ele está ajudando a dobrada do Hugo Leal",
+      "tokens": [
+        50365,
+        2438,
+        11,
+        1118,
+        3192,
+        16126,
+        1806,
+        257,
+        23067,
+        1538,
+        360,
+        32504,
+        1456,
+        304,
+        50529
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12262027574622113,
+      "compression_ratio": 1.6008230452674896,
+      "no_speech_prob": 4.2250838244717315e-12,
+      "words": [
+        {
+          "word": " Ah,",
+          "start": 79.68,
+          "end": 80.54,
+          "probability": 0.56396484375
+        },
+        {
+          "word": " ele",
+          "start": 80.64,
+          "end": 80.72,
+          "probability": 0.99267578125
+        },
+        {
+          "word": " está",
+          "start": 80.72,
+          "end": 80.86,
+          "probability": 0.84716796875
+        },
+        {
+          "word": " ajudando",
+          "start": 80.86,
+          "end": 81.3,
+          "probability": 1.0
+        },
+        {
+          "word": " a",
+          "start": 81.3,
+          "end": 81.42,
+          "probability": 0.97265625
+        },
+        {
+          "word": " dobrada",
+          "start": 81.42,
+          "end": 81.96,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " do",
+          "start": 81.96,
+          "end": 82.16,
+          "probability": 0.96435546875
+        },
+        {
+          "word": " Hugo",
+          "start": 82.16,
+          "end": 82.4,
+          "probability": 0.99267578125
+        },
+        {
+          "word": " Leal",
+          "start": 82.4,
+          "end": 82.94,
+          "probability": 0.998046875
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "seek": 7968,
+      "start": 83.82,
+      "end": 86.72,
+      "text": " Então a gente teria essa informação também na planilha",
+      "tokens": [
+        50529,
+        6469,
+        257,
+        3788,
+        45530,
+        7208,
+        48403,
+        6274,
+        1667,
+        1393,
+        388,
+        1641,
+        50717
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12262027574622113,
+      "compression_ratio": 1.6008230452674896,
+      "no_speech_prob": 4.2250838244717315e-12,
+      "words": [
+        {
+          "word": " Então",
+          "start": 83.82,
+          "end": 84.32,
+          "probability": 0.1807861328125
+        },
+        {
+          "word": " a",
+          "start": 84.32,
+          "end": 84.56,
+          "probability": 0.9208984375
+        },
+        {
+          "word": " gente",
+          "start": 84.56,
+          "end": 84.7,
+          "probability": 1.0
+        },
+        {
+          "word": " teria",
+          "start": 84.7,
+          "end": 85.0,
+          "probability": 0.97509765625
+        },
+        {
+          "word": " essa",
+          "start": 85.0,
+          "end": 85.2,
+          "probability": 0.8896484375
+        },
+        {
+          "word": " informação",
+          "start": 85.2,
+          "end": 85.76,
+          "probability": 0.99609375
+        },
+        {
+          "word": " também",
+          "start": 85.76,
+          "end": 86.12,
+          "probability": 0.943359375
+        },
+        {
+          "word": " na",
+          "start": 86.12,
+          "end": 86.28,
+          "probability": 0.94775390625
+        },
+        {
+          "word": " planilha",
+          "start": 86.28,
+          "end": 86.72,
+          "probability": 0.98681640625
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 7968,
+      "start": 86.72,
+      "end": 87.8,
+      "text": " Você vai ver os dados aí",
+      "tokens": [
+        50717,
+        9781,
+        4405,
+        1306,
+        3003,
+        39915,
+        7461,
+        50774
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12262027574622113,
+      "compression_ratio": 1.6008230452674896,
+      "no_speech_prob": 4.2250838244717315e-12,
+      "words": [
+        {
+          "word": " Você",
+          "start": 86.72,
+          "end": 86.86,
+          "probability": 0.85302734375
+        },
+        {
+          "word": " vai",
+          "start": 86.86,
+          "end": 86.98,
+          "probability": 1.0
+        },
+        {
+          "word": " ver",
+          "start": 86.98,
+          "end": 87.14,
+          "probability": 1.0
+        },
+        {
+          "word": " os",
+          "start": 87.14,
+          "end": 87.3,
+          "probability": 1.0
+        },
+        {
+          "word": " dados",
+          "start": 87.3,
+          "end": 87.52,
+          "probability": 1.0
+        },
+        {
+          "word": " aí",
+          "start": 87.52,
+          "end": 87.8,
+          "probability": 0.9990234375
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "seek": 7968,
+      "start": 87.8,
+      "end": 89.92,
+      "text": " Qual o objetivo da planilha?",
+      "tokens": [
+        50774,
+        13616,
+        277,
+        29809,
+        1120,
+        1393,
+        388,
+        1641,
+        30,
+        50877
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12262027574622113,
+      "compression_ratio": 1.6008230452674896,
+      "no_speech_prob": 4.2250838244717315e-12,
+      "words": [
+        {
+          "word": " Qual",
+          "start": 87.8,
+          "end": 88.64,
+          "probability": 0.87939453125
+        },
+        {
+          "word": " o",
+          "start": 88.64,
+          "end": 88.74,
+          "probability": 0.96826171875
+        },
+        {
+          "word": " objetivo",
+          "start": 88.74,
+          "end": 89.16,
+          "probability": 1.0
+        },
+        {
+          "word": " da",
+          "start": 89.16,
+          "end": 89.48,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " planilha?",
+          "start": 89.48,
+          "end": 89.92,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "seek": 7968,
+      "start": 90.0,
+      "end": 94.04,
+      "text": " O objetivo da planilha é a gente enxergar o estado como um todo",
+      "tokens": [
+        50880,
+        422,
+        29809,
+        1120,
+        1393,
+        388,
+        1641,
+        1136,
+        257,
+        3788,
+        465,
+        87,
+        260,
+        2976,
+        277,
+        18372,
+        2617,
+        1105,
+        5149,
+        51084
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12262027574622113,
+      "compression_ratio": 1.6008230452674896,
+      "no_speech_prob": 4.2250838244717315e-12,
+      "words": [
+        {
+          "word": " O",
+          "start": 90.0,
+          "end": 90.04,
+          "probability": 0.96875
+        },
+        {
+          "word": " objetivo",
+          "start": 90.04,
+          "end": 90.36,
+          "probability": 1.0
+        },
+        {
+          "word": " da",
+          "start": 90.36,
+          "end": 90.56,
+          "probability": 1.0
+        },
+        {
+          "word": " planilha",
+          "start": 90.56,
+          "end": 90.96,
+          "probability": 1.0
+        },
+        {
+          "word": " é",
+          "start": 90.96,
+          "end": 91.04,
+          "probability": 0.994140625
+        },
+        {
+          "word": " a",
+          "start": 91.04,
+          "end": 91.1,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " gente",
+          "start": 91.1,
+          "end": 91.28,
+          "probability": 1.0
+        },
+        {
+          "word": " enxergar",
+          "start": 91.28,
+          "end": 91.9,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " o",
+          "start": 91.9,
+          "end": 92.88,
+          "probability": 0.78857421875
+        },
+        {
+          "word": " estado",
+          "start": 92.88,
+          "end": 93.28,
+          "probability": 0.72119140625
+        },
+        {
+          "word": " como",
+          "start": 93.28,
+          "end": 93.6,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " um",
+          "start": 93.6,
+          "end": 93.8,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " todo",
+          "start": 93.8,
+          "end": 94.04,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "seek": 7968,
+      "start": 94.76,
+      "end": 97.98,
+      "text": " Ver as cidades que a gente tem carência",
+      "tokens": [
+        51084,
+        4281,
+        382,
+        269,
+        10284,
+        631,
+        257,
+        3788,
+        1383,
+        1032,
+        9322,
+        51281
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12262027574622113,
+      "compression_ratio": 1.6008230452674896,
+      "no_speech_prob": 4.2250838244717315e-12,
+      "words": [
+        {
+          "word": " Ver",
+          "start": 94.76,
+          "end": 95.26,
+          "probability": 0.966796875
+        },
+        {
+          "word": " as",
+          "start": 95.26,
+          "end": 95.48,
+          "probability": 1.0
+        },
+        {
+          "word": " cidades",
+          "start": 95.48,
+          "end": 96.04,
+          "probability": 1.0
+        },
+        {
+          "word": " que",
+          "start": 96.04,
+          "end": 96.88,
+          "probability": 0.7861328125
+        },
+        {
+          "word": " a",
+          "start": 96.88,
+          "end": 97.02,
+          "probability": 1.0
+        },
+        {
+          "word": " gente",
+          "start": 97.02,
+          "end": 97.22,
+          "probability": 1.0
+        },
+        {
+          "word": " tem",
+          "start": 97.22,
+          "end": 97.44,
+          "probability": 1.0
+        },
+        {
+          "word": " carência",
+          "start": 97.44,
+          "end": 97.98,
+          "probability": 0.9970703125
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 7968,
+      "start": 97.98,
+      "end": 100.16,
+      "text": " Que a gente não tem nenhuma liderança",
+      "tokens": [
+        51281,
+        4493,
+        257,
+        3788,
+        2431,
+        1383,
+        43273,
+        45341,
+        22930,
+        51389
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12262027574622113,
+      "compression_ratio": 1.6008230452674896,
+      "no_speech_prob": 4.2250838244717315e-12,
+      "words": [
+        {
+          "word": " Que",
+          "start": 97.98,
+          "end": 98.16,
+          "probability": 0.71630859375
+        },
+        {
+          "word": " a",
+          "start": 98.16,
+          "end": 98.26,
+          "probability": 1.0
+        },
+        {
+          "word": " gente",
+          "start": 98.26,
+          "end": 98.4,
+          "probability": 1.0
+        },
+        {
+          "word": " não",
+          "start": 98.4,
+          "end": 98.62,
+          "probability": 1.0
+        },
+        {
+          "word": " tem",
+          "start": 98.62,
+          "end": 98.88,
+          "probability": 1.0
+        },
+        {
+          "word": " nenhuma",
+          "start": 98.88,
+          "end": 99.24,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " liderança",
+          "start": 99.24,
+          "end": 100.16,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "seek": 7968,
+      "start": 100.16,
+      "end": 102.1,
+      "text": " Uma coordenação",
+      "tokens": [
+        51389,
+        21939,
+        14230,
+        4118,
+        2917,
+        51489
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12262027574622113,
+      "compression_ratio": 1.6008230452674896,
+      "no_speech_prob": 4.2250838244717315e-12,
+      "words": [
+        {
+          "word": " Uma",
+          "start": 100.16,
+          "end": 101.1,
+          "probability": 0.2384033203125
+        },
+        {
+          "word": " coordenação",
+          "start": 101.1,
+          "end": 102.1,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "seek": 7968,
+      "start": 102.1,
+      "end": 104.52,
+      "text": " Ah, ela também vai servir",
+      "tokens": [
+        51489,
+        2438,
+        11,
+        7175,
+        6274,
+        4405,
+        29463,
+        51609
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12262027574622113,
+      "compression_ratio": 1.6008230452674896,
+      "no_speech_prob": 4.2250838244717315e-12,
+      "words": [
+        {
+          "word": " Ah,",
+          "start": 102.1,
+          "end": 103.08,
+          "probability": 0.98095703125
+        },
+        {
+          "word": " ela",
+          "start": 103.34,
+          "end": 103.46,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " também",
+          "start": 103.46,
+          "end": 103.8,
+          "probability": 1.0
+        },
+        {
+          "word": " vai",
+          "start": 103.8,
+          "end": 104.02,
+          "probability": 1.0
+        },
+        {
+          "word": " servir",
+          "start": 104.02,
+          "end": 104.52,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "seek": 7968,
+      "start": 104.52,
+      "end": 108.12,
+      "text": " Ah, eu tenho um evento na região tal",
+      "tokens": [
+        51609,
+        2438,
+        11,
+        2228,
+        14291,
+        1105,
+        40655,
+        1667,
+        45697,
+        4023,
+        51790
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12262027574622113,
+      "compression_ratio": 1.6008230452674896,
+      "no_speech_prob": 4.2250838244717315e-12,
+      "words": [
+        {
+          "word": " Ah,",
+          "start": 104.52,
+          "end": 104.82,
+          "probability": 0.58203125
+        },
+        {
+          "word": " eu",
+          "start": 105.06,
+          "end": 105.22,
+          "probability": 0.984375
+        },
+        {
+          "word": " tenho",
+          "start": 105.22,
+          "end": 105.38,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " um",
+          "start": 105.38,
+          "end": 105.54,
+          "probability": 1.0
+        },
+        {
+          "word": " evento",
+          "start": 105.54,
+          "end": 106.14,
+          "probability": 1.0
+        },
+        {
+          "word": " na",
+          "start": 106.14,
+          "end": 106.96,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " região",
+          "start": 106.96,
+          "end": 107.54,
+          "probability": 1.0
+        },
+        {
+          "word": " tal",
+          "start": 107.54,
+          "end": 108.12,
+          "probability": 0.99755859375
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "seek": 10812,
+      "start": 108.12,
+      "end": 113.48,
+      "text": " Então eu vou filtrar todas as pessoas daquela região ou daquela cidade",
+      "tokens": [
+        50365,
+        6469,
+        2228,
+        6008,
+        29148,
+        5352,
+        10906,
+        382,
+        10021,
+        1120,
+        41462,
+        45697,
+        2820,
+        1120,
+        41462,
+        27882,
+        50635
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.11757915834837322,
+      "compression_ratio": 1.527363184079602,
+      "no_speech_prob": 3.5182189193211366e-12,
+      "words": [
+        {
+          "word": " Então",
+          "start": 108.12,
+          "end": 108.96,
+          "probability": 0.7958984375
+        },
+        {
+          "word": " eu",
+          "start": 108.96,
+          "end": 109.12,
+          "probability": 0.77294921875
+        },
+        {
+          "word": " vou",
+          "start": 109.12,
+          "end": 109.3,
+          "probability": 1.0
+        },
+        {
+          "word": " filtrar",
+          "start": 109.3,
+          "end": 110.0,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " todas",
+          "start": 110.0,
+          "end": 110.8,
+          "probability": 0.86767578125
+        },
+        {
+          "word": " as",
+          "start": 110.8,
+          "end": 111.08,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " pessoas",
+          "start": 111.08,
+          "end": 111.5,
+          "probability": 0.998046875
+        },
+        {
+          "word": " daquela",
+          "start": 111.5,
+          "end": 111.94,
+          "probability": 0.974609375
+        },
+        {
+          "word": " região",
+          "start": 111.94,
+          "end": 112.34,
+          "probability": 1.0
+        },
+        {
+          "word": " ou",
+          "start": 112.34,
+          "end": 112.6,
+          "probability": 0.91650390625
+        },
+        {
+          "word": " daquela",
+          "start": 112.6,
+          "end": 113.04,
+          "probability": 1.0
+        },
+        {
+          "word": " cidade",
+          "start": 113.04,
+          "end": 113.48,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "seek": 10812,
+      "start": 113.48,
+      "end": 119.92,
+      "text": " Vou comunicar, olha, o deputado vai estar fazendo aqui um evento nessa cidade",
+      "tokens": [
+        50635,
+        24361,
+        11040,
+        7953,
+        11,
+        23550,
+        11,
+        277,
+        1367,
+        325,
+        1573,
+        4405,
+        8755,
+        20741,
+        3871,
+        1105,
+        40655,
+        23246,
+        27882,
+        50962
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.11757915834837322,
+      "compression_ratio": 1.527363184079602,
+      "no_speech_prob": 3.5182189193211366e-12,
+      "words": [
+        {
+          "word": " Vou",
+          "start": 113.48,
+          "end": 113.76,
+          "probability": 0.028228759765625
+        },
+        {
+          "word": " comunicar,",
+          "start": 113.76,
+          "end": 114.42,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " olha,",
+          "start": 114.58,
+          "end": 114.82,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " o",
+          "start": 115.28,
+          "end": 115.44,
+          "probability": 0.66357421875
+        },
+        {
+          "word": " deputado",
+          "start": 115.44,
+          "end": 115.94,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " vai",
+          "start": 115.94,
+          "end": 116.14,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " estar",
+          "start": 116.14,
+          "end": 116.28,
+          "probability": 0.98779296875
+        },
+        {
+          "word": " fazendo",
+          "start": 116.28,
+          "end": 116.72,
+          "probability": 1.0
+        },
+        {
+          "word": " aqui",
+          "start": 116.72,
+          "end": 116.94,
+          "probability": 0.994140625
+        },
+        {
+          "word": " um",
+          "start": 116.94,
+          "end": 117.08,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " evento",
+          "start": 117.08,
+          "end": 117.64,
+          "probability": 1.0
+        },
+        {
+          "word": " nessa",
+          "start": 117.64,
+          "end": 119.34,
+          "probability": 0.90576171875
+        },
+        {
+          "word": " cidade",
+          "start": 119.34,
+          "end": 119.92,
+          "probability": 0.99853515625
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "seek": 10812,
+      "start": 119.92,
+      "end": 122.74,
+      "text": " Eu preciso mobilizar vocês para participarem",
+      "tokens": [
+        50962,
+        2186,
+        30109,
+        15891,
+        9736,
+        10522,
+        1690,
+        3421,
+        19183,
+        51098
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.11757915834837322,
+      "compression_ratio": 1.527363184079602,
+      "no_speech_prob": 3.5182189193211366e-12,
+      "words": [
+        {
+          "word": " Eu",
+          "start": 119.92,
+          "end": 120.18,
+          "probability": 0.93896484375
+        },
+        {
+          "word": " preciso",
+          "start": 120.18,
+          "end": 120.48,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " mobilizar",
+          "start": 120.48,
+          "end": 121.24,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " vocês",
+          "start": 121.24,
+          "end": 121.66,
+          "probability": 1.0
+        },
+        {
+          "word": " para",
+          "start": 121.66,
+          "end": 121.92,
+          "probability": 0.88720703125
+        },
+        {
+          "word": " participarem",
+          "start": 121.92,
+          "end": 122.74,
+          "probability": 0.99609375
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "seek": 10812,
+      "start": 123.78,
+      "end": 127.16,
+      "text": " Enfim, outras coisas também, rota de entrega de material",
+      "tokens": [
+        51098,
+        2193,
+        69,
+        332,
+        11,
+        22221,
+        14567,
+        6274,
+        11,
+        4297,
+        64,
+        368,
+        32843,
+        64,
+        368,
+        2527,
+        51326
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.11757915834837322,
+      "compression_ratio": 1.527363184079602,
+      "no_speech_prob": 3.5182189193211366e-12,
+      "words": [
+        {
+          "word": " Enfim,",
+          "start": 123.78,
+          "end": 124.4,
+          "probability": 0.98486328125
+        },
+        {
+          "word": " outras",
+          "start": 124.5,
+          "end": 124.78,
+          "probability": 0.833984375
+        },
+        {
+          "word": " coisas",
+          "start": 124.78,
+          "end": 125.18,
+          "probability": 1.0
+        },
+        {
+          "word": " também,",
+          "start": 125.18,
+          "end": 125.44,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " rota",
+          "start": 125.58,
+          "end": 125.9,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " de",
+          "start": 125.9,
+          "end": 126.06,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " entrega",
+          "start": 126.06,
+          "end": 126.46,
+          "probability": 1.0
+        },
+        {
+          "word": " de",
+          "start": 126.46,
+          "end": 126.58,
+          "probability": 1.0
+        },
+        {
+          "word": " material",
+          "start": 126.58,
+          "end": 127.16,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "seek": 10812,
+      "start": 127.16,
+      "end": 130.48,
+      "text": " Ah, vai sair material gráfico aqui para uma região",
+      "tokens": [
+        51326,
+        2438,
+        11,
+        4405,
+        29157,
+        2527,
+        34613,
+        78,
+        3871,
+        1690,
+        2772,
+        45697,
+        51488
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.11757915834837322,
+      "compression_ratio": 1.527363184079602,
+      "no_speech_prob": 3.5182189193211366e-12,
+      "words": [
+        {
+          "word": " Ah,",
+          "start": 127.16,
+          "end": 128.12,
+          "probability": 0.480712890625
+        },
+        {
+          "word": " vai",
+          "start": 128.22,
+          "end": 128.34,
+          "probability": 1.0
+        },
+        {
+          "word": " sair",
+          "start": 128.34,
+          "end": 128.54,
+          "probability": 0.99560546875
+        },
+        {
+          "word": " material",
+          "start": 128.54,
+          "end": 129.02,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " gráfico",
+          "start": 129.02,
+          "end": 129.54,
+          "probability": 1.0
+        },
+        {
+          "word": " aqui",
+          "start": 129.54,
+          "end": 129.7,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " para",
+          "start": 129.7,
+          "end": 129.9,
+          "probability": 0.9892578125
+        },
+        {
+          "word": " uma",
+          "start": 129.9,
+          "end": 130.04,
+          "probability": 1.0
+        },
+        {
+          "word": " região",
+          "start": 130.04,
+          "end": 130.48,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "seek": 13048,
+      "start": 130.48,
+      "end": 140.26,
+      "text": " Então eu posso tentar já fazer uma rota considerando as pessoas que estão ali naquela...",
+      "tokens": [
+        50365,
+        6469,
+        2228,
+        22501,
+        33572,
+        6242,
+        6736,
+        2772,
+        4297,
+        64,
+        1949,
+        1806,
+        382,
+        10021,
+        631,
+        14775,
+        10198,
+        1667,
+        41462,
+        485,
+        50859
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.20715768309845323,
+      "compression_ratio": 1.5120772946859904,
+      "no_speech_prob": 5.077125352082046e-12,
+      "words": [
+        {
+          "word": " Então",
+          "start": 130.48,
+          "end": 130.6,
+          "probability": 0.2371826171875
+        },
+        {
+          "word": " eu",
+          "start": 130.6,
+          "end": 131.42,
+          "probability": 0.5556640625
+        },
+        {
+          "word": " posso",
+          "start": 131.42,
+          "end": 131.74,
+          "probability": 0.9794921875
+        },
+        {
+          "word": " tentar",
+          "start": 131.74,
+          "end": 132.14,
+          "probability": 0.96826171875
+        },
+        {
+          "word": " já",
+          "start": 132.14,
+          "end": 132.42,
+          "probability": 0.8759765625
+        },
+        {
+          "word": " fazer",
+          "start": 132.42,
+          "end": 132.8,
+          "probability": 0.9814453125
+        },
+        {
+          "word": " uma",
+          "start": 132.8,
+          "end": 132.98,
+          "probability": 0.998046875
+        },
+        {
+          "word": " rota",
+          "start": 132.98,
+          "end": 133.4,
+          "probability": 0.994140625
+        },
+        {
+          "word": " considerando",
+          "start": 133.4,
+          "end": 134.26,
+          "probability": 0.9501953125
+        },
+        {
+          "word": " as",
+          "start": 134.26,
+          "end": 135.72,
+          "probability": 0.96435546875
+        },
+        {
+          "word": " pessoas",
+          "start": 135.72,
+          "end": 136.16,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " que",
+          "start": 136.16,
+          "end": 136.38,
+          "probability": 0.99169921875
+        },
+        {
+          "word": " estão",
+          "start": 136.38,
+          "end": 136.64,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " ali",
+          "start": 136.64,
+          "end": 136.92,
+          "probability": 0.9912109375
+        },
+        {
+          "word": " naquela...",
+          "start": 136.92,
+          "end": 140.26,
+          "probability": 0.92041015625
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "seek": 13048,
+      "start": 140.26,
+      "end": 142.2,
+      "text": " Isso vai fazer uma espécie de filtro, né?",
+      "tokens": [
+        50859,
+        14887,
+        4405,
+        6736,
+        2772,
+        7089,
+        526,
+        4260,
+        368,
+        29148,
+        340,
+        11,
+        7024,
+        30,
+        50953
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.20715768309845323,
+      "compression_ratio": 1.5120772946859904,
+      "no_speech_prob": 5.077125352082046e-12,
+      "words": [
+        {
+          "word": " Isso",
+          "start": 140.26,
+          "end": 140.64,
+          "probability": 0.87548828125
+        },
+        {
+          "word": " vai",
+          "start": 140.64,
+          "end": 140.86,
+          "probability": 0.98876953125
+        },
+        {
+          "word": " fazer",
+          "start": 140.86,
+          "end": 141.12,
+          "probability": 0.95849609375
+        },
+        {
+          "word": " uma",
+          "start": 141.12,
+          "end": 141.24,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " espécie",
+          "start": 141.24,
+          "end": 141.54,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " de",
+          "start": 141.54,
+          "end": 141.74,
+          "probability": 1.0
+        },
+        {
+          "word": " filtro,",
+          "start": 141.74,
+          "end": 142.08,
+          "probability": 0.99609375
+        },
+        {
+          "word": " né?",
+          "start": 142.16,
+          "end": 142.2,
+          "probability": 0.99169921875
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "seek": 13048,
+      "start": 143.06,
+      "end": 143.74,
+      "text": " Exatamente.",
+      "tokens": [
+        50994,
+        2111,
+        25354,
+        13,
+        51030
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.20715768309845323,
+      "compression_ratio": 1.5120772946859904,
+      "no_speech_prob": 5.077125352082046e-12,
+      "words": [
+        {
+          "word": " Exatamente.",
+          "start": 143.06,
+          "end": 143.74,
+          "probability": 0.998046875
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "seek": 13048,
+      "start": 144.44,
+      "end": 148.72,
+      "text": " Enfim, a gente vai pensando ali as informações que a gente precisa.",
+      "tokens": [
+        51068,
+        2193,
+        69,
+        332,
+        11,
+        257,
+        3788,
+        4405,
+        34525,
+        10198,
+        382,
+        42542,
+        631,
+        257,
+        3788,
+        18861,
+        13,
+        51279
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.20715768309845323,
+      "compression_ratio": 1.5120772946859904,
+      "no_speech_prob": 5.077125352082046e-12,
+      "words": [
+        {
+          "word": " Enfim,",
+          "start": 144.44,
+          "end": 145.12,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " a",
+          "start": 145.24,
+          "end": 145.3,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " gente",
+          "start": 145.3,
+          "end": 145.44,
+          "probability": 1.0
+        },
+        {
+          "word": " vai",
+          "start": 145.44,
+          "end": 145.7,
+          "probability": 1.0
+        },
+        {
+          "word": " pensando",
+          "start": 145.7,
+          "end": 146.72,
+          "probability": 0.9775390625
+        },
+        {
+          "word": " ali",
+          "start": 146.72,
+          "end": 147.08,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " as",
+          "start": 147.08,
+          "end": 147.36,
+          "probability": 0.9931640625
+        },
+        {
+          "word": " informações",
+          "start": 147.36,
+          "end": 147.86,
+          "probability": 1.0
+        },
+        {
+          "word": " que",
+          "start": 147.86,
+          "end": 148.14,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " a",
+          "start": 148.14,
+          "end": 148.26,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " gente",
+          "start": 148.26,
+          "end": 148.26,
+          "probability": 1.0
+        },
+        {
+          "word": " precisa.",
+          "start": 148.26,
+          "end": 148.72,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "seek": 13048,
+      "start": 149.24,
+      "end": 157.5,
+      "text": " E aí a ideia é que a gente, com a planilha pronta, a gente permitiria algumas pessoas também",
+      "tokens": [
+        51320,
+        462,
+        7461,
+        257,
+        26409,
+        1136,
+        631,
+        257,
+        3788,
+        11,
+        395,
+        257,
+        1393,
+        388,
+        1641,
+        582,
+        45442,
+        11,
+        257,
+        3788,
+        46865,
+        654,
+        23207,
+        10021,
+        6274,
+        51721
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.20715768309845323,
+      "compression_ratio": 1.5120772946859904,
+      "no_speech_prob": 5.077125352082046e-12,
+      "words": [
+        {
+          "word": " E",
+          "start": 149.24,
+          "end": 149.68,
+          "probability": 0.998046875
+        },
+        {
+          "word": " aí",
+          "start": 149.68,
+          "end": 149.9,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " a",
+          "start": 149.9,
+          "end": 150.1,
+          "probability": 0.998046875
+        },
+        {
+          "word": " ideia",
+          "start": 150.1,
+          "end": 150.5,
+          "probability": 1.0
+        },
+        {
+          "word": " é",
+          "start": 150.5,
+          "end": 151.54,
+          "probability": 1.0
+        },
+        {
+          "word": " que",
+          "start": 151.54,
+          "end": 151.86,
+          "probability": 1.0
+        },
+        {
+          "word": " a",
+          "start": 151.86,
+          "end": 152.44,
+          "probability": 0.9423828125
+        },
+        {
+          "word": " gente,",
+          "start": 152.44,
+          "end": 152.78,
+          "probability": 1.0
+        },
+        {
+          "word": " com",
+          "start": 153.12,
+          "end": 153.92,
+          "probability": 1.0
+        },
+        {
+          "word": " a",
+          "start": 153.92,
+          "end": 154.02,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " planilha",
+          "start": 154.02,
+          "end": 154.36,
+          "probability": 0.99267578125
+        },
+        {
+          "word": " pronta,",
+          "start": 154.36,
+          "end": 155.0,
+          "probability": 0.998046875
+        },
+        {
+          "word": " a",
+          "start": 155.16,
+          "end": 155.16,
+          "probability": 0.9794921875
+        },
+        {
+          "word": " gente",
+          "start": 155.16,
+          "end": 155.32,
+          "probability": 1.0
+        },
+        {
+          "word": " permitiria",
+          "start": 155.32,
+          "end": 156.14,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " algumas",
+          "start": 156.14,
+          "end": 156.48,
+          "probability": 0.83935546875
+        },
+        {
+          "word": " pessoas",
+          "start": 156.48,
+          "end": 157.06,
+          "probability": 1.0
+        },
+        {
+          "word": " também",
+          "start": 157.06,
+          "end": 157.5,
+          "probability": 0.99755859375
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "seek": 15750,
+      "start": 159.5,
+      "end": 161.02,
+      "text": " selecionadas para alimentar.",
+      "tokens": [
+        50365,
+        23264,
+        10015,
+        6872,
+        1690,
+        17043,
+        289,
+        13,
+        50542
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30008319272833356,
+      "compression_ratio": 1.4778761061946903,
+      "no_speech_prob": 4.678652864437138e-12,
+      "words": [
+        {
+          "word": " selecionadas",
+          "start": 159.5,
+          "end": 160.02,
+          "probability": 0.87646484375
+        },
+        {
+          "word": " para",
+          "start": 160.02,
+          "end": 160.26,
+          "probability": 0.658203125
+        },
+        {
+          "word": " alimentar.",
+          "start": 160.26,
+          "end": 161.02,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "seek": 15750,
+      "start": 161.32,
+      "end": 163.42,
+      "text": " Ah, tem uma liderança minha lá no Rio.",
+      "tokens": [
+        50576,
+        2438,
+        11,
+        1383,
+        2772,
+        45341,
+        22930,
+        11720,
+        7453,
+        572,
+        18719,
+        13,
+        50664
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30008319272833356,
+      "compression_ratio": 1.4778761061946903,
+      "no_speech_prob": 4.678652864437138e-12,
+      "words": [
+        {
+          "word": " Ah,",
+          "start": 161.32,
+          "end": 161.84,
+          "probability": 0.9111328125
+        },
+        {
+          "word": " tem",
+          "start": 161.92,
+          "end": 162.06,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " uma",
+          "start": 162.06,
+          "end": 162.24,
+          "probability": 1.0
+        },
+        {
+          "word": " liderança",
+          "start": 162.24,
+          "end": 162.72,
+          "probability": 1.0
+        },
+        {
+          "word": " minha",
+          "start": 162.72,
+          "end": 162.96,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " lá",
+          "start": 162.96,
+          "end": 163.12,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " no",
+          "start": 163.12,
+          "end": 163.26,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " Rio.",
+          "start": 163.26,
+          "end": 163.42,
+          "probability": 0.97998046875
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "seek": 15750,
+      "start": 163.56,
+      "end": 164.28,
+      "text": " Lá ela já...",
+      "tokens": [
+        50669,
+        441,
+        842,
+        7175,
+        6242,
+        485,
+        50731
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30008319272833356,
+      "compression_ratio": 1.4778761061946903,
+      "no_speech_prob": 4.678652864437138e-12,
+      "words": [
+        {
+          "word": " Lá",
+          "start": 163.56,
+          "end": 163.72,
+          "probability": 0.63671875
+        },
+        {
+          "word": " ela",
+          "start": 163.72,
+          "end": 163.86,
+          "probability": 0.72216796875
+        },
+        {
+          "word": " já...",
+          "start": 163.86,
+          "end": 164.28,
+          "probability": 0.7265625
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "seek": 15750,
+      "start": 164.82,
+      "end": 166.54,
+      "text": " Uma pessoa já habilitada para",
+      "tokens": [
+        50731,
+        21939,
+        16366,
+        6242,
+        3025,
+        34050,
+        1538,
+        1690,
+        50818
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30008319272833356,
+      "compression_ratio": 1.4778761061946903,
+      "no_speech_prob": 4.678652864437138e-12,
+      "words": [
+        {
+          "word": " Uma",
+          "start": 164.76000000000002,
+          "end": 165.02,
+          "probability": 0.58203125
+        },
+        {
+          "word": " pessoa",
+          "start": 165.02,
+          "end": 165.36,
+          "probability": 1.0
+        },
+        {
+          "word": " já",
+          "start": 165.36,
+          "end": 165.56,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " habilitada",
+          "start": 165.56,
+          "end": 166.24,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " para",
+          "start": 166.24,
+          "end": 166.54,
+          "probability": 0.94482421875
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "seek": 15750,
+      "start": 166.54,
+      "end": 168.1,
+      "text": " colocar na planilha",
+      "tokens": [
+        50818,
+        17568,
+        1667,
+        1393,
+        388,
+        1641,
+        50895
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30008319272833356,
+      "compression_ratio": 1.4778761061946903,
+      "no_speech_prob": 4.678652864437138e-12,
+      "words": [
+        {
+          "word": " colocar",
+          "start": 166.54,
+          "end": 167.32,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " na",
+          "start": 167.32,
+          "end": 167.54,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " planilha",
+          "start": 167.54,
+          "end": 168.1,
+          "probability": 0.98779296875
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "seek": 15750,
+      "start": 168.92,
+      "end": 170.84,
+      "text": " uma nova liderança que chegou.",
+      "tokens": [
+        50895,
+        2772,
+        28265,
+        45341,
+        22930,
+        631,
+        36799,
+        13,
+        51032
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30008319272833356,
+      "compression_ratio": 1.4778761061946903,
+      "no_speech_prob": 4.678652864437138e-12,
+      "words": [
+        {
+          "word": " uma",
+          "start": 168.92,
+          "end": 169.44,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " nova",
+          "start": 169.44,
+          "end": 169.76,
+          "probability": 1.0
+        },
+        {
+          "word": " liderança",
+          "start": 169.76,
+          "end": 170.32,
+          "probability": 1.0
+        },
+        {
+          "word": " que",
+          "start": 170.32,
+          "end": 170.48,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " chegou.",
+          "start": 170.48,
+          "end": 170.84,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 15750,
+      "start": 171.26,
+      "end": 173.18,
+      "text": " Para a coisa ser muito dinâmica.",
+      "tokens": [
+        51072,
+        11107,
+        257,
+        9614,
+        816,
+        4945,
+        3791,
+        24484,
+        2262,
+        13,
+        51150
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30008319272833356,
+      "compression_ratio": 1.4778761061946903,
+      "no_speech_prob": 4.678652864437138e-12,
+      "words": [
+        {
+          "word": " Para",
+          "start": 171.26,
+          "end": 171.74,
+          "probability": 0.9765625
+        },
+        {
+          "word": " a",
+          "start": 171.74,
+          "end": 172.18,
+          "probability": 0.9638671875
+        },
+        {
+          "word": " coisa",
+          "start": 172.18,
+          "end": 172.34,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " ser",
+          "start": 172.34,
+          "end": 172.54,
+          "probability": 1.0
+        },
+        {
+          "word": " muito",
+          "start": 172.54,
+          "end": 172.76,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " dinâmica.",
+          "start": 172.76,
+          "end": 173.18,
+          "probability": 0.99853515625
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "seek": 15750,
+      "start": 173.3,
+      "end": 174.62,
+      "text": " Aliás, a gente tem pouco tempo.",
+      "tokens": [
+        51156,
+        12020,
+        2490,
+        11,
+        257,
+        3788,
+        1383,
+        13920,
+        8972,
+        13,
+        51222
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30008319272833356,
+      "compression_ratio": 1.4778761061946903,
+      "no_speech_prob": 4.678652864437138e-12,
+      "words": [
+        {
+          "word": " Aliás,",
+          "start": 173.3,
+          "end": 173.6,
+          "probability": 0.9853515625
+        },
+        {
+          "word": " a",
+          "start": 173.6,
+          "end": 173.64,
+          "probability": 0.9951171875
+        },
+        {
+          "word": " gente",
+          "start": 173.64,
+          "end": 173.76,
+          "probability": 1.0
+        },
+        {
+          "word": " tem",
+          "start": 173.76,
+          "end": 173.9,
+          "probability": 1.0
+        },
+        {
+          "word": " pouco",
+          "start": 173.9,
+          "end": 174.16,
+          "probability": 1.0
+        },
+        {
+          "word": " tempo.",
+          "start": 174.16,
+          "end": 174.62,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "seek": 15750,
+      "start": 175.46,
+      "end": 175.7,
+      "text": " Então,",
+      "tokens": [
+        51264,
+        6469,
+        11,
+        51277
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30008319272833356,
+      "compression_ratio": 1.4778761061946903,
+      "no_speech_prob": 4.678652864437138e-12,
+      "words": [
+        {
+          "word": " Então,",
+          "start": 175.46,
+          "end": 175.7,
+          "probability": 0.98681640625
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "seek": 15750,
+      "start": 176.54,
+      "end": 178.44,
+      "text": " essa é a proposta da planilha.",
+      "tokens": [
+        51323,
+        7208,
+        1136,
+        257,
+        2365,
+        8638,
+        1120,
+        1393,
+        388,
+        1641,
+        13,
+        51412
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30008319272833356,
+      "compression_ratio": 1.4778761061946903,
+      "no_speech_prob": 4.678652864437138e-12,
+      "words": [
+        {
+          "word": " essa",
+          "start": 176.54,
+          "end": 177.06,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " é",
+          "start": 177.06,
+          "end": 177.22,
+          "probability": 1.0
+        },
+        {
+          "word": " a",
+          "start": 177.22,
+          "end": 177.32,
+          "probability": 1.0
+        },
+        {
+          "word": " proposta",
+          "start": 177.32,
+          "end": 177.8,
+          "probability": 1.0
+        },
+        {
+          "word": " da",
+          "start": 177.8,
+          "end": 177.96,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " planilha.",
+          "start": 177.96,
+          "end": 178.44,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "seek": 15750,
+      "start": 179.9,
+      "end": 181.16,
+      "text": " Falar mais alguma coisa, Léo?",
+      "tokens": [
+        51492,
+        479,
+        12031,
+        2420,
+        20259,
+        9614,
+        11,
+        441,
+        45805,
+        30,
+        51547
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30008319272833356,
+      "compression_ratio": 1.4778761061946903,
+      "no_speech_prob": 4.678652864437138e-12,
+      "words": [
+        {
+          "word": " Falar",
+          "start": 179.9,
+          "end": 180.42,
+          "probability": 0.8427734375
+        },
+        {
+          "word": " mais",
+          "start": 180.42,
+          "end": 180.58,
+          "probability": 0.9189453125
+        },
+        {
+          "word": " alguma",
+          "start": 180.58,
+          "end": 180.66,
+          "probability": 0.75341796875
+        },
+        {
+          "word": " coisa,",
+          "start": 180.66,
+          "end": 180.92,
+          "probability": 1.0
+        },
+        {
+          "word": " Léo?",
+          "start": 181.02,
+          "end": 181.16,
+          "probability": 0.91015625
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "seek": 15750,
+      "start": 181.74,
+      "end": 183.0,
+      "text": " Não, acho que é isso.",
+      "tokens": [
+        51579,
+        8010,
+        11,
+        14253,
+        631,
+        1136,
+        4616,
+        13,
+        51641
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30008319272833356,
+      "compression_ratio": 1.4778761061946903,
+      "no_speech_prob": 4.678652864437138e-12,
+      "words": [
+        {
+          "word": " Não,",
+          "start": 181.74,
+          "end": 182.26,
+          "probability": 0.97412109375
+        },
+        {
+          "word": " acho",
+          "start": 182.3,
+          "end": 182.46,
+          "probability": 0.9833984375
+        },
+        {
+          "word": " que",
+          "start": 182.46,
+          "end": 182.58,
+          "probability": 1.0
+        },
+        {
+          "word": " é",
+          "start": 182.58,
+          "end": 182.68,
+          "probability": 1.0
+        },
+        {
+          "word": " isso.",
+          "start": 182.68,
+          "end": 183.0,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "seek": 15750,
+      "start": 183.74,
+      "end": 184.26,
+      "text": " E...",
+      "tokens": [
+        51685,
+        462,
+        485,
+        51735
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30008319272833356,
+      "compression_ratio": 1.4778761061946903,
+      "no_speech_prob": 4.678652864437138e-12,
+      "words": [
+        {
+          "word": " E...",
+          "start": 183.74,
+          "end": 184.26,
+          "probability": 0.8935546875
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "seek": 18426,
+      "start": 185.36,
+      "end": 186.88,
+      "text": " Essa questão que o Levi falou",
+      "tokens": [
+        50365,
+        22818,
+        28477,
+        631,
+        277,
+        33987,
+        28443,
+        50496
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16451402271495147,
+      "compression_ratio": 1.6098484848484849,
+      "no_speech_prob": 5.384346614401014e-12,
+      "words": [
+        {
+          "word": " Essa",
+          "start": 185.36,
+          "end": 185.96,
+          "probability": 0.763671875
+        },
+        {
+          "word": " questão",
+          "start": 185.96,
+          "end": 186.3,
+          "probability": 0.99560546875
+        },
+        {
+          "word": " que",
+          "start": 186.3,
+          "end": 186.44,
+          "probability": 0.97314453125
+        },
+        {
+          "word": " o",
+          "start": 186.44,
+          "end": 186.5,
+          "probability": 0.998046875
+        },
+        {
+          "word": " Levi",
+          "start": 186.5,
+          "end": 186.64,
+          "probability": 0.97900390625
+        },
+        {
+          "word": " falou",
+          "start": 186.64,
+          "end": 186.88,
+          "probability": 0.984375
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "seek": 18426,
+      "start": 186.88,
+      "end": 189.32,
+      "text": " Tipo de um braço, de uma ferramenta de gestão também",
+      "tokens": [
+        50496,
+        18210,
+        78,
+        368,
+        1105,
+        1548,
+        8560,
+        11,
+        368,
+        2772,
+        7202,
+        2356,
+        8938,
+        368,
+        7219,
+        1076,
+        6274,
+        50622
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16451402271495147,
+      "compression_ratio": 1.6098484848484849,
+      "no_speech_prob": 5.384346614401014e-12,
+      "words": [
+        {
+          "word": " Tipo",
+          "start": 186.88,
+          "end": 187.16,
+          "probability": 0.5830078125
+        },
+        {
+          "word": " de",
+          "start": 187.16,
+          "end": 187.24,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " um",
+          "start": 187.24,
+          "end": 187.34,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " braço,",
+          "start": 187.34,
+          "end": 187.64,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " de",
+          "start": 187.72,
+          "end": 187.74,
+          "probability": 0.98193359375
+        },
+        {
+          "word": " uma",
+          "start": 187.74,
+          "end": 187.82,
+          "probability": 1.0
+        },
+        {
+          "word": " ferramenta",
+          "start": 187.82,
+          "end": 188.36,
+          "probability": 1.0
+        },
+        {
+          "word": " de",
+          "start": 188.36,
+          "end": 188.54,
+          "probability": 0.96923828125
+        },
+        {
+          "word": " gestão",
+          "start": 188.54,
+          "end": 188.96,
+          "probability": 1.0
+        },
+        {
+          "word": " também",
+          "start": 188.96,
+          "end": 189.32,
+          "probability": 0.9150390625
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "seek": 18426,
+      "start": 190.22,
+      "end": 192.72,
+      "text": " Que a gente tem que controlar até as tarefas",
+      "tokens": [
+        50622,
+        4493,
+        257,
+        3788,
+        1383,
+        631,
+        47843,
+        8784,
+        382,
+        49423,
+        69,
+        296,
+        50789
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16451402271495147,
+      "compression_ratio": 1.6098484848484849,
+      "no_speech_prob": 5.384346614401014e-12,
+      "words": [
+        {
+          "word": " Que",
+          "start": 190.22,
+          "end": 190.82,
+          "probability": 0.82666015625
+        },
+        {
+          "word": " a",
+          "start": 190.82,
+          "end": 190.94,
+          "probability": 1.0
+        },
+        {
+          "word": " gente",
+          "start": 190.94,
+          "end": 191.06,
+          "probability": 1.0
+        },
+        {
+          "word": " tem",
+          "start": 191.06,
+          "end": 191.22,
+          "probability": 0.9912109375
+        },
+        {
+          "word": " que",
+          "start": 191.22,
+          "end": 191.34,
+          "probability": 0.939453125
+        },
+        {
+          "word": " controlar",
+          "start": 191.34,
+          "end": 191.78,
+          "probability": 0.8154296875
+        },
+        {
+          "word": " até",
+          "start": 191.78,
+          "end": 192.06,
+          "probability": 0.654296875
+        },
+        {
+          "word": " as",
+          "start": 192.06,
+          "end": 192.2,
+          "probability": 0.998046875
+        },
+        {
+          "word": " tarefas",
+          "start": 192.2,
+          "end": 192.72,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "seek": 18426,
+      "start": 192.72,
+      "end": 194.94,
+      "text": " De repente, aquele usuário",
+      "tokens": [
+        50789,
+        1346,
+        42884,
+        11,
+        23640,
+        32247,
+        12657,
+        50899
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16451402271495147,
+      "compression_ratio": 1.6098484848484849,
+      "no_speech_prob": 5.384346614401014e-12,
+      "words": [
+        {
+          "word": " De",
+          "start": 192.72,
+          "end": 193.28,
+          "probability": 0.42333984375
+        },
+        {
+          "word": " repente,",
+          "start": 193.28,
+          "end": 193.64,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " aquele",
+          "start": 193.64,
+          "end": 194.1,
+          "probability": 0.275146484375
+        },
+        {
+          "word": " usuário",
+          "start": 194.1,
+          "end": 194.94,
+          "probability": 0.8466796875
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "seek": 18426,
+      "start": 194.94,
+      "end": 195.84,
+      "text": " Levi Carnela",
+      "tokens": [
+        50899,
+        33987,
+        32254,
+        4053,
+        50945
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16451402271495147,
+      "compression_ratio": 1.6098484848484849,
+      "no_speech_prob": 5.384346614401014e-12,
+      "words": [
+        {
+          "word": " Levi",
+          "start": 194.94,
+          "end": 195.22,
+          "probability": 0.98388671875
+        },
+        {
+          "word": " Carnela",
+          "start": 195.22,
+          "end": 195.84,
+          "probability": 0.8115234375
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "seek": 18426,
+      "start": 195.84,
+      "end": 197.38,
+      "text": " E o usuário Léo",
+      "tokens": [
+        50945,
+        462,
+        277,
+        32247,
+        12657,
+        441,
+        45805,
+        51022
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16451402271495147,
+      "compression_ratio": 1.6098484848484849,
+      "no_speech_prob": 5.384346614401014e-12,
+      "words": [
+        {
+          "word": " E",
+          "start": 195.84,
+          "end": 196.56,
+          "probability": 0.57763671875
+        },
+        {
+          "word": " o",
+          "start": 196.56,
+          "end": 196.66,
+          "probability": 0.99267578125
+        },
+        {
+          "word": " usuário",
+          "start": 196.66,
+          "end": 197.02,
+          "probability": 1.0
+        },
+        {
+          "word": " Léo",
+          "start": 197.02,
+          "end": 197.38,
+          "probability": 0.7646484375
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "seek": 18426,
+      "start": 197.38,
+      "end": 199.7,
+      "text": " Eles tem o mesmo nível de acesso",
+      "tokens": [
+        51022,
+        31096,
+        1383,
+        277,
+        9082,
+        41747,
+        368,
+        49543,
+        51138
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16451402271495147,
+      "compression_ratio": 1.6098484848484849,
+      "no_speech_prob": 5.384346614401014e-12,
+      "words": [
+        {
+          "word": " Eles",
+          "start": 197.38,
+          "end": 198.2,
+          "probability": 0.9873046875
+        },
+        {
+          "word": " tem",
+          "start": 198.2,
+          "end": 198.32,
+          "probability": 0.7216796875
+        },
+        {
+          "word": " o",
+          "start": 198.32,
+          "end": 198.42,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " mesmo",
+          "start": 198.42,
+          "end": 198.64,
+          "probability": 1.0
+        },
+        {
+          "word": " nível",
+          "start": 198.64,
+          "end": 199.02,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " de",
+          "start": 199.02,
+          "end": 199.24,
+          "probability": 0.564453125
+        },
+        {
+          "word": " acesso",
+          "start": 199.24,
+          "end": 199.7,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "seek": 18426,
+      "start": 199.7,
+      "end": 203.0,
+      "text": " Para ter acesso a um Kanban de tarefas pendentes",
+      "tokens": [
+        51138,
+        11107,
+        1796,
+        49543,
+        257,
+        1105,
+        11120,
+        5144,
+        368,
+        49423,
+        69,
+        296,
+        12179,
+        9240,
+        51303
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16451402271495147,
+      "compression_ratio": 1.6098484848484849,
+      "no_speech_prob": 5.384346614401014e-12,
+      "words": [
+        {
+          "word": " Para",
+          "start": 199.7,
+          "end": 199.9,
+          "probability": 0.58544921875
+        },
+        {
+          "word": " ter",
+          "start": 199.9,
+          "end": 200.24,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " acesso",
+          "start": 200.24,
+          "end": 201.16,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " a",
+          "start": 201.16,
+          "end": 201.26,
+          "probability": 0.9736328125
+        },
+        {
+          "word": " um",
+          "start": 201.26,
+          "end": 201.38,
+          "probability": 1.0
+        },
+        {
+          "word": " Kanban",
+          "start": 201.38,
+          "end": 201.78,
+          "probability": 0.8251953125
+        },
+        {
+          "word": " de",
+          "start": 201.78,
+          "end": 201.98,
+          "probability": 0.30517578125
+        },
+        {
+          "word": " tarefas",
+          "start": 201.98,
+          "end": 202.4,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " pendentes",
+          "start": 202.4,
+          "end": 203.0,
+          "probability": 0.998046875
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "seek": 18426,
+      "start": 203.0,
+      "end": 203.74,
+      "text": " Sim, sim",
+      "tokens": [
+        51303,
+        3998,
+        11,
+        1034,
+        51343
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16451402271495147,
+      "compression_ratio": 1.6098484848484849,
+      "no_speech_prob": 5.384346614401014e-12,
+      "words": [
+        {
+          "word": " Sim,",
+          "start": 203.0,
+          "end": 203.38,
+          "probability": 0.7392578125
+        },
+        {
+          "word": " sim",
+          "start": 203.46,
+          "end": 203.74,
+          "probability": 0.99755859375
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "seek": 18426,
+      "start": 203.74,
+      "end": 204.62,
+      "text": " Entendeu?",
+      "tokens": [
+        51343,
+        3951,
+        36202,
+        30,
+        51383
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16451402271495147,
+      "compression_ratio": 1.6098484848484849,
+      "no_speech_prob": 5.384346614401014e-12,
+      "words": [
+        {
+          "word": " Entendeu?",
+          "start": 203.74,
+          "end": 204.62,
+          "probability": 0.9296875
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "seek": 18426,
+      "start": 204.92,
+      "end": 207.18,
+      "text": " E um desdobramento maravilhoso também",
+      "tokens": [
+        51420,
+        462,
+        1105,
+        730,
+        67,
+        996,
+        34706,
+        41009,
+        71,
+        9869,
+        6274,
+        51515
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16451402271495147,
+      "compression_ratio": 1.6098484848484849,
+      "no_speech_prob": 5.384346614401014e-12,
+      "words": [
+        {
+          "word": " E",
+          "start": 204.92,
+          "end": 205.52,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " um",
+          "start": 205.52,
+          "end": 205.62,
+          "probability": 0.99609375
+        },
+        {
+          "word": " desdobramento",
+          "start": 205.62,
+          "end": 206.16,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " maravilhoso",
+          "start": 206.16,
+          "end": 206.88,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " também",
+          "start": 206.88,
+          "end": 207.18,
+          "probability": 0.9716796875
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "seek": 18426,
+      "start": 207.18,
+      "end": 209.08,
+      "text": " Seria a gente ter uma agenda online",
+      "tokens": [
+        51515,
+        4210,
+        654,
+        257,
+        3788,
+        1796,
+        2772,
+        9829,
+        2950,
+        51608
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16451402271495147,
+      "compression_ratio": 1.6098484848484849,
+      "no_speech_prob": 5.384346614401014e-12,
+      "words": [
+        {
+          "word": " Seria",
+          "start": 207.18,
+          "end": 207.6,
+          "probability": 0.9736328125
+        },
+        {
+          "word": " a",
+          "start": 207.6,
+          "end": 207.72,
+          "probability": 0.99462890625
+        },
+        {
+          "word": " gente",
+          "start": 207.72,
+          "end": 207.8,
+          "probability": 1.0
+        },
+        {
+          "word": " ter",
+          "start": 207.8,
+          "end": 207.98,
+          "probability": 1.0
+        },
+        {
+          "word": " uma",
+          "start": 207.98,
+          "end": 208.16,
+          "probability": 1.0
+        },
+        {
+          "word": " agenda",
+          "start": 208.16,
+          "end": 208.56,
+          "probability": 1.0
+        },
+        {
+          "word": " online",
+          "start": 208.56,
+          "end": 209.08,
+          "probability": 0.99853515625
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "seek": 18426,
+      "start": 209.84,
+      "end": 211.6,
+      "text": " Onde o Edson consiga ali",
+      "tokens": [
+        51608,
+        422,
+        16404,
+        277,
+        3977,
+        3015,
+        1014,
+        9900,
+        10198,
+        51736
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16451402271495147,
+      "compression_ratio": 1.6098484848484849,
+      "no_speech_prob": 5.384346614401014e-12,
+      "words": [
+        {
+          "word": " Onde",
+          "start": 209.84,
+          "end": 210.44,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " o",
+          "start": 210.44,
+          "end": 210.56,
+          "probability": 1.0
+        },
+        {
+          "word": " Edson",
+          "start": 210.56,
+          "end": 210.9,
+          "probability": 0.9443359375
+        },
+        {
+          "word": " consiga",
+          "start": 210.9,
+          "end": 211.42,
+          "probability": 0.958984375
+        },
+        {
+          "word": " ali",
+          "start": 211.42,
+          "end": 211.6,
+          "probability": 0.411376953125
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "seek": 18426,
+      "start": 211.6,
+      "end": 213.9,
+      "text": " Só através de um link simples",
+      "tokens": [
+        51736,
+        19961,
+        39941,
+        368,
+        1105,
+        2113,
+        21730,
+        51853
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16451402271495147,
+      "compression_ratio": 1.6098484848484849,
+      "no_speech_prob": 5.384346614401014e-12,
+      "words": [
+        {
+          "word": " Só",
+          "start": 211.6,
+          "end": 212.0,
+          "probability": 0.9521484375
+        },
+        {
+          "word": " através",
+          "start": 212.0,
+          "end": 212.44,
+          "probability": 1.0
+        },
+        {
+          "word": " de",
+          "start": 212.44,
+          "end": 212.7,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " um",
+          "start": 212.7,
+          "end": 213.02,
+          "probability": 1.0
+        },
+        {
+          "word": " link",
+          "start": 213.02,
+          "end": 213.26,
+          "probability": 0.99609375
+        },
+        {
+          "word": " simples",
+          "start": 213.26,
+          "end": 213.9,
+          "probability": 0.986328125
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "seek": 21390,
+      "start": 214.46,
+      "end": 216.3,
+      "text": " abrir a agenda e já atualiza, atualiza",
+      "tokens": [
+        50365,
+        27446,
+        257,
+        9829,
+        308,
+        6242,
+        39241,
+        13427,
+        11,
+        39241,
+        13427,
+        50485
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.31464783804757257,
+      "compression_ratio": 1.5800711743772242,
+      "no_speech_prob": 4.94187937100099e-12,
+      "words": [
+        {
+          "word": " abrir",
+          "start": 214.46,
+          "end": 214.88,
+          "probability": 0.3681640625
+        },
+        {
+          "word": " a",
+          "start": 214.88,
+          "end": 215.04,
+          "probability": 0.97900390625
+        },
+        {
+          "word": " agenda",
+          "start": 215.04,
+          "end": 215.26,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " e",
+          "start": 215.26,
+          "end": 215.4,
+          "probability": 0.505859375
+        },
+        {
+          "word": " já",
+          "start": 215.4,
+          "end": 215.5,
+          "probability": 0.75439453125
+        },
+        {
+          "word": " atualiza,",
+          "start": 215.5,
+          "end": 215.94,
+          "probability": 0.9921875
+        },
+        {
+          "word": " atualiza",
+          "start": 216.0,
+          "end": 216.3,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "seek": 21390,
+      "start": 216.3,
+      "end": 217.74,
+      "text": " pra todo mundo que é necessário aqui.",
+      "tokens": [
+        50485,
+        3206,
+        5149,
+        7968,
+        631,
+        1136,
+        2688,
+        12657,
+        3871,
+        13,
+        50560
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.31464783804757257,
+      "compression_ratio": 1.5800711743772242,
+      "no_speech_prob": 4.94187937100099e-12,
+      "words": [
+        {
+          "word": " pra",
+          "start": 216.3,
+          "end": 216.44,
+          "probability": 0.464111328125
+        },
+        {
+          "word": " todo",
+          "start": 216.44,
+          "end": 216.64,
+          "probability": 1.0
+        },
+        {
+          "word": " mundo",
+          "start": 216.64,
+          "end": 216.84,
+          "probability": 1.0
+        },
+        {
+          "word": " que",
+          "start": 216.84,
+          "end": 216.94,
+          "probability": 0.90576171875
+        },
+        {
+          "word": " é",
+          "start": 216.94,
+          "end": 217.02,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " necessário",
+          "start": 217.02,
+          "end": 217.54,
+          "probability": 1.0
+        },
+        {
+          "word": " aqui.",
+          "start": 217.54,
+          "end": 217.74,
+          "probability": 0.8955078125
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "seek": 21390,
+      "start": 218.76,
+      "end": 219.72,
+      "text": " Aí seria legal,",
+      "tokens": [
+        50610,
+        22175,
+        20809,
+        5089,
+        11,
+        50657
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.31464783804757257,
+      "compression_ratio": 1.5800711743772242,
+      "no_speech_prob": 4.94187937100099e-12,
+      "words": [
+        {
+          "word": " Aí",
+          "start": 218.76,
+          "end": 218.94,
+          "probability": 0.98828125
+        },
+        {
+          "word": " seria",
+          "start": 218.94,
+          "end": 219.12,
+          "probability": 0.83984375
+        },
+        {
+          "word": " legal,",
+          "start": 219.12,
+          "end": 219.72,
+          "probability": 0.99853515625
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 21390,
+      "start": 220.28,
+      "end": 222.04,
+      "text": " que aí eu não sei o nível disso, né?",
+      "tokens": [
+        50697,
+        631,
+        7461,
+        2228,
+        2431,
+        10842,
+        277,
+        41747,
+        20088,
+        11,
+        7024,
+        30,
+        50774
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.31464783804757257,
+      "compression_ratio": 1.5800711743772242,
+      "no_speech_prob": 4.94187937100099e-12,
+      "words": [
+        {
+          "word": " que",
+          "start": 220.28,
+          "end": 220.7,
+          "probability": 0.91796875
+        },
+        {
+          "word": " aí",
+          "start": 220.7,
+          "end": 220.8,
+          "probability": 0.98779296875
+        },
+        {
+          "word": " eu",
+          "start": 220.8,
+          "end": 220.88,
+          "probability": 1.0
+        },
+        {
+          "word": " não",
+          "start": 220.88,
+          "end": 220.96,
+          "probability": 1.0
+        },
+        {
+          "word": " sei",
+          "start": 220.96,
+          "end": 221.14,
+          "probability": 1.0
+        },
+        {
+          "word": " o",
+          "start": 221.14,
+          "end": 221.26,
+          "probability": 1.0
+        },
+        {
+          "word": " nível",
+          "start": 221.26,
+          "end": 221.48,
+          "probability": 1.0
+        },
+        {
+          "word": " disso,",
+          "start": 221.48,
+          "end": 221.86,
+          "probability": 1.0
+        },
+        {
+          "word": " né?",
+          "start": 221.98,
+          "end": 222.04,
+          "probability": 0.94189453125
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "seek": 21390,
+      "start": 224.02,
+      "end": 224.88,
+      "text": " Até de repente",
+      "tokens": [
+        50873,
+        31793,
+        368,
+        42884,
+        50914
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.31464783804757257,
+      "compression_ratio": 1.5800711743772242,
+      "no_speech_prob": 4.94187937100099e-12,
+      "words": [
+        {
+          "word": " Até",
+          "start": 224.02,
+          "end": 224.44,
+          "probability": 0.70947265625
+        },
+        {
+          "word": " de",
+          "start": 224.44,
+          "end": 224.6,
+          "probability": 0.7822265625
+        },
+        {
+          "word": " repente",
+          "start": 224.6,
+          "end": 224.88,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "seek": 21390,
+      "start": 224.88,
+      "end": 225.94,
+      "text": " chegar um alerta",
+      "tokens": [
+        50914,
+        25512,
+        1105,
+        9615,
+        64,
+        50983
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.31464783804757257,
+      "compression_ratio": 1.5800711743772242,
+      "no_speech_prob": 4.94187937100099e-12,
+      "words": [
+        {
+          "word": " chegar",
+          "start": 224.88,
+          "end": 225.18,
+          "probability": 0.99462890625
+        },
+        {
+          "word": " um",
+          "start": 225.18,
+          "end": 225.32,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " alerta",
+          "start": 225.32,
+          "end": 225.94,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "seek": 21390,
+      "start": 226.8,
+      "end": 227.94,
+      "text": " pelo nosso WhatsApp.",
+      "tokens": [
+        50983,
+        12167,
+        14347,
+        30513,
+        13,
+        51072
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.31464783804757257,
+      "compression_ratio": 1.5800711743772242,
+      "no_speech_prob": 4.94187937100099e-12,
+      "words": [
+        {
+          "word": " pelo",
+          "start": 226.8,
+          "end": 227.22,
+          "probability": 0.9853515625
+        },
+        {
+          "word": " nosso",
+          "start": 227.22,
+          "end": 227.5,
+          "probability": 1.0
+        },
+        {
+          "word": " WhatsApp.",
+          "start": 227.5,
+          "end": 227.94,
+          "probability": 0.98486328125
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "seek": 21390,
+      "start": 228.28,
+      "end": 230.24,
+      "text": " Eu sei que você tá com o de papo aí do WhatsApp também.",
+      "tokens": [
+        51083,
+        2186,
+        10842,
+        631,
+        2723,
+        7737,
+        395,
+        277,
+        368,
+        5806,
+        78,
+        7461,
+        360,
+        30513,
+        6274,
+        13,
+        51185
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.31464783804757257,
+      "compression_ratio": 1.5800711743772242,
+      "no_speech_prob": 4.94187937100099e-12,
+      "words": [
+        {
+          "word": " Eu",
+          "start": 228.28,
+          "end": 228.36,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " sei",
+          "start": 228.36,
+          "end": 228.5,
+          "probability": 1.0
+        },
+        {
+          "word": " que",
+          "start": 228.5,
+          "end": 228.56,
+          "probability": 1.0
+        },
+        {
+          "word": " você",
+          "start": 228.56,
+          "end": 228.64,
+          "probability": 0.98974609375
+        },
+        {
+          "word": " tá",
+          "start": 228.64,
+          "end": 228.76,
+          "probability": 0.57275390625
+        },
+        {
+          "word": " com",
+          "start": 228.76,
+          "end": 228.9,
+          "probability": 0.7880859375
+        },
+        {
+          "word": " o",
+          "start": 228.9,
+          "end": 229.02,
+          "probability": 0.3505859375
+        },
+        {
+          "word": " de",
+          "start": 229.02,
+          "end": 229.02,
+          "probability": 0.373779296875
+        },
+        {
+          "word": " papo",
+          "start": 229.02,
+          "end": 229.38,
+          "probability": 0.59375
+        },
+        {
+          "word": " aí",
+          "start": 229.38,
+          "end": 229.46,
+          "probability": 0.95849609375
+        },
+        {
+          "word": " do",
+          "start": 229.46,
+          "end": 229.56,
+          "probability": 0.97119140625
+        },
+        {
+          "word": " WhatsApp",
+          "start": 229.56,
+          "end": 229.9,
+          "probability": 1.0
+        },
+        {
+          "word": " também.",
+          "start": 229.9,
+          "end": 230.24,
+          "probability": 0.8935546875
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "seek": 21390,
+      "start": 230.82,
+      "end": 232.24,
+      "text": " De repente você consegue, poxa,",
+      "tokens": [
+        51227,
+        1346,
+        42884,
+        2723,
+        27179,
+        11,
+        714,
+        36852,
+        11,
+        51283
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.31464783804757257,
+      "compression_ratio": 1.5800711743772242,
+      "no_speech_prob": 4.94187937100099e-12,
+      "words": [
+        {
+          "word": " De",
+          "start": 230.82,
+          "end": 231.22,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " repente",
+          "start": 231.22,
+          "end": 231.48,
+          "probability": 1.0
+        },
+        {
+          "word": " você",
+          "start": 231.48,
+          "end": 231.64,
+          "probability": 0.96728515625
+        },
+        {
+          "word": " consegue,",
+          "start": 231.64,
+          "end": 232.0,
+          "probability": 1.0
+        },
+        {
+          "word": " poxa,",
+          "start": 232.16,
+          "end": 232.24,
+          "probability": 0.81640625
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "seek": 21390,
+      "start": 232.24,
+      "end": 233.98,
+      "text": " cada nova agenda cadastrada, chega",
+      "tokens": [
+        51284,
+        8411,
+        28265,
+        9829,
+        12209,
+        525,
+        19120,
+        11,
+        40157,
+        51370
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.31464783804757257,
+      "compression_ratio": 1.5800711743772242,
+      "no_speech_prob": 4.94187937100099e-12,
+      "words": [
+        {
+          "word": " cada",
+          "start": 232.24,
+          "end": 232.5,
+          "probability": 0.92626953125
+        },
+        {
+          "word": " nova",
+          "start": 232.5,
+          "end": 232.72,
+          "probability": 0.98828125
+        },
+        {
+          "word": " agenda",
+          "start": 232.72,
+          "end": 233.02,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " cadastrada,",
+          "start": 233.02,
+          "end": 233.7,
+          "probability": 0.9892578125
+        },
+        {
+          "word": " chega",
+          "start": 233.72,
+          "end": 233.98,
+          "probability": 0.97119140625
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "seek": 21390,
+      "start": 233.98,
+      "end": 236.14,
+      "text": " uma mensagem do nosso WhatsApp aqui",
+      "tokens": [
+        51370,
+        2772,
+        10923,
+        14767,
+        360,
+        14347,
+        30513,
+        3871,
+        51479
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.31464783804757257,
+      "compression_ratio": 1.5800711743772242,
+      "no_speech_prob": 4.94187937100099e-12,
+      "words": [
+        {
+          "word": " uma",
+          "start": 233.98,
+          "end": 234.2,
+          "probability": 0.98486328125
+        },
+        {
+          "word": " mensagem",
+          "start": 234.2,
+          "end": 235.16,
+          "probability": 1.0
+        },
+        {
+          "word": " do",
+          "start": 235.16,
+          "end": 235.3,
+          "probability": 0.62939453125
+        },
+        {
+          "word": " nosso",
+          "start": 235.3,
+          "end": 235.48,
+          "probability": 1.0
+        },
+        {
+          "word": " WhatsApp",
+          "start": 235.48,
+          "end": 235.92,
+          "probability": 1.0
+        },
+        {
+          "word": " aqui",
+          "start": 235.92,
+          "end": 236.14,
+          "probability": 0.6162109375
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "seek": 21390,
+      "start": 236.14,
+      "end": 238.7,
+      "text": " dos coordenadores geral da campanha.",
+      "tokens": [
+        51479,
+        4491,
+        14230,
+        268,
+        11856,
+        35412,
+        1120,
+        2255,
+        37899,
+        13,
+        51605
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.31464783804757257,
+      "compression_ratio": 1.5800711743772242,
+      "no_speech_prob": 4.94187937100099e-12,
+      "words": [
+        {
+          "word": " dos",
+          "start": 236.14,
+          "end": 236.48,
+          "probability": 0.923828125
+        },
+        {
+          "word": " coordenadores",
+          "start": 236.48,
+          "end": 237.82,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " geral",
+          "start": 237.82,
+          "end": 238.06,
+          "probability": 0.65966796875
+        },
+        {
+          "word": " da",
+          "start": 238.06,
+          "end": 238.2,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " campanha.",
+          "start": 238.2,
+          "end": 238.7,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "seek": 21390,
+      "start": 239.72,
+      "end": 240.14,
+      "text": " Enfim,",
+      "tokens": [
+        51658,
+        2193,
+        69,
+        332,
+        11,
+        51679
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.31464783804757257,
+      "compression_ratio": 1.5800711743772242,
+      "no_speech_prob": 4.94187937100099e-12,
+      "words": [
+        {
+          "word": " Enfim,",
+          "start": 239.72,
+          "end": 240.14,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "seek": 21390,
+      "start": 240.44,
+      "end": 241.28,
+      "text": " deixa Deus te usar aí.",
+      "tokens": [
+        51679,
+        26208,
+        15057,
+        535,
+        14745,
+        7461,
+        13,
+        51741
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.31464783804757257,
+      "compression_ratio": 1.5800711743772242,
+      "no_speech_prob": 4.94187937100099e-12,
+      "words": [
+        {
+          "word": " deixa",
+          "start": 240.44,
+          "end": 240.64,
+          "probability": 0.99560546875
+        },
+        {
+          "word": " Deus",
+          "start": 240.64,
+          "end": 240.8,
+          "probability": 0.568359375
+        },
+        {
+          "word": " te",
+          "start": 240.8,
+          "end": 240.92,
+          "probability": 0.69970703125
+        },
+        {
+          "word": " usar",
+          "start": 240.92,
+          "end": 241.12,
+          "probability": 0.9873046875
+        },
+        {
+          "word": " aí.",
+          "start": 241.12,
+          "end": 241.28,
+          "probability": 0.9716796875
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "seek": 21390,
+      "start": 242.24,
+      "end": 243.22,
+      "text": " É isso aí, garoto.",
+      "tokens": [
+        51787,
+        4922,
+        4616,
+        7461,
+        11,
+        3691,
+        6738,
+        13,
+        51832
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.31464783804757257,
+      "compression_ratio": 1.5800711743772242,
+      "no_speech_prob": 4.94187937100099e-12,
+      "words": [
+        {
+          "word": " É",
+          "start": 242.24,
+          "end": 242.48,
+          "probability": 0.994140625
+        },
+        {
+          "word": " isso",
+          "start": 242.48,
+          "end": 242.66,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " aí,",
+          "start": 242.66,
+          "end": 242.74,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " garoto.",
+          "start": 242.82,
+          "end": 243.22,
+          "probability": 0.9990234375
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "seek": 24390,
+      "start": 244.23999999999998,
+      "end": 250.32,
+      "text": " Um abraço aí, sucesso aí nessa etapa aí, valeu!",
+      "tokens": [
+        50365,
+        3301,
+        33693,
+        8560,
+        7461,
+        11,
+        459,
+        43611,
+        7461,
+        23246,
+        1030,
+        7961,
+        7461,
+        11,
+        15474,
+        84,
+        0,
+        50687
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.226190868176912,
+      "compression_ratio": 1.0,
+      "no_speech_prob": 2.3507443821374485e-12,
+      "words": [
+        {
+          "word": " Um",
+          "start": 244.23999999999998,
+          "end": 244.98,
+          "probability": 0.78564453125
+        },
+        {
+          "word": " abraço",
+          "start": 244.98,
+          "end": 245.42,
+          "probability": 1.0
+        },
+        {
+          "word": " aí,",
+          "start": 245.42,
+          "end": 245.6,
+          "probability": 0.75
+        },
+        {
+          "word": " sucesso",
+          "start": 245.98,
+          "end": 246.62,
+          "probability": 0.9951171875
+        },
+        {
+          "word": " aí",
+          "start": 246.62,
+          "end": 246.8,
+          "probability": 0.88427734375
+        },
+        {
+          "word": " nessa",
+          "start": 246.8,
+          "end": 247.14,
+          "probability": 0.98828125
+        },
+        {
+          "word": " etapa",
+          "start": 247.14,
+          "end": 249.46,
+          "probability": 0.9208984375
+        },
+        {
+          "word": " aí,",
+          "start": 249.46,
+          "end": 249.72,
+          "probability": 0.98046875
+        },
+        {
+          "word": " valeu!",
+          "start": 249.9,
+          "end": 250.32,
+          "probability": 0.9990234375
+        }
+      ]
+    }
+  ],
+  "language": "pt"
+}

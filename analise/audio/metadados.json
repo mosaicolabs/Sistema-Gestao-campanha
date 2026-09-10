@@ -1,0 +1,11 @@
+{
+  "arquivo": "/Users/joaomvalente/Downloads/WhatsApp Audio 2026-09-10 at 06.44.38.ogg",
+  "duracao_segundos": 250.9535,
+  "sample_rate_processamento": 16000,
+  "modelo": "mlx-community/whisper-large-v3-turbo",
+  "processamento": "inteiramente local, sem envio do áudio",
+  "idioma": "pt",
+  "sha256_arquivo_original": "2c59110a999d9d49476cf1d8173c6bf1837c2b2c0e80926957657bc56f99dc64",
+  "validacao": "Comparação de reconhecimentos automáticos; sem validação auditiva humana",
+  "versao_mlx_whisper": "0.4.3"
+}

@@ -1,0 +1,1762 @@
+{
+  "same_block": {
+    "Marta Rocha": true,
+    "Sostenes": true,
+    "Abraão": true,
+    "Luciano Vieira": true
+  },
+  "same_block_count": 37,
+  "same_block_origins": [
+    {
+      "source": "'Vinicius Farah'!22",
+      "municipal": [
+        "'Rio de Janeiro'!80"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!23",
+      "municipal": [
+        "'Rio de Janeiro'!81"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!24",
+      "municipal": [
+        "'Rio de Janeiro'!82"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!25",
+      "municipal": [
+        "'Rio de Janeiro'!83"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!26",
+      "municipal": [
+        "'Rio de Janeiro'!84"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!27",
+      "municipal": [
+        "'Rio de Janeiro'!85"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!28",
+      "municipal": [
+        "'Rio de Janeiro'!86"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!29",
+      "municipal": [
+        "'Rio de Janeiro'!89"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!30",
+      "municipal": [
+        "'Rio de Janeiro'!90"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!31",
+      "municipal": [
+        "'Rio de Janeiro'!91"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!32",
+      "municipal": [
+        "'Rio de Janeiro'!107"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!33",
+      "municipal": [
+        "'São José do Vale do Rio Preto'!4"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!34",
+      "municipal": [
+        "'Três Rios'!4"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!35",
+      "municipal": [
+        "'Três Rios'!5"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!36",
+      "municipal": [
+        "'Três Rios'!6"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!37",
+      "municipal": [
+        "'Três Rios'!7"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!38",
+      "municipal": [
+        "'Três Rios'!8"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!39",
+      "municipal": [
+        "'Três Rios'!9"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!40",
+      "municipal": [
+        "'Três Rios'!10"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!41",
+      "municipal": [
+        "'Três Rios'!11"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!42",
+      "municipal": [
+        "'Três Rios'!12"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!43",
+      "municipal": [
+        "'Três Rios'!13"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!44",
+      "municipal": [
+        "'Três Rios'!14"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!45",
+      "municipal": [
+        "'Três Rios'!15"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!46",
+      "municipal": [
+        "'Três Rios'!16"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!47",
+      "municipal": [
+        "'Três Rios'!17"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!48",
+      "municipal": [
+        "'Três Rios'!18"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!49",
+      "municipal": [
+        "'Três Rios'!19"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!50",
+      "municipal": [
+        "'Três Rios'!20"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!51",
+      "municipal": [
+        "'Três Rios'!21"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!52",
+      "municipal": [
+        "'Três Rios'!22"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!53",
+      "municipal": [
+        "'Três Rios'!23"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!54",
+      "municipal": [
+        "'Três Rios'!24"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!55",
+      "municipal": [
+        "'Três Rios'!25"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!56",
+      "municipal": [
+        "'Três Rios'!26"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!57",
+      "municipal": [
+        "'Três Rios'!27"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    },
+    {
+      "source": "'Vinicius Farah'!58",
+      "municipal": [
+        "'Valença'!3"
+      ],
+      "label": [
+        "VINICIUS FARAH"
+      ]
+    }
+  ],
+  "index_entries": [
+    {
+      "sheet": ">>COSTA VERDE<<",
+      "cell": "A3",
+      "label": "Angra dos Reis",
+      "quantity": 9.0,
+      "target": "Angra dos Reis",
+      "records": 8,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>COSTA VERDE<<",
+      "cell": "A4",
+      "label": "Itaguaí",
+      "quantity": null,
+      "target": "Itaguaí",
+      "records": 1,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>COSTA VERDE<<",
+      "cell": "A5",
+      "label": "Mangaratiba",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>COSTA VERDE<<",
+      "cell": "A6",
+      "label": "Paraty",
+      "quantity": 4.0,
+      "target": "Paraty",
+      "records": 4,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>COSTA VERDE<<",
+      "cell": "A7",
+      "label": "ITAGUAÍ",
+      "quantity": null,
+      "target": "Itaguaí",
+      "records": 1,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A3",
+      "label": "Barra do Piraí",
+      "quantity": 58.0,
+      "target": "Barra do Piraí",
+      "records": 58,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A4",
+      "label": "Barra Mansa",
+      "quantity": 84.0,
+      "target": "Barra Mansa",
+      "records": 84,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A5",
+      "label": "Lídice",
+      "quantity": 3.0,
+      "target": "Lídice",
+      "records": 3,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A6",
+      "label": "Itatiaia",
+      "quantity": 0.0,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A7",
+      "label": "Pinheiral",
+      "quantity": 19.0,
+      "target": "Pinheiral",
+      "records": 19,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A8",
+      "label": "Piraí",
+      "quantity": 2.0,
+      "target": "Piraí",
+      "records": 2,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A9",
+      "label": "Porto Real",
+      "quantity": 12.0,
+      "target": "Porto Real",
+      "records": 12,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A10",
+      "label": "Quatis",
+      "quantity": 2.0,
+      "target": "Quatis",
+      "records": 2,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A11",
+      "label": "Resende",
+      "quantity": 10.0,
+      "target": "Resende",
+      "records": 10,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A12",
+      "label": "Rio Claro",
+      "quantity": 13.0,
+      "target": "Rio Claro",
+      "records": 13,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A13",
+      "label": "Rio das Flores",
+      "quantity": 0.0,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A14",
+      "label": "Valença",
+      "quantity": 1.0,
+      "target": "Valença",
+      "records": 1,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A15",
+      "label": "Volta Redonda",
+      "quantity": 161.0,
+      "target": "Volta Redonda",
+      "records": 164,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>METROPOLITANA<<",
+      "cell": "A3",
+      "label": "Belford Roxo",
+      "quantity": 1.0,
+      "target": "Belford Roxo",
+      "records": 1,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>METROPOLITANA<<",
+      "cell": "A4",
+      "label": "Duque de Caxias",
+      "quantity": 11.0,
+      "target": "Duque de Caxias",
+      "records": 11,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>METROPOLITANA<<",
+      "cell": "A5",
+      "label": "Guapimirim",
+      "quantity": 3.0,
+      "target": "Guapimirim",
+      "records": 3,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>METROPOLITANA<<",
+      "cell": "A6",
+      "label": "Japeri",
+      "quantity": 10.0,
+      "target": "Japeri",
+      "records": 10,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>METROPOLITANA<<",
+      "cell": "A7",
+      "label": "Magé",
+      "quantity": 5.0,
+      "target": "Magé",
+      "records": 5,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>METROPOLITANA<<",
+      "cell": "A8",
+      "label": "Maricá",
+      "quantity": 5.0,
+      "target": "Maricá",
+      "records": 5,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>METROPOLITANA<<",
+      "cell": "A9",
+      "label": "Mesquita",
+      "quantity": 3.0,
+      "target": "Mesquita",
+      "records": 3,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>METROPOLITANA<<",
+      "cell": "A10",
+      "label": "Nilópolis",
+      "quantity": 3.0,
+      "target": "Nilópolis",
+      "records": 3,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>METROPOLITANA<<",
+      "cell": "A11",
+      "label": "Niterói",
+      "quantity": 9.0,
+      "target": "Niterói",
+      "records": 9,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>METROPOLITANA<<",
+      "cell": "A12",
+      "label": "Nova Iguaçu",
+      "quantity": 5.0,
+      "target": "Nova Iguaçu",
+      "records": 5,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>METROPOLITANA<<",
+      "cell": "A13",
+      "label": "Paracambi",
+      "quantity": 1.0,
+      "target": "Paracambi",
+      "records": 1,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>METROPOLITANA<<",
+      "cell": "A14",
+      "label": "Queimados",
+      "quantity": 2.0,
+      "target": "Queimados",
+      "records": 2,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>METROPOLITANA<<",
+      "cell": "A15",
+      "label": "Rio de Janeiro",
+      "quantity": 120.0,
+      "target": "Rio de Janeiro",
+      "records": 120,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>METROPOLITANA<<",
+      "cell": "A16",
+      "label": "São Gonçalo",
+      "quantity": 6.0,
+      "target": "São Gonçalo",
+      "records": 6,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>METROPOLITANA<<",
+      "cell": "A17",
+      "label": "São João de Meriti",
+      "quantity": 1.0,
+      "target": "São João de Meriti",
+      "records": 1,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A3",
+      "label": "Aperibé",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A4",
+      "label": "Bom Jesus do Itabapoana",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A5",
+      "label": "Cambuci",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A6",
+      "label": "Cardoso Moreira",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A7",
+      "label": "Italva",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A8",
+      "label": "Itaocara",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A9",
+      "label": "Itaperuna",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A10",
+      "label": "Laje do Muriaé",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A11",
+      "label": "Miracema",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A12",
+      "label": "Natividade",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A13",
+      "label": "Porciúncula",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A14",
+      "label": "Santo Antônio de Pádua",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A15",
+      "label": "São José de Ubá",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A16",
+      "label": "Varre-Sai",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NORTE FLUMINENSE<<",
+      "cell": "A3",
+      "label": "Campos dos Goytacazes",
+      "quantity": 2.0,
+      "target": "Campos dos Goytacazes",
+      "records": 2,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>NORTE FLUMINENSE<<",
+      "cell": "A4",
+      "label": "Carapebus",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NORTE FLUMINENSE<<",
+      "cell": "A5",
+      "label": "Conceição de Macabu",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NORTE FLUMINENSE<<",
+      "cell": "A6",
+      "label": "Macaé",
+      "quantity": 2.0,
+      "target": "Macaé",
+      "records": 2,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>NORTE FLUMINENSE<<",
+      "cell": "A7",
+      "label": "Quissamã",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NORTE FLUMINENSE<<",
+      "cell": "A8",
+      "label": "São Fidélis",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NORTE FLUMINENSE<<",
+      "cell": "A9",
+      "label": "São Francisco de Itabapoana",
+      "quantity": 1.0,
+      "target": "São Francisco de Itabapoana",
+      "records": 1,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>NORTE FLUMINENSE<<",
+      "cell": "A10",
+      "label": "São João da Barra",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>REGIÃO DOS LAGOS<<",
+      "cell": "A3",
+      "label": "Araruama",
+      "quantity": 4.0,
+      "target": "Araruama",
+      "records": 4,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>REGIÃO DOS LAGOS<<",
+      "cell": "A4",
+      "label": "Armação dos Búzios",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>REGIÃO DOS LAGOS<<",
+      "cell": "A5",
+      "label": "Arraial do Cabo",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>REGIÃO DOS LAGOS<<",
+      "cell": "A6",
+      "label": "Cabo Frio",
+      "quantity": 1.0,
+      "target": "Cabo Frio",
+      "records": 1,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>REGIÃO DOS LAGOS<<",
+      "cell": "A7",
+      "label": "Casimiro de Abreu",
+      "quantity": 1.0,
+      "target": "Casemiro de Abreu",
+      "records": 1,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>REGIÃO DOS LAGOS<<",
+      "cell": "A8",
+      "label": "Iguaba Grande",
+      "quantity": 14.0,
+      "target": "Iguaba Grande",
+      "records": 14,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>REGIÃO DOS LAGOS<<",
+      "cell": "A9",
+      "label": "Rio das Ostras",
+      "quantity": 1.0,
+      "target": "Rio das Ostras",
+      "records": 1,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>REGIÃO DOS LAGOS<<",
+      "cell": "A10",
+      "label": "São Pedro da Aldeia",
+      "quantity": 4.0,
+      "target": "São Pedro da Aldeia",
+      "records": 4,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>REGIÃO DOS LAGOS<<",
+      "cell": "A11",
+      "label": "Saquarema",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>REGIÃO DOS LAGOS<<",
+      "cell": "A12",
+      "label": "Silva Jardim",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A3",
+      "label": "Bom Jardim",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A4",
+      "label": "Cachoeiras de Macacu",
+      "quantity": 1.0,
+      "target": "Cachoeiras de Macacu",
+      "records": 1,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A5",
+      "label": "Cantagalo",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A6",
+      "label": "Carmo",
+      "quantity": 1.0,
+      "target": "Carmo",
+      "records": 1,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A7",
+      "label": "Cordeiro",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A8",
+      "label": "Duas Barras",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A9",
+      "label": "Macuco",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A10",
+      "label": "Nova Friburgo",
+      "quantity": 1.0,
+      "target": "Nova Friburgo",
+      "records": 1,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A11",
+      "label": "Petrópolis",
+      "quantity": 4.0,
+      "target": "Petrópolis",
+      "records": 4,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A12",
+      "label": "Santa Maria Madalena",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A13",
+      "label": "São José do Vale do Rio Preto",
+      "quantity": 6.0,
+      "target": "São José do Vale do Rio Preto",
+      "records": 6,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A14",
+      "label": "São Sebastião do Alto",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A15",
+      "label": "Sumidouro",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A16",
+      "label": "Teresópolis",
+      "quantity": null,
+      "target": "Teresópolis",
+      "records": 1,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A17",
+      "label": "Trajano de Moraes",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>CENTRO SUL<<",
+      "cell": "A3",
+      "label": "Areal",
+      "quantity": 2.0,
+      "target": "Areal",
+      "records": 2,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>CENTRO SUL<<",
+      "cell": "A4",
+      "label": "Comendador Levy Gasparian",
+      "quantity": 1.0,
+      "target": "Comendador Levy Gasparian",
+      "records": 1,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>CENTRO SUL<<",
+      "cell": "A5",
+      "label": "Engenheiro Paulo de Frontin",
+      "quantity": 10.0,
+      "target": "Engenheiro Paulo de Frontin",
+      "records": 10,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>CENTRO SUL<<",
+      "cell": "A6",
+      "label": "Mendes",
+      "quantity": null,
+      "target": "Mendes",
+      "records": 0,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>CENTRO SUL<<",
+      "cell": "A7",
+      "label": "Miguel Pereira",
+      "quantity": 9.0,
+      "target": "Miguel Pereira",
+      "records": 9,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>CENTRO SUL<<",
+      "cell": "A8",
+      "label": "Paraíba do Sul",
+      "quantity": 4.0,
+      "target": "Paraíba do Sul",
+      "records": 4,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>CENTRO SUL<<",
+      "cell": "A9",
+      "label": "Paty do Alferes",
+      "quantity": 1.0,
+      "target": "Paty do Alferes",
+      "records": 6,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>CENTRO SUL<<",
+      "cell": "A10",
+      "label": "Sapucaia",
+      "quantity": 1.0,
+      "target": "Sapucaia",
+      "records": 1,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>CENTRO SUL<<",
+      "cell": "A11",
+      "label": "Três Rios",
+      "quantity": 25.0,
+      "target": "Três Rios",
+      "records": 25,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>CENTRO SUL<<",
+      "cell": "A12",
+      "label": "Vassouras",
+      "quantity": 13.0,
+      "target": "Vassouras",
+      "records": 13,
+      "hyperlink": true
+    }
+  ],
+  "index_without_sheet": [
+    {
+      "sheet": ">>COSTA VERDE<<",
+      "cell": "A5",
+      "label": "Mangaratiba",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A6",
+      "label": "Itatiaia",
+      "quantity": 0.0,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A13",
+      "label": "Rio das Flores",
+      "quantity": 0.0,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A3",
+      "label": "Aperibé",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A4",
+      "label": "Bom Jesus do Itabapoana",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A5",
+      "label": "Cambuci",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A6",
+      "label": "Cardoso Moreira",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A7",
+      "label": "Italva",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A8",
+      "label": "Itaocara",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A9",
+      "label": "Itaperuna",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A10",
+      "label": "Laje do Muriaé",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A11",
+      "label": "Miracema",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A12",
+      "label": "Natividade",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A13",
+      "label": "Porciúncula",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A14",
+      "label": "Santo Antônio de Pádua",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A15",
+      "label": "São José de Ubá",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NOROESTE FLUMINENSE<<",
+      "cell": "A16",
+      "label": "Varre-Sai",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NORTE FLUMINENSE<<",
+      "cell": "A4",
+      "label": "Carapebus",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NORTE FLUMINENSE<<",
+      "cell": "A5",
+      "label": "Conceição de Macabu",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NORTE FLUMINENSE<<",
+      "cell": "A7",
+      "label": "Quissamã",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NORTE FLUMINENSE<<",
+      "cell": "A8",
+      "label": "São Fidélis",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>NORTE FLUMINENSE<<",
+      "cell": "A10",
+      "label": "São João da Barra",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>REGIÃO DOS LAGOS<<",
+      "cell": "A4",
+      "label": "Armação dos Búzios",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>REGIÃO DOS LAGOS<<",
+      "cell": "A5",
+      "label": "Arraial do Cabo",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>REGIÃO DOS LAGOS<<",
+      "cell": "A11",
+      "label": "Saquarema",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>REGIÃO DOS LAGOS<<",
+      "cell": "A12",
+      "label": "Silva Jardim",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A3",
+      "label": "Bom Jardim",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A5",
+      "label": "Cantagalo",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A7",
+      "label": "Cordeiro",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A8",
+      "label": "Duas Barras",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A9",
+      "label": "Macuco",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A12",
+      "label": "Santa Maria Madalena",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A14",
+      "label": "São Sebastião do Alto",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A15",
+      "label": "Sumidouro",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A17",
+      "label": "Trajano de Moraes",
+      "quantity": null,
+      "target": null,
+      "records": null,
+      "hyperlink": false
+    }
+  ],
+  "sheets_without_link": [
+    "Mendes",
+    "Teresópolis"
+  ],
+  "sheets_without_entry": [],
+  "duplicate_index_names": [
+    [
+      {
+        "sheet": ">>COSTA VERDE<<",
+        "cell": "A4",
+        "label": "Itaguaí",
+        "quantity": null,
+        "target": "Itaguaí",
+        "records": 1,
+        "hyperlink": true
+      },
+      {
+        "sheet": ">>COSTA VERDE<<",
+        "cell": "A7",
+        "label": "ITAGUAÍ",
+        "quantity": null,
+        "target": "Itaguaí",
+        "records": 1,
+        "hyperlink": false
+      }
+    ]
+  ],
+  "mismatching_index_counts": [
+    {
+      "sheet": ">>COSTA VERDE<<",
+      "cell": "A3",
+      "label": "Angra dos Reis",
+      "quantity": 9.0,
+      "target": "Angra dos Reis",
+      "records": 8,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>COSTA VERDE<<",
+      "cell": "A4",
+      "label": "Itaguaí",
+      "quantity": null,
+      "target": "Itaguaí",
+      "records": 1,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>COSTA VERDE<<",
+      "cell": "A7",
+      "label": "ITAGUAÍ",
+      "quantity": null,
+      "target": "Itaguaí",
+      "records": 1,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>SUL FLUNINENSE<<",
+      "cell": "A15",
+      "label": "Volta Redonda",
+      "quantity": 161.0,
+      "target": "Volta Redonda",
+      "records": 164,
+      "hyperlink": true
+    },
+    {
+      "sheet": ">>SERRANA<<",
+      "cell": "A16",
+      "label": "Teresópolis",
+      "quantity": null,
+      "target": "Teresópolis",
+      "records": 1,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>CENTRO SUL<<",
+      "cell": "A6",
+      "label": "Mendes",
+      "quantity": null,
+      "target": "Mendes",
+      "records": 0,
+      "hyperlink": false
+    },
+    {
+      "sheet": ">>CENTRO SUL<<",
+      "cell": "A9",
+      "label": "Paty do Alferes",
+      "quantity": 1.0,
+      "target": "Paty do Alferes",
+      "records": 6,
+      "hyperlink": true
+    }
+  ],
+  "regions": {
+    ">>COSTA VERDE<<": {
+      "index_sum": 13.0,
+      "record_sum": 13
+    },
+    ">>SUL FLUNINENSE<<": {
+      "index_sum": 365.0,
+      "record_sum": 368
+    },
+    ">>METROPOLITANA<<": {
+      "index_sum": 185.0,
+      "record_sum": 185
+    },
+    ">>NOROESTE FLUMINENSE<<": {
+      "index_sum": 0,
+      "record_sum": 0
+    },
+    ">>NORTE FLUMINENSE<<": {
+      "index_sum": 5.0,
+      "record_sum": 5
+    },
+    ">>REGIÃO DOS LAGOS<<": {
+      "index_sum": 25.0,
+      "record_sum": 25
+    },
+    ">>SERRANA<<": {
+      "index_sum": 13.0,
+      "record_sum": 14
+    },
+    ">>CENTRO SUL<<": {
+      "index_sum": 66.0,
+      "record_sum": 71
+    }
+  },
+  "totals": {
+    "index_main_regions": 672.0,
+    "index_main_recortes": 591.0
+  },
+  "view_city_names_unmatched": {
+    "CACHOEIRA DE MACACU": 1,
+    "CAMPOS DOS GOYTACASES": 2,
+    "CASEMIRO DE ABEU": 1,
+    "COMENDADOR LEVY GASPARIAM": 1,
+    "ENGENHEIRO PAULO DE FRONTIM": 1,
+    "PATY DO ALVERES": 2
+  },
+  "municipal_same_city_leader_candidates": [
+    {
+      "refs": [
+        "'Barra Mansa'!30",
+        "'Barra Mansa'!35"
+      ],
+      "differences": [
+        5
+      ]
+    },
+    {
+      "refs": [
+        "'Barra do Piraí'!10",
+        "'Barra do Piraí'!44"
+      ],
+      "differences": [
+        2,
+        5
+      ]
+    },
+    {
+      "refs": [
+        "'Barra do Piraí'!32",
+        "'Barra do Piraí'!51"
+      ],
+      "differences": [
+        2
+      ]
+    },
+    {
+      "refs": [
+        "'Porto Real'!6",
+        "'Porto Real'!13"
+      ],
+      "differences": [
+        1,
+        8
+      ]
+    },
+    {
+      "refs": [
+        "'Rio de Janeiro'!6",
+        "'Rio de Janeiro'!99"
+      ],
+      "differences": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "refs": [
+        "'Rio de Janeiro'!10",
+        "'Rio de Janeiro'!101"
+      ],
+      "differences": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "refs": [
+        "'Rio de Janeiro'!21",
+        "'Rio de Janeiro'!95"
+      ],
+      "differences": [
+        5,
+        6
+      ]
+    },
+    {
+      "refs": [
+        "'Rio de Janeiro'!53",
+        "'Rio de Janeiro'!107"
+      ],
+      "differences": [
+        1,
+        6,
+        8
+      ]
+    },
+    {
+      "refs": [
+        "'Volta Redonda'!7",
+        "'Volta Redonda'!121"
+      ],
+      "differences": [
+        5
+      ]
+    },
+    {
+      "refs": [
+        "'Volta Redonda'!22",
+        "'Volta Redonda'!150"
+      ],
+      "differences": [
+        2,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "refs": [
+        "'Volta Redonda'!110",
+        "'Volta Redonda'!140"
+      ],
+      "differences": [
+        5
+      ]
+    },
+    {
+      "refs": [
+        "'Volta Redonda'!113",
+        "'Volta Redonda'!145"
+      ],
+      "differences": [
+        2,
+        5
+      ]
+    },
+    {
+      "refs": [
+        "'Volta Redonda'!131",
+        "'Volta Redonda'!147"
+      ],
+      "differences": [
+        2,
+        5
+      ]
+    }
+  ],
+  "municipal_no_articulador": [
+    "'Petrópolis'!A6",
+    "'Rio de Janeiro'!A15"
+  ],
+  "validations": [
+    {
+      "sheet": ">>CENTRO SUL<<",
+      "rules": [
+        {
+          "range": "E3",
+          "type": "list",
+          "formula1": "\"Sim,Não\"",
+          "formula2": null
+        }
+      ]
+    }
+  ],
+  "municipal_header_mismatch": []
+}

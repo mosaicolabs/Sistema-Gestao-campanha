@@ -1,0 +1,29 @@
+{
+  "name": "sistema-gestao-campanha",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "dotenv -e .env -- concurrently --kill-others-on-fail -n API,WEB -c cyan,yellow \"npm run dev -w @campanha/api\" \"npm run dev -w @campanha/web\"",
+    "build": "npm run build -w @campanha/types && npm run build -w @campanha/validation && npm run build -w @campanha/database && npm run build -w @campanha/api && npm run build -w @campanha/web",
+    "build:packages": "npm run build -w @campanha/types && npm run build -w @campanha/validation && npm run build -w @campanha/database",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run build:packages && npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "db:generate": "dotenv -e .env -- npm run prisma:generate -w @campanha/database",
+    "db:migrate": "dotenv -e .env -- npm run prisma:migrate -w @campanha/database",
+    "db:seed": "dotenv -e .env -- npm run prisma:seed -w @campanha/database",
+    "db:studio": "dotenv -e .env -- npm run prisma:studio -w @campanha/database"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "dotenv-cli": "^10.0.0",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

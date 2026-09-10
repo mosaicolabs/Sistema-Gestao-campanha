@@ -1,0 +1,588 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum RecordStatus {
+  ACTIVE
+  INACTIVE
+  PENDING_REVIEW
+}
+
+enum UserStatus {
+  ACTIVE
+  SUSPENDED
+}
+
+enum ContactType {
+  PHONE
+  WHATSAPP
+  EMAIL
+  OTHER
+}
+
+enum LocalityType {
+  STATE
+  REGION
+  CITY
+  LOCAL_AREA
+}
+
+enum ImportCategory {
+  GENERAL_INDEX
+  REGIONAL_INDEX
+  TERRITORIAL
+  ALLIANCE
+  UNKNOWN
+}
+
+enum ImportStatus {
+  PROCESSING
+  REVIEW_REQUIRED
+  CLOSED
+  FAILED
+}
+
+enum IssueType {
+  DUPLICATE_BLOCK
+  DUPLICATE_RECORD
+  DUPLICATE_CANDIDATE
+  REPEATED_PHONE
+  SHIFTED_FIELDS
+  MISSING_FIELD
+  LOCALITY_ALIAS
+  BROKEN_LINK
+  COUNT_MISMATCH
+  OTHER
+}
+
+enum IssueSeverity {
+  INFO
+  WARNING
+  CRITICAL
+}
+
+enum IssueStatus {
+  OPEN
+  REVIEWING
+  RESOLVED
+  DISMISSED
+}
+
+enum ReconciliationAction {
+  KEEP
+  REJECT
+  MERGE
+  SPLIT
+  CORRECT
+}
+
+enum TaskPriority {
+  LOW
+  MEDIUM
+  HIGH
+  URGENT
+}
+
+enum EventStatus {
+  SCHEDULED
+  CANCELLED
+  COMPLETED
+}
+
+enum Visibility {
+  PRIVATE
+  TEAM
+}
+
+enum DeliveryStatus {
+  REQUESTED
+  PLANNED
+  IN_TRANSIT
+  DELIVERED
+  CANCELLED
+  BLOCKED
+}
+
+enum NotificationChannel {
+  WHATSAPP
+}
+
+enum NotificationStatus {
+  PENDING
+  SENT
+  FAILED
+  DISABLED
+}
+
+enum ProductDecisionStatus {
+  PENDING
+  CONFIRMED
+}
+
+model Person {
+  id            String             @id @default(cuid())
+  displayName   String
+  canonicalName String
+  status        RecordStatus       @default(ACTIVE)
+  notes         String?
+  createdAt     DateTime           @default(now())
+  updatedAt     DateTime           @updatedAt
+  aliases       PersonAlias[]
+  contacts      Contact[]
+  assignments   PersonAssignment[]
+  alliances     PersonAlliance[]
+  user          User?
+
+  @@index([canonicalName])
+  @@index([status])
+}
+
+model PersonAlias {
+  id                   String            @id @default(cuid())
+  personId             String
+  value                String
+  sourceOccurrenceId   String?
+  person               Person            @relation(fields: [personId], references: [id], onDelete: Cascade)
+  sourceOccurrence     SourceOccurrence? @relation(fields: [sourceOccurrenceId], references: [id], onDelete: SetNull)
+  createdAt            DateTime          @default(now())
+
+  @@unique([personId, value])
+}
+
+model Contact {
+  id              String       @id @default(cuid())
+  personId        String
+  type            ContactType
+  valueRaw        String
+  valueNormalized String
+  isPrimary       Boolean      @default(false)
+  status          RecordStatus @default(ACTIVE)
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+  person          Person       @relation(fields: [personId], references: [id], onDelete: Cascade)
+
+  @@index([valueNormalized])
+}
+
+model Locality {
+  id            String          @id @default(cuid())
+  name          String
+  canonicalName String
+  type          LocalityType
+  parentId      String?
+  status        RecordStatus    @default(ACTIVE)
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+  parent        Locality?       @relation("LocalityHierarchy", fields: [parentId], references: [id], onDelete: SetNull)
+  children      Locality[]      @relation("LocalityHierarchy")
+  aliases       LocalityAlias[]
+  assignments   PersonAssignment[]
+  alliances     PersonAlliance[]
+  events        CalendarEvent[]
+  deliveries    Delivery[]
+
+  @@unique([canonicalName, type])
+  @@index([parentId])
+}
+
+model LocalityAlias {
+  id                   String            @id @default(cuid())
+  localityId           String
+  value                String
+  sourceOccurrenceId   String?
+  locality             Locality          @relation(fields: [localityId], references: [id], onDelete: Cascade)
+  sourceOccurrence     SourceOccurrence? @relation(fields: [sourceOccurrenceId], references: [id], onDelete: SetNull)
+  createdAt            DateTime          @default(now())
+
+  @@unique([localityId, value])
+}
+
+model BusinessRole {
+  id          String             @id @default(cuid())
+  code        String             @unique
+  name        String
+  description String?
+  assignments PersonAssignment[]
+}
+
+model PersonAssignment {
+  id                    String              @id @default(cuid())
+  personId              String
+  businessRoleId        String
+  localityId            String
+  reportsToAssignmentId String?
+  startsAt              DateTime?
+  endsAt                DateTime?
+  status                RecordStatus        @default(ACTIVE)
+  createdAt             DateTime            @default(now())
+  updatedAt             DateTime            @updatedAt
+  person                Person              @relation(fields: [personId], references: [id], onDelete: Cascade)
+  businessRole          BusinessRole        @relation(fields: [businessRoleId], references: [id])
+  locality              Locality            @relation(fields: [localityId], references: [id])
+  reportsTo             PersonAssignment?   @relation("AssignmentHierarchy", fields: [reportsToAssignmentId], references: [id], onDelete: SetNull)
+  reports               PersonAssignment[]  @relation("AssignmentHierarchy")
+
+  @@index([personId, localityId])
+  @@index([businessRoleId, localityId])
+}
+
+model Alliance {
+  id            String           @id @default(cuid())
+  name          String
+  canonicalName String           @unique
+  status        RecordStatus     @default(ACTIVE)
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
+  members       PersonAlliance[]
+}
+
+model PersonAlliance {
+  id                   String            @id @default(cuid())
+  personId             String
+  allianceId           String
+  localityId           String?
+  sourceOccurrenceId   String?
+  startsAt             DateTime?
+  endsAt               DateTime?
+  status               RecordStatus      @default(PENDING_REVIEW)
+  createdAt            DateTime          @default(now())
+  updatedAt            DateTime          @updatedAt
+  person               Person            @relation(fields: [personId], references: [id], onDelete: Cascade)
+  alliance             Alliance          @relation(fields: [allianceId], references: [id])
+  locality             Locality?         @relation(fields: [localityId], references: [id], onDelete: SetNull)
+  sourceOccurrence     SourceOccurrence? @relation(fields: [sourceOccurrenceId], references: [id], onDelete: SetNull)
+
+  @@index([personId, allianceId])
+}
+
+model User {
+  id                       String                    @id @default(cuid())
+  personId                 String?                   @unique
+  username                 String                    @unique
+  passwordHash             String
+  status                   UserStatus                @default(ACTIVE)
+  mustChangePassword       Boolean                   @default(true)
+  lastLoginAt              DateTime?
+  createdAt                DateTime                  @default(now())
+  updatedAt                DateTime                  @updatedAt
+  person                   Person?                   @relation(fields: [personId], references: [id], onDelete: SetNull)
+  roles                    UserAccessRole[]
+  createdTasks             Task[]                    @relation("TaskCreator")
+  taskAssignments          TaskAssignee[]
+  createdEvents            CalendarEvent[]           @relation("EventCreator")
+  eventParticipations      EventParticipant[]
+  responsibleDeliveries    Delivery[]                @relation("DeliveryResponsible")
+  createdImports           ImportBatch[]             @relation("ImportCreator")
+  reconciliationDecisions  ReconciliationDecision[]  @relation("DecisionAuthor")
+  auditLogs                AuditLog[]
+}
+
+model AccessRole {
+  id          String                 @id @default(cuid())
+  code        String                 @unique
+  name        String
+  description String?
+  permissions AccessRolePermission[]
+  users       UserAccessRole[]
+}
+
+model Permission {
+  id       String                 @id @default(cuid())
+  resource String
+  action   String
+  roles    AccessRolePermission[]
+
+  @@unique([resource, action])
+}
+
+model AccessRolePermission {
+  accessRoleId String
+  permissionId String
+  accessRole   AccessRole @relation(fields: [accessRoleId], references: [id], onDelete: Cascade)
+  permission   Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@id([accessRoleId, permissionId])
+}
+
+model UserAccessRole {
+  userId       String
+  accessRoleId String
+  scopeType    String     @default("GLOBAL")
+  scopeId      String?
+  user         User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessRole   AccessRole @relation(fields: [accessRoleId], references: [id], onDelete: Cascade)
+
+  @@id([userId, accessRoleId, scopeType])
+}
+
+model ImportBatch {
+  id                         String             @id @default(cuid())
+  filename                   String
+  fileHash                   String             @unique
+  status                     ImportStatus       @default(PROCESSING)
+  workbookTabs               Int                @default(0)
+  territorialOccurrences     Int                @default(0)
+  allianceOccurrences        Int                @default(0)
+  ignoredRows                Int                @default(0)
+  manualTerritorialIndex     Int?
+  manualAllianceIndex        Int?
+  consolidatedPeople         Int                @default(0)
+  consolidatedAssignments    Int                @default(0)
+  consolidatedAlliances      Int                @default(0)
+  createdById                String?
+  createdAt                  DateTime           @default(now())
+  finishedAt                 DateTime?
+  createdBy                  User?              @relation("ImportCreator", fields: [createdById], references: [id], onDelete: SetNull)
+  occurrences                SourceOccurrence[]
+  issues                     ImportIssue[]
+
+  @@index([createdAt])
+}
+
+model SourceOccurrence {
+  id               String             @id @default(cuid())
+  importBatchId    String
+  sheetName        String
+  rowNumber        Int
+  category         ImportCategory
+  rawValues        Json
+  normalizedValues Json?
+  rowHash          String
+  createdAt        DateTime           @default(now())
+  importBatch      ImportBatch        @relation(fields: [importBatchId], references: [id], onDelete: Cascade)
+  issues           ImportIssue[]
+  personAliases    PersonAlias[]
+  localityAliases  LocalityAlias[]
+  personAlliances  PersonAlliance[]
+  entitySources    EntitySource[]
+
+  @@unique([importBatchId, sheetName, rowNumber, category])
+  @@index([rowHash])
+}
+
+model ImportIssue {
+  id           String         @id @default(cuid())
+  importBatchId String
+  occurrenceId String?
+  type         IssueType
+  severity     IssueSeverity
+  title        String
+  details      Json
+  status       IssueStatus    @default(OPEN)
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  importBatch  ImportBatch    @relation(fields: [importBatchId], references: [id], onDelete: Cascade)
+  occurrence   SourceOccurrence? @relation(fields: [occurrenceId], references: [id], onDelete: SetNull)
+  decisions    ReconciliationDecision[]
+
+  @@index([status, severity])
+}
+
+model ReconciliationDecision {
+  id               String                @id @default(cuid())
+  issueId          String
+  decision         ReconciliationAction
+  targetEntityType String?
+  targetEntityId   String?
+  reason           String
+  decidedById      String
+  decidedAt        DateTime              @default(now())
+  issue            ImportIssue           @relation(fields: [issueId], references: [id], onDelete: Cascade)
+  decidedBy        User                  @relation("DecisionAuthor", fields: [decidedById], references: [id])
+
+  @@index([issueId, decidedAt])
+}
+
+model EntitySource {
+  id           String           @id @default(cuid())
+  entityType   String
+  entityId     String
+  occurrenceId String
+  fieldMapping Json?
+  occurrence   SourceOccurrence @relation(fields: [occurrenceId], references: [id], onDelete: Cascade)
+
+  @@unique([entityType, entityId, occurrenceId])
+}
+
+model KanbanBoard {
+  id              String          @id @default(cuid())
+  name            String
+  visibilityScope String          @default("TEAM")
+  status          RecordStatus    @default(ACTIVE)
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  columns         KanbanColumn[]
+  tasks           Task[]
+}
+
+model KanbanColumn {
+  id         String       @id @default(cuid())
+  boardId    String
+  name       String
+  position   Int
+  isTerminal Boolean      @default(false)
+  board      KanbanBoard  @relation(fields: [boardId], references: [id], onDelete: Cascade)
+  tasks      Task[]
+
+  @@unique([boardId, position])
+}
+
+model Task {
+  id          String         @id @default(cuid())
+  boardId     String
+  columnId    String
+  title       String
+  description String?
+  dueAt       DateTime?
+  priority    TaskPriority   @default(MEDIUM)
+  position    Int            @default(0)
+  createdById String
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  board       KanbanBoard    @relation(fields: [boardId], references: [id], onDelete: Cascade)
+  column      KanbanColumn   @relation(fields: [columnId], references: [id])
+  createdBy   User           @relation("TaskCreator", fields: [createdById], references: [id])
+  assignees   TaskAssignee[]
+
+  @@index([boardId, columnId, position])
+}
+
+model TaskAssignee {
+  taskId String
+  userId String
+  task   Task   @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([taskId, userId])
+}
+
+model CalendarEvent {
+  id          String       @id @default(cuid())
+  title       String
+  description String?
+  startsAt    DateTime
+  endsAt      DateTime
+  timezone    String       @default("America/Sao_Paulo")
+  localityId  String?
+  address     String?
+  status      EventStatus  @default(SCHEDULED)
+  visibility  Visibility   @default(TEAM)
+  createdById String
+  version     Int          @default(1)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  locality    Locality?    @relation(fields: [localityId], references: [id], onDelete: SetNull)
+  createdBy   User         @relation("EventCreator", fields: [createdById], references: [id])
+  participants EventParticipant[]
+  shareLinks  ShareLink[]
+  notifications Notification[]
+
+  @@index([startsAt, status])
+}
+
+model EventParticipant {
+  eventId               String
+  userId                String
+  role                  String
+  notificationPreference String?
+  event                 CalendarEvent @relation(fields: [eventId], references: [id], onDelete: Cascade)
+  user                  User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([eventId, userId])
+}
+
+model ShareLink {
+  id         String         @id @default(cuid())
+  eventId    String?
+  tokenHash  String         @unique
+  permission String
+  expiresAt  DateTime?
+  revokedAt  DateTime?
+  createdAt  DateTime       @default(now())
+  event      CalendarEvent? @relation(fields: [eventId], references: [id], onDelete: Cascade)
+}
+
+model Material {
+  id        String         @id @default(cuid())
+  name      String         @unique
+  unit      String
+  status    RecordStatus   @default(ACTIVE)
+  items     DeliveryItem[]
+}
+
+model Delivery {
+  id                String          @id @default(cuid())
+  origin            String?
+  destination       String
+  localityId        String?
+  address           String?
+  responsibleUserId String?
+  scheduledAt       DateTime?
+  deliveredAt       DateTime?
+  status            DeliveryStatus  @default(REQUESTED)
+  notes             String?
+  createdAt         DateTime        @default(now())
+  updatedAt         DateTime        @updatedAt
+  locality          Locality?       @relation(fields: [localityId], references: [id], onDelete: SetNull)
+  responsible       User?           @relation("DeliveryResponsible", fields: [responsibleUserId], references: [id], onDelete: SetNull)
+  items             DeliveryItem[]
+
+  @@index([status, scheduledAt])
+}
+
+model DeliveryItem {
+  deliveryId String
+  materialId String
+  quantity   Decimal      @db.Decimal(12, 2)
+  delivery   Delivery     @relation(fields: [deliveryId], references: [id], onDelete: Cascade)
+  material   Material     @relation(fields: [materialId], references: [id])
+
+  @@id([deliveryId, materialId])
+}
+
+model Notification {
+  id             String              @id @default(cuid())
+  eventId        String?
+  channel        NotificationChannel
+  eventType      String
+  recipient      String
+  payload        Json
+  status         NotificationStatus  @default(DISABLED)
+  idempotencyKey String               @unique
+  attemptedAt    DateTime?
+  error          String?
+  createdAt      DateTime             @default(now())
+  event          CalendarEvent?       @relation(fields: [eventId], references: [id], onDelete: SetNull)
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  userId     String?
+  action     String
+  entityType String
+  entityId   String
+  beforeData Json?
+  afterData  Json?
+  createdAt  DateTime @default(now())
+  user       User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([entityType, entityId, createdAt])
+}
+
+model ProductDecision {
+  id          String                @id
+  title       String
+  impact      String
+  status      ProductDecisionStatus @default(PENDING)
+  source      String
+  decidedAt   DateTime?
+  decidedBy   String?
+  notes       String?
+  createdAt   DateTime              @default(now())
+  updatedAt   DateTime              @updatedAt
+}

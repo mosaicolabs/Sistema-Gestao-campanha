@@ -1,0 +1,981 @@
+[
+  {
+    "sheet": "Angra dos Reis",
+    "type": "territorial",
+    "rows": 8,
+    "leader_rows": 8,
+    "last_data_row": 10,
+    "populated": {
+      "articulador": 8,
+      "lideranca": 8,
+      "dobrada": 8,
+      "religiao": 3,
+      "regiao_local": 2,
+      "contato_lideranca": 1
+    }
+  },
+  {
+    "sheet": "Areal",
+    "type": "territorial",
+    "rows": 2,
+    "leader_rows": 2,
+    "last_data_row": 4,
+    "populated": {
+      "articulador": 2,
+      "lideranca": 2,
+      "dobrada": 2,
+      "religiao": 1
+    }
+  },
+  {
+    "sheet": "Araruama",
+    "type": "territorial",
+    "rows": 4,
+    "leader_rows": 4,
+    "last_data_row": 6,
+    "populated": {
+      "articulador": 4,
+      "lideranca": 4,
+      "contato_lideranca": 3,
+      "dobrada": 4,
+      "religiao": 2
+    }
+  },
+  {
+    "sheet": "Barra Mansa",
+    "type": "territorial",
+    "rows": 84,
+    "leader_rows": 84,
+    "last_data_row": 86,
+    "populated": {
+      "articulador": 84,
+      "coordenador": 57,
+      "lideranca": 84,
+      "dobrada": 83,
+      "regiao_local": 73,
+      "religiao": 47
+    }
+  },
+  {
+    "sheet": "Barra do Piraí",
+    "type": "territorial",
+    "rows": 58,
+    "leader_rows": 58,
+    "last_data_row": 60,
+    "populated": {
+      "articulador": 58,
+      "coordenador": 57,
+      "lideranca": 58,
+      "dobrada": 58,
+      "regiao_local": 36,
+      "religiao": 7
+    }
+  },
+  {
+    "sheet": "Belford Roxo",
+    "type": "territorial",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "articulador": 1,
+      "lideranca": 1,
+      "contato_lideranca": 1,
+      "dobrada": 1,
+      "religiao": 1
+    }
+  },
+  {
+    "sheet": "Cabo Frio",
+    "type": "territorial",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "articulador": 1,
+      "lideranca": 1,
+      "contato_lideranca": 1,
+      "dobrada": 1,
+      "religiao": 1
+    }
+  },
+  {
+    "sheet": "Cachoeiras de Macacu",
+    "type": "territorial",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "articulador": 1,
+      "lideranca": 1,
+      "contato_lideranca": 1,
+      "dobrada": 1
+    }
+  },
+  {
+    "sheet": "Campos dos Goytacazes",
+    "type": "territorial",
+    "rows": 2,
+    "leader_rows": 2,
+    "last_data_row": 4,
+    "populated": {
+      "articulador": 2,
+      "lideranca": 2,
+      "contato_lideranca": 2,
+      "dobrada": 2,
+      "religiao": 2
+    }
+  },
+  {
+    "sheet": "Carmo",
+    "type": "territorial",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "articulador": 1,
+      "lideranca": 1,
+      "dobrada": 1,
+      "religiao": 1
+    }
+  },
+  {
+    "sheet": "Casemiro de Abreu",
+    "type": "territorial",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "articulador": 1,
+      "lideranca": 1,
+      "contato_lideranca": 1,
+      "dobrada": 1,
+      "religiao": 1
+    }
+  },
+  {
+    "sheet": "Comendador Levy Gasparian",
+    "type": "territorial",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "articulador": 1,
+      "lideranca": 1,
+      "dobrada": 1,
+      "religiao": 1
+    }
+  },
+  {
+    "sheet": "Duque de Caxias",
+    "type": "territorial",
+    "rows": 11,
+    "leader_rows": 11,
+    "last_data_row": 13,
+    "populated": {
+      "articulador": 11,
+      "lideranca": 11,
+      "contato_lideranca": 8,
+      "dobrada": 9,
+      "religiao": 9,
+      "coordenador": 2
+    }
+  },
+  {
+    "sheet": "Engenheiro Paulo de Frontin",
+    "type": "territorial",
+    "rows": 10,
+    "leader_rows": 10,
+    "last_data_row": 12,
+    "populated": {
+      "articulador": 10,
+      "lideranca": 10,
+      "dobrada": 10,
+      "contato_lideranca": 3,
+      "religiao": 1
+    }
+  },
+  {
+    "sheet": "Guapimirim",
+    "type": "territorial",
+    "rows": 3,
+    "leader_rows": 3,
+    "last_data_row": 5,
+    "populated": {
+      "articulador": 3,
+      "lideranca": 3,
+      "contato_lideranca": 2,
+      "dobrada": 3,
+      "religiao": 1
+    }
+  },
+  {
+    "sheet": "Iguaba Grande",
+    "type": "territorial",
+    "rows": 14,
+    "leader_rows": 14,
+    "last_data_row": 16,
+    "populated": {
+      "articulador": 14,
+      "lideranca": 14,
+      "contato_lideranca": 13,
+      "dobrada": 14,
+      "religiao": 11
+    }
+  },
+  {
+    "sheet": "Itaguaí",
+    "type": "territorial",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "articulador": 1,
+      "lideranca": 1,
+      "dobrada": 1
+    }
+  },
+  {
+    "sheet": "Japeri",
+    "type": "territorial",
+    "rows": 10,
+    "leader_rows": 10,
+    "last_data_row": 12,
+    "populated": {
+      "articulador": 10,
+      "coordenador": 3,
+      "lideranca": 10,
+      "contato_lideranca": 3,
+      "dobrada": 10,
+      "religiao": 3
+    }
+  },
+  {
+    "sheet": "Lídice",
+    "type": "territorial",
+    "rows": 3,
+    "leader_rows": 3,
+    "last_data_row": 5,
+    "populated": {
+      "articulador": 3,
+      "coordenador": 3,
+      "lideranca": 3,
+      "dobrada": 3
+    }
+  },
+  {
+    "sheet": "Macaé",
+    "type": "territorial",
+    "rows": 2,
+    "leader_rows": 2,
+    "last_data_row": 4,
+    "populated": {
+      "articulador": 2,
+      "coordenador": 2,
+      "lideranca": 2,
+      "contato_lideranca": 2,
+      "dobrada": 2,
+      "religiao": 2
+    }
+  },
+  {
+    "sheet": "Magé",
+    "type": "territorial",
+    "rows": 5,
+    "leader_rows": 5,
+    "last_data_row": 7,
+    "populated": {
+      "articulador": 5,
+      "lideranca": 5,
+      "contato_lideranca": 5,
+      "dobrada": 3,
+      "religiao": 5,
+      "regiao_local": 1
+    }
+  },
+  {
+    "sheet": "Maricá",
+    "type": "territorial",
+    "rows": 5,
+    "leader_rows": 5,
+    "last_data_row": 7,
+    "populated": {
+      "articulador": 5,
+      "lideranca": 5,
+      "contato_lideranca": 5,
+      "dobrada": 4,
+      "religiao": 4
+    }
+  },
+  {
+    "sheet": "Mesquita",
+    "type": "territorial",
+    "rows": 3,
+    "leader_rows": 3,
+    "last_data_row": 5,
+    "populated": {
+      "articulador": 3,
+      "lideranca": 3,
+      "dobrada": 3,
+      "religiao": 2
+    }
+  },
+  {
+    "sheet": "Mendes",
+    "type": "territorial",
+    "rows": 0,
+    "leader_rows": 0,
+    "last_data_row": 2,
+    "populated": {}
+  },
+  {
+    "sheet": "Miguel Pereira",
+    "type": "territorial",
+    "rows": 9,
+    "leader_rows": 9,
+    "last_data_row": 11,
+    "populated": {
+      "articulador": 9,
+      "lideranca": 9,
+      "dobrada": 8
+    }
+  },
+  {
+    "sheet": "Nilópolis",
+    "type": "territorial",
+    "rows": 3,
+    "leader_rows": 3,
+    "last_data_row": 5,
+    "populated": {
+      "articulador": 3,
+      "lideranca": 3,
+      "contato_lideranca": 3,
+      "dobrada": 3
+    }
+  },
+  {
+    "sheet": "Niterói",
+    "type": "territorial",
+    "rows": 9,
+    "leader_rows": 9,
+    "last_data_row": 11,
+    "populated": {
+      "articulador": 9,
+      "lideranca": 9,
+      "contato_lideranca": 6,
+      "dobrada": 8,
+      "religiao": 3
+    }
+  },
+  {
+    "sheet": "Nova Friburgo",
+    "type": "territorial",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "articulador": 1,
+      "lideranca": 1,
+      "dobrada": 1
+    }
+  },
+  {
+    "sheet": "Nova Iguaçu",
+    "type": "territorial",
+    "rows": 5,
+    "leader_rows": 5,
+    "last_data_row": 7,
+    "populated": {
+      "articulador": 5,
+      "lideranca": 5,
+      "dobrada": 5,
+      "religiao": 2,
+      "contato_lideranca": 3
+    }
+  },
+  {
+    "sheet": "Paracambi",
+    "type": "territorial",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "articulador": 1,
+      "lideranca": 1,
+      "contato_lideranca": 1,
+      "dobrada": 1,
+      "religiao": 1
+    }
+  },
+  {
+    "sheet": "Paraty",
+    "type": "territorial",
+    "rows": 4,
+    "leader_rows": 0,
+    "last_data_row": 6,
+    "populated": {
+      "articulador": 4,
+      "regiao_local": 4,
+      "contato_lideranca": 4,
+      "dobrada": 4,
+      "religiao": 3
+    }
+  },
+  {
+    "sheet": "Paraíba do Sul",
+    "type": "territorial",
+    "rows": 4,
+    "leader_rows": 4,
+    "last_data_row": 6,
+    "populated": {
+      "articulador": 4,
+      "lideranca": 4,
+      "dobrada": 4
+    }
+  },
+  {
+    "sheet": "Paty do Alferes",
+    "type": "territorial",
+    "rows": 6,
+    "leader_rows": 6,
+    "last_data_row": 8,
+    "populated": {
+      "articulador": 6,
+      "lideranca": 6,
+      "contato_lideranca": 1,
+      "religiao": 1,
+      "dobrada": 3
+    }
+  },
+  {
+    "sheet": "Petrópolis",
+    "type": "territorial",
+    "rows": 4,
+    "leader_rows": 4,
+    "last_data_row": 6,
+    "populated": {
+      "articulador": 3,
+      "lideranca": 4,
+      "regiao_local": 1,
+      "dobrada": 4
+    }
+  },
+  {
+    "sheet": "Pinheiral",
+    "type": "territorial",
+    "rows": 19,
+    "leader_rows": 19,
+    "last_data_row": 21,
+    "populated": {
+      "articulador": 19,
+      "lideranca": 19,
+      "dobrada": 19,
+      "religiao": 6,
+      "coordenador": 12,
+      "regiao_local": 7
+    }
+  },
+  {
+    "sheet": "Piraí",
+    "type": "territorial",
+    "rows": 2,
+    "leader_rows": 2,
+    "last_data_row": 4,
+    "populated": {
+      "articulador": 2,
+      "lideranca": 2,
+      "dobrada": 2,
+      "religiao": 1,
+      "regiao_local": 1
+    }
+  },
+  {
+    "sheet": "Porto Real",
+    "type": "territorial",
+    "rows": 12,
+    "leader_rows": 12,
+    "last_data_row": 14,
+    "populated": {
+      "articulador": 12,
+      "lideranca": 12,
+      "dobrada": 11,
+      "religiao": 2
+    }
+  },
+  {
+    "sheet": "Quatis",
+    "type": "territorial",
+    "rows": 2,
+    "leader_rows": 2,
+    "last_data_row": 4,
+    "populated": {
+      "articulador": 2,
+      "lideranca": 2,
+      "dobrada": 2,
+      "religiao": 2
+    }
+  },
+  {
+    "sheet": "Queimados",
+    "type": "territorial",
+    "rows": 2,
+    "leader_rows": 2,
+    "last_data_row": 4,
+    "populated": {
+      "articulador": 2,
+      "lideranca": 2,
+      "contato_lideranca": 2,
+      "dobrada": 2,
+      "religiao": 2
+    }
+  },
+  {
+    "sheet": "Resende",
+    "type": "territorial",
+    "rows": 10,
+    "leader_rows": 10,
+    "last_data_row": 12,
+    "populated": {
+      "articulador": 10,
+      "lideranca": 10,
+      "dobrada": 10,
+      "religiao": 2,
+      "coordenador": 7
+    }
+  },
+  {
+    "sheet": "Rio Claro",
+    "type": "territorial",
+    "rows": 13,
+    "leader_rows": 13,
+    "last_data_row": 15,
+    "populated": {
+      "articulador": 13,
+      "lideranca": 13,
+      "dobrada": 13,
+      "coordenador": 7,
+      "regiao_local": 4
+    }
+  },
+  {
+    "sheet": "Rio das Ostras",
+    "type": "territorial",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "articulador": 1,
+      "lideranca": 1,
+      "dobrada": 1
+    }
+  },
+  {
+    "sheet": "Rio de Janeiro",
+    "type": "territorial",
+    "rows": 120,
+    "leader_rows": 119,
+    "last_data_row": 122,
+    "populated": {
+      "articulador": 119,
+      "lideranca": 119,
+      "regiao_local": 97,
+      "contato_lideranca": 79,
+      "dobrada": 102,
+      "religiao": 27,
+      "coordenador": 16
+    }
+  },
+  {
+    "sheet": "São Francisco de Itabapoana",
+    "type": "territorial",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "articulador": 1,
+      "lideranca": 1,
+      "contato_lideranca": 1
+    }
+  },
+  {
+    "sheet": "São José do Vale do Rio Preto",
+    "type": "territorial",
+    "rows": 6,
+    "leader_rows": 6,
+    "last_data_row": 8,
+    "populated": {
+      "articulador": 6,
+      "lideranca": 6,
+      "dobrada": 6
+    }
+  },
+  {
+    "sheet": "São Pedro da Aldeia",
+    "type": "territorial",
+    "rows": 4,
+    "leader_rows": 4,
+    "last_data_row": 6,
+    "populated": {
+      "articulador": 4,
+      "lideranca": 4,
+      "contato_lideranca": 2,
+      "dobrada": 3,
+      "religiao": 2
+    }
+  },
+  {
+    "sheet": "São Gonçalo",
+    "type": "territorial",
+    "rows": 6,
+    "leader_rows": 6,
+    "last_data_row": 8,
+    "populated": {
+      "articulador": 6,
+      "lideranca": 6,
+      "dobrada": 5,
+      "contato_lideranca": 2,
+      "religiao": 1
+    }
+  },
+  {
+    "sheet": "São João de Meriti",
+    "type": "territorial",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "articulador": 1,
+      "lideranca": 1,
+      "contato_lideranca": 1,
+      "dobrada": 1,
+      "religiao": 1
+    }
+  },
+  {
+    "sheet": "Sapucaia",
+    "type": "territorial",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "articulador": 1,
+      "lideranca": 1,
+      "regiao_local": 1,
+      "dobrada": 1
+    }
+  },
+  {
+    "sheet": "Teresópolis",
+    "type": "territorial",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "articulador": 1,
+      "lideranca": 1,
+      "dobrada": 1
+    }
+  },
+  {
+    "sheet": "Três Rios",
+    "type": "territorial",
+    "rows": 25,
+    "leader_rows": 25,
+    "last_data_row": 27,
+    "populated": {
+      "articulador": 25,
+      "lideranca": 25,
+      "dobrada": 25,
+      "coordenador": 24
+    }
+  },
+  {
+    "sheet": "Valença",
+    "type": "territorial",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "articulador": 1,
+      "lideranca": 1,
+      "dobrada": 1
+    }
+  },
+  {
+    "sheet": "Vassouras",
+    "type": "territorial",
+    "rows": 13,
+    "leader_rows": 13,
+    "last_data_row": 15,
+    "populated": {
+      "articulador": 13,
+      "lideranca": 13,
+      "dobrada": 12,
+      "coordenador": 11,
+      "contato_lideranca": 1,
+      "religiao": 1
+    }
+  },
+  {
+    "sheet": "Volta Redonda",
+    "type": "territorial",
+    "rows": 164,
+    "leader_rows": 164,
+    "last_data_row": 166,
+    "populated": {
+      "articulador": 164,
+      "lideranca": 164,
+      "dobrada": 157,
+      "religiao": 24,
+      "coordenador": 114,
+      "regiao_local": 134,
+      "contato_lideranca": 3
+    }
+  },
+  {
+    "sheet": "Dani Cunha",
+    "type": "dobrada",
+    "rows": 377,
+    "leader_rows": 373,
+    "last_data_row": 379,
+    "populated": {
+      "localidade": 377,
+      "articulador": 377,
+      "lideranca": 373,
+      "regiao_local": 266,
+      "contato_lideranca": 37,
+      "religiao": 102,
+      "coordenador": 220
+    }
+  },
+  {
+    "sheet": "Coronel Henrique",
+    "type": "dobrada",
+    "rows": 5,
+    "leader_rows": 5,
+    "last_data_row": 7,
+    "populated": {
+      "localidade": 5,
+      "articulador": 5,
+      "lideranca": 5,
+      "regiao_local": 2,
+      "coordenador": 3
+    }
+  },
+  {
+    "sheet": "Hugo Leal",
+    "type": "dobrada",
+    "rows": 2,
+    "leader_rows": 2,
+    "last_data_row": 4,
+    "populated": {
+      "localidade": 2,
+      "articulador": 2,
+      "lideranca": 2,
+      "religiao": 1,
+      "coordenador": 1
+    }
+  },
+  {
+    "sheet": "Wellington José",
+    "type": "dobrada",
+    "rows": 18,
+    "leader_rows": 18,
+    "last_data_row": 20,
+    "populated": {
+      "localidade": 18,
+      "articulador": 18,
+      "lideranca": 18,
+      "regiao_local": 7
+    }
+  },
+  {
+    "sheet": "Eloi Ramalho",
+    "type": "dobrada",
+    "rows": 4,
+    "leader_rows": 4,
+    "last_data_row": 6,
+    "populated": {
+      "localidade": 4,
+      "articulador": 4,
+      "coordenador": 2,
+      "lideranca": 4,
+      "contato_lideranca": 3
+    }
+  },
+  {
+    "sheet": "Áureo Ribeiro",
+    "type": "dobrada",
+    "rows": 78,
+    "leader_rows": 78,
+    "last_data_row": 80,
+    "populated": {
+      "localidade": 78,
+      "articulador": 77,
+      "lideranca": 78,
+      "contato_lideranca": 50,
+      "religiao": 19,
+      "coordenador": 28,
+      "regiao_local": 30
+    }
+  },
+  {
+    "sheet": "Júnior Trovão",
+    "type": "dobrada",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "localidade": 1,
+      "articulador": 1,
+      "lideranca": 1
+    }
+  },
+  {
+    "sheet": "Serfiotis",
+    "type": "dobrada",
+    "rows": 22,
+    "leader_rows": 22,
+    "last_data_row": 24,
+    "populated": {
+      "localidade": 22,
+      "articulador": 22,
+      "contato_coordenador": 1,
+      "lideranca": 22,
+      "religiao": 9,
+      "coordenador": 7,
+      "regiao_local": 1
+    }
+  },
+  {
+    "sheet": "Vinicius Farah",
+    "type": "dobrada",
+    "rows": 56,
+    "leader_rows": 56,
+    "last_data_row": 58,
+    "populated": {
+      "localidade": 56,
+      "articulador": 56,
+      "lideranca": 56,
+      "religiao": 2,
+      "regiao_local": 21,
+      "contato_lideranca": 18,
+      "coordenador": 40
+    }
+  },
+  {
+    "sheet": "Marta Rocha",
+    "type": "dobrada",
+    "rows": 48,
+    "leader_rows": 48,
+    "last_data_row": 58,
+    "populated": {
+      "localidade": 48,
+      "articulador": 48,
+      "lideranca": 48,
+      "contato_lideranca": 9,
+      "coordenador": 36,
+      "regiao_local": 12
+    }
+  },
+  {
+    "sheet": "Sostenes",
+    "type": "dobrada",
+    "rows": 43,
+    "leader_rows": 43,
+    "last_data_row": 58,
+    "populated": {
+      "localidade": 43,
+      "articulador": 43,
+      "lideranca": 43,
+      "contato_lideranca": 10,
+      "religiao": 2,
+      "regiao_local": 12,
+      "coordenador": 34
+    }
+  },
+  {
+    "sheet": "Abraão",
+    "type": "dobrada",
+    "rows": 38,
+    "leader_rows": 38,
+    "last_data_row": 58,
+    "populated": {
+      "localidade": 38,
+      "articulador": 38,
+      "lideranca": 38,
+      "coordenador": 34,
+      "regiao_local": 11,
+      "contato_lideranca": 7
+    }
+  },
+  {
+    "sheet": "Luciano Vieira",
+    "type": "dobrada",
+    "rows": 39,
+    "leader_rows": 39,
+    "last_data_row": 58,
+    "populated": {
+      "localidade": 39,
+      "articulador": 39,
+      "lideranca": 39,
+      "coordenador": 34,
+      "regiao_local": 11,
+      "contato_lideranca": 7
+    }
+  },
+  {
+    "sheet": "Talita Galhardo",
+    "type": "dobrada",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "localidade": 1,
+      "articulador": 1,
+      "lideranca": 1,
+      "regiao_local": 1
+    }
+  },
+  {
+    "sheet": "Altineu Côrtes",
+    "type": "dobrada",
+    "rows": 1,
+    "leader_rows": 1,
+    "last_data_row": 3,
+    "populated": {
+      "localidade": 1,
+      "articulador": 1,
+      "lideranca": 1,
+      "contato_lideranca": 1
+    }
+  },
+  {
+    "sheet": "Gutembertg Reis",
+    "type": "dobrada",
+    "rows": 2,
+    "leader_rows": 2,
+    "last_data_row": 4,
+    "populated": {
+      "localidade": 2,
+      "articulador": 2,
+      "lideranca": 2,
+      "contato_lideranca": 1,
+      "regiao_local": 1
+    }
+  },
+  {
+    "sheet": "Luizinho",
+    "type": "dobrada",
+    "rows": 4,
+    "leader_rows": 4,
+    "last_data_row": 6,
+    "populated": {
+      "localidade": 4,
+      "articulador": 4,
+      "lideranca": 4,
+      "regiao_local": 2,
+      "coordenador": 2
+    }
+  }
+]
