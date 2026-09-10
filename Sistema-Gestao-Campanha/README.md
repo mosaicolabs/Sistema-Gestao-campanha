@@ -2,6 +2,8 @@
 
 MVP executavel do PRD `PRD_sistema_gestao_campanha.md`. O sistema concentra pessoas, papeis, localidades, contatos e dobradas em um cadastro unico e adiciona os modulos operacionais de tarefas, agenda, entregas, importacao e auditoria.
 
+Leia o [índice da documentação](docs/README.md) para conhecer arquitetura, padrões de frontend, API, banco, segurança, Docker, operação e contribuição.
+
 ## Estrutura
 
 ```text
