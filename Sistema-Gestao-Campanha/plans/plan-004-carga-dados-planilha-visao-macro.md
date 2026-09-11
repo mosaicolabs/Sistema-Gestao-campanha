@@ -1,6 +1,6 @@
 # Carga dos dados da planilha na visão macro Implementation Plan
 
-> **Status de execução (10/09/2026):** Tasks 1–8 implementadas na branch `normalizacao-localidades`. A migration foi aplicada no PostgreSQL local, o lote da revisão foi carregado com 1.420 ocorrências e a materialização transacional foi concluída. A documentação e a revisão final de candidatos permanecem como fechamento operacional da Task 9.
+> **Status de execução (10/09/2026):** Tasks 1–9 implementadas na branch `normalizacao-localidades`. A migration foi aplicada no PostgreSQL local, o lote da revisão foi carregado com 1.420 ocorrências, a materialização transacional foi concluída e a documentação foi atualizada. Commit publicado: `2ed09db`.
 
 ### Evidência da execução
 
@@ -11,7 +11,7 @@
 - Smoke HTTP: prévia `200`, árvore `200`, ausência de JWT `401`, cidade inexistente `404`.
 - O ciclo TDD foi explicitamente dispensado pelo gestor; build, migration, seed, dry-run, apply e smoke foram usados como validação substituta.
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use `superpowers:subagent-driven-development` (recommended) or `superpowers:executing-plans` to implement this plan task-by-task. Apply `superpowers:test-driven-development`, `superpowers:systematic-debugging` when a test fails, and `superpowers:verification-before-completion` before claiming completion. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use `superpowers:subagent-driven-development` (recommended) or `superpowers:executing-plans` to implement this plan task-by-task. Use `superpowers:systematic-debugging` only when a validation failure occurs and use `superpowers:verification-before-completion` before claiming completion. TDD was explicitly waived by the gestor for this execution; build, migration, seed, dry-run, apply and smoke checks were used instead. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Importar integralmente a planilha aberta `Campanha_EA_2026_REV-006` para a camada de evidência do PostgreSQL e materializar, com rastreabilidade e regras de reconciliação, regiões, cidades, pessoas, contatos, papéis e vínculos com dobradores que alimentam a visão macro do sistema.
 

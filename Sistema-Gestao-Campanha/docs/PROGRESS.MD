@@ -2,7 +2,8 @@
 
 Última atualização: 10/09/2026  
 Branch de trabalho: `normalizacao-localidades`  
-Commit da implementação do plan 003: `bc6e848 feat: implementar visao macro de cobertura`
+Commit da implementação do plan 004: `2ed09db feat: carregar dados da planilha na visao macro`
+Branch publicada: `origin/normalizacao-localidades`
 
 ## Como usar este arquivo
 
@@ -21,7 +22,7 @@ Este é o ponto de retomada do projeto. Depois de cada plano implementado, regis
 | UI de visão macro hierárquica | Implementada | `CoverageNavigation`, acordeão de regiões/cidades e seção de dobradores na sidebar desktop e mobile |
 | Modal de pessoas por cidade | Implementada | `CoverageCityDialog`, tabela responsiva e consulta sob demanda por cidade |
 | Visão por dobrador | Implementada | `CoverageAllianceView`, agrupamento por região/cidade/papel e retorno para a árvore |
-| Carga da visão macro (plan 004) | Implementada em ambiente local | Lote `cmtvnvn9j0046sg36jjbrsn1o`, 1.420 ocorrências, materialização transacional concluída |
+| Carga da visão macro (plan 004) | Implementada e publicada | Lote `cmtvnvn9j0046sg36jjbrsn1o`, 1.420 ocorrências, materialização transacional concluída |
 
 ## Planos e commits
 
@@ -46,11 +47,11 @@ Este é o ponto de retomada do projeto. Depois de cada plano implementado, regis
 
 ### Plan 004 — Carga de dados da planilha na visão macro
 
-- Estado: implementado na branch `normalizacao-localidades`; documentação e revisão técnica finais pendentes.
+- Estado: implementado, validado, commitado e publicado na branch `normalizacao-localidades` (`2ed09db`).
 - Entregas: fingerprint semântico versionado; migration aditiva para artefatos, controles e estado de materialização; parser nomeado para abas, índices e colunas; detector de divergências sem hash fixo; persistência de 1.420 `SourceOccurrence`; dry-run e aplicação transacional; CLI e runbook; prévia de materialização na tela de Importações.
 - Lote validado: 80 abas, 681 ocorrências territoriais, 739 ocorrências de dobradas, índices manuais 672/591, 148 duplicidades preservadas e um bloco adicional identificado; 80 controles de índice com observado/diferença; status `COMPLETED` após aplicação.
 - Materialização atual: 843 pessoas e 843 atribuições vinculadas ao lote no primeiro apply; 30 entidades de dobrador observadas foram materializadas, enquanto nomes fora das 17 abas conhecidas permanecem como candidatos `PENDING_REVIEW`. A base global contém registros adicionais de tentativas anteriores e deve ser revisada antes de produção.
-- Validação: `docker compose build api`, `docker compose build web`, migration aplicada, seed idempotente, healthchecks saudáveis, dry-run e apply autenticados executados no container. A geração local do Prisma/TypeScript foi substituída pela validação no Docker por lentidão do CLI no host.
+- Validação: `docker compose build api`, `docker compose build web`, migration aplicada, seed idempotente, healthchecks saudáveis, dry-run e apply autenticados executados no container; smoke HTTP confirmou prévia e cobertura. A geração local do Prisma/TypeScript foi substituída pela validação no Docker por lentidão do CLI no host.
 - Observação: a aplicação foi corrigida para reutilizar a pessoa já ligada à ocorrência e ao papel. Não executar novas cargas em produção antes de revisar os candidatos criados no ensaio local.
 
 ## Decisões confirmadas
