@@ -1,4 +1,5 @@
 import type { Request, Response } from 'express'
+import type { CoverageMacroFilters } from '@campanha/validation'
 import { auditRepository } from '../repositories/audit.repository.js'
 import { coverageRepository } from '../repositories/coverage.repository.js'
 import { dashboardRepository } from '../repositories/dashboard.repository.js'
@@ -19,7 +20,7 @@ export const operationsController = {
     response.json(await coverageRepository.list(request.query.regionId as string | undefined))
   },
   async coverageMacro(request: Request, response: Response) {
-    response.json(await coverageRepository.listMacro(request.query.regionId as string | undefined))
+    response.json(await coverageRepository.listMacro(request.query as unknown as CoverageMacroFilters))
   },
   async coverageTree(request: Request, response: Response) {
     response.json(await coverageRepository.listTree(request.query.stateId as string | undefined))

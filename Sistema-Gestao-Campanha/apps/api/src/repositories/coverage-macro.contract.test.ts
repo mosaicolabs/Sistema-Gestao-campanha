@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { coverageAllianceParamSchema, coverageCityParamSchema, coverageTreeQuerySchema } from '@campanha/validation'
+import { coverageAllianceParamSchema, coverageCityParamSchema, coverageMacroQuerySchema, coverageTreeQuerySchema } from '@campanha/validation'
 import type { CoverageAllianceDetail, CoverageCityDetail, CoverageTreeRegion } from '@campanha/types'
 import { toCoverageAllianceDetail, toCoverageCityDetail, toCoverageTreeRegion } from './coverage.repository.js'
 
@@ -46,6 +46,9 @@ describe('coverage macro contracts', () => {
   })
 
   it('valida filtros e parâmetros da API', () => {
+    expect(coverageMacroQuerySchema.parse({})).toEqual({ aliasStatus: 'ALL', sortBy: 'city', sortDirection: 'asc' })
+    expect(coverageMacroQuerySchema.safeParse({ sortBy: 'invalid' }).success).toBe(false)
+    expect(coverageMacroQuerySchema.parse({ role: 'COORDINATOR', aliasStatus: 'PENDING', sortBy: 'uniqueAlliances', sortDirection: 'desc' })).toMatchObject({ role: 'COORDINATOR', aliasStatus: 'PENDING', sortBy: 'uniqueAlliances', sortDirection: 'desc' })
     expect(coverageTreeQuerySchema.parse({ stateId: 'state-1' })).toEqual({ stateId: 'state-1' })
     expect(coverageTreeQuerySchema.parse({})).toEqual({})
     expect(coverageCityParamSchema.safeParse({ cityId: '' }).success).toBe(false)

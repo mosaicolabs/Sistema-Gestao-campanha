@@ -61,3 +61,11 @@ Siga esta sequência:
 4. Use `useQuery` e `useMutation` com chaves estáveis e invalidação após mutações
 5. Inclua estados de carregamento, vazio, erro e sucesso
 6. Teste a tela em largura mobile e desktop
+
+## Cobertura com filtros e tabela
+
+Na tela `/cobertura`, `CoverageFiltersBar` lê e escreve os filtros na query string e `CoverageTable` usa TanStack Table com sorting controlado pela API. Os parâmetros aceitos são `search`, `regionId`, `role`, `allianceId`, `aliasStatus`, `sortBy` e `sortDirection`; filtros de servidor devem entrar na chave do TanStack Query.
+
+No desktop, a tabela mantém a cidade na primeira coluna durante o scroll e exibe todos os campos da linha macro. No mobile, cada cidade possui uma expansão semântica com os mesmos campos em pares de rótulo e valor. O detalhe por cidade continua em `CoverageCityDialog`, e `CoverageAllianceView` usa uma tabela agrupada por região e cidade.
+
+Os cards agregados `Cidades na seleção`, `Relações articulador–cidade` e `Aliases em revisão` não fazem parte da UI da cobertura. Números por cidade continuam sendo dados operacionais e não devem ser removidos da tabela.

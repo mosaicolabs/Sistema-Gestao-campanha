@@ -103,7 +103,23 @@ Envie a planilha como `multipart/form-data`, no campo `file`. O servidor aceita 
 
 ## Visão macro e aliases
 
-`GET /coverage/macro` agrupa por cidade canônica e aceita `regionId`. A resposta distingue `articulatorCityRelations` (relações únicas articulador–cidade), `uniqueArticulators`, `uniqueAssignments`, `uniqueAlliances`, `observedVariants` e `pendingAliasCount`. Aliases aprovados preservam a ocorrência original; pendências precisam de `POST /reconciliation-issues/:id/decisions` com justificativa e, para `CORRECT` ou `MERGE`, `targetEntityType=Locality` e `targetEntityId` de uma cidade ativa.
+`GET /coverage/macro` agrupa por cidade canônica e aceita filtros e ordenação. A resposta distingue `articulatorCityRelations` (relações únicas articulador–cidade), `uniqueArticulators`, `uniqueCoordinators`, `uniqueLeaderships`, `uniqueAssignments`, `uniqueAlliances`, `observedVariants` e `pendingAliasCount`. Aliases aprovados preservam a ocorrência original; pendências precisam de `POST /reconciliation-issues/:id/decisions` com justificativa e, para `CORRECT` ou `MERGE`, `targetEntityType=Locality` e `targetEntityId` de uma cidade ativa.
+
+### Filtros e ordenação da cobertura
+
+Todos os parâmetros são opcionais; os defaults são `aliasStatus=ALL`, `sortBy=city` e `sortDirection=asc`. A API continua retornando um array de linhas, sem paginação nesta visão.
+
+| Parâmetro | Valores | Efeito |
+| --- | --- | --- |
+| `regionId` | ID de região | Restringe às cidades filhas da região. |
+| `search` | Texto de até 120 caracteres | Procura na cidade, região ou chave canônica. |
+| `role` | `ARTICULATOR`, `COORDINATOR`, `LEADERSHIP` | Mantém cidades com pelo menos uma atribuição ativa do papel. |
+| `allianceId` | ID de dobrador | Mantém cidades com vínculo ativo para o dobrador. |
+| `aliasStatus` | `ALL`, `PENDING`, `CLEAR` | Filtra cidades com ou sem alias em revisão. |
+| `sortBy` | `city`, `region`, `articulatorCityRelations`, `uniqueArticulators`, `uniqueCoordinators`, `uniqueLeaderships`, `uniqueAssignments`, `uniqueAlliances`, `pendingAliasCount` | Define a coluna de ordenação. |
+| `sortDirection` | `asc`, `desc` | Define a direção; empates usam cidade canônica crescente. |
+
+Exemplo: `GET /coverage/macro?role=COORDINATOR&aliasStatus=PENDING&sortBy=uniqueAlliances&sortDirection=desc`. Valores fora dos enums retornam `422 VALIDATION_ERROR`.
 
 ### Árvore de cobertura
 

@@ -83,6 +83,24 @@ export const peopleQuerySchema = z.object({
 
 export const coverageMacroQuerySchema = z.object({
   regionId: entityId.optional(),
+  search: z.string().trim().max(120).optional(),
+  role: z.enum(['ARTICULATOR', 'COORDINATOR', 'LEADERSHIP']).optional(),
+  allianceId: entityId.optional(),
+  aliasStatus: z.enum(['ALL', 'PENDING', 'CLEAR']).default('ALL'),
+  sortBy: z
+    .enum([
+      'city',
+      'region',
+      'articulatorCityRelations',
+      'uniqueArticulators',
+      'uniqueCoordinators',
+      'uniqueLeaderships',
+      'uniqueAssignments',
+      'uniqueAlliances',
+      'pendingAliasCount',
+    ])
+    .default('city'),
+  sortDirection: z.enum(['asc', 'desc']).default('asc'),
 })
 
 export const coverageTreeQuerySchema = z.object({
@@ -175,3 +193,4 @@ export type CreatePersonInput = z.infer<typeof createPersonSchema>
 export type CreateTaskInput = z.infer<typeof createTaskSchema>
 export type CreateEventInput = z.infer<typeof createEventSchema>
 export type CreateDeliveryInput = z.infer<typeof createDeliverySchema>
+export type CoverageMacroFilters = z.infer<typeof coverageMacroQuerySchema>

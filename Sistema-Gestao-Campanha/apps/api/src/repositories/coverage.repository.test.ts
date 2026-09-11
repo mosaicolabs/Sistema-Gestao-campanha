@@ -28,6 +28,8 @@ describe('coverageRepository macro aggregation', () => {
       id: 'city-paty',
       articulatorCityRelations: 1,
       uniqueArticulators: 1,
+      uniqueCoordinators: 0,
+      uniqueLeaderships: 1,
       uniqueAssignments: 3,
       uniqueAlliances: 1,
       pendingAliasCount: 2,

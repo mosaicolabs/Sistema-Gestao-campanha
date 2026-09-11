@@ -99,6 +99,8 @@ export type MacroCoverageRow = {
   region: string
   uniqueArticulators: number
   articulatorCityRelations: number
+  uniqueCoordinators: number
+  uniqueLeaderships: number
   uniqueAssignments: number
   uniqueAlliances: number
   observedVariants: string[]

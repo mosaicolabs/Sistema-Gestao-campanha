@@ -23,6 +23,7 @@ Este é o ponto de retomada do projeto. Depois de cada plano implementado, regis
 | Modal de pessoas por cidade | Implementada | `CoverageCityDialog`, tabela responsiva e consulta sob demanda por cidade |
 | Visão por dobrador | Implementada | `CoverageAllianceView`, agrupamento por região/cidade/papel e retorno para a árvore |
 | Carga da visão macro (plan 004) | Implementada e publicada | Lote `cmtvnvn9j0046sg36jjbrsn1o`, 1.420 ocorrências, materialização transacional concluída |
+| Filtros, ordenações e tabela de Cobertura (plan 005) | Implementada e validada | Query Zod/API com filtros e ordenação; tabela responsiva; visão por dobrador em tabela; cards técnicos removidos |
 
 ## Planos e commits
 
@@ -53,6 +54,15 @@ Este é o ponto de retomada do projeto. Depois de cada plano implementado, regis
 - Materialização atual: 843 pessoas e 843 atribuições vinculadas ao lote no primeiro apply; 30 entidades de dobrador observadas foram materializadas, enquanto nomes fora das 17 abas conhecidas permanecem como candidatos `PENDING_REVIEW`. A base global contém registros adicionais de tentativas anteriores e deve ser revisada antes de produção.
 - Validação: `docker compose build api`, `docker compose build web`, migration aplicada, seed idempotente, healthchecks saudáveis, dry-run e apply autenticados executados no container; smoke HTTP confirmou prévia e cobertura. A geração local do Prisma/TypeScript foi substituída pela validação no Docker por lentidão do CLI no host.
 - Observação: a aplicação foi corrigida para reutilizar a pessoa já ligada à ocorrência e ao papel. Não executar novas cargas em produção antes de revisar os candidatos criados no ensaio local.
+
+### Plan 005 — Filtros, ordenações e reorganização da tela de Cobertura
+
+- Estado: implementado e validado localmente; commit/push desta execução serão registrados após a revisão final do diff.
+- Entregas: filtros por busca, região, papel, dobrador e situação de alias; ordenação por cidade, região e métricas; estado persistido na query string; tabela principal com todas as métricas por cidade; detalhe de cidade preservado; visão por dobrador reorganizada em tabela; os três cards técnicos removidos.
+- API: `GET /api/coverage/macro` mantém `coverage:read`, valida os novos parâmetros com Zod e aplica filtros/ordenação sobre a visão macro existente sem migration Prisma.
+- UX: desktop usa tabela com cabeçalhos ordenáveis; mobile usa tabela semântica com expansão por linha e `Sheet` para os filtros; a contagem de resultados aparece como contexto textual, sem card KPI.
+- Validação: `npm run typecheck -w @campanha/validation`, `npm run typecheck -w @campanha/api`, `npm run typecheck -w @campanha/web` e `docker compose build api web` concluídos; containers API, web e PostgreSQL saudáveis; `/health` `200`; rota de cobertura sem autenticação `401`; frontend conferido em execução com busca `Barra Mansa`, URL sincronizada e resultado único; console sem erros.
+- Observação: o teste automatizado completo e o build Vite no host foram interrompidos por lentidão do ambiente local; o build oficial no Docker concluiu API e web sem erro. A execução segue sem TDD conforme decisão do gestor.
 
 ## Decisões confirmadas
 
@@ -100,7 +110,7 @@ Antes de concluir o plan 003, validar manualmente em 375px e desktop: sidebar �
 
 Origem: planejamento Superpowers + documentação do projeto  
 Destino: Product manager, arquiteto, frontend, backend, QA e redator técnico  
-Objetivo: executar `plan-004-carga-dados-planilha-visao-macro.md` em etapas revisáveis  
-Evidências: builds Docker da API/web concluídos; migration e seed aplicados; lote com 1.420 ocorrências e materialização `COMPLETED`; dry-run/apply executados no container.  
+Objetivo: executar `plan-005-filtros-ordenacoes-cobertura.md` em etapas revisáveis  
+Evidências: builds Docker da API/web concluídos; containers saudáveis; filtros e ordenação conferidos na tela em execução; cards agregados ausentes; endpoint sem JWT retornando `401`.  
 Pendências: revisar candidatos fora das 17 abas de dobradores, decidir DP-006/RBAC e executar revisão final de idempotência em banco limpo.  
-Próximo passo: revisar este diff, executar smoke HTTP das rotas de materialização e fazer o commit da carga sem incluir o arquivo XLSX.
+Próximo passo: revisar o diff do plan 005, criar o commit somente com os arquivos desta tarefa e publicar a branch `normalizacao-localidades`.

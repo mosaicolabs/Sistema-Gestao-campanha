@@ -7,6 +7,7 @@ import type {
   CoverageTreeCity,
   CoverageTreeRegion,
 } from '@campanha/types'
+import type { CoverageMacroFilters } from '@campanha/validation'
 
 type MacroCityInput = {
   id: string
@@ -124,6 +125,8 @@ export function toCoverageAllianceDetail(alliance: { id: string; name: string },
 export function toMacroCoverageRow(city: MacroCityInput) {
   const activeAssignments = city.assignments.filter((item) => item.status !== 'INACTIVE')
   const articulatorAssignments = activeAssignments.filter((item) => item.businessRole.code === 'ARTICULATOR')
+  const coordinatorAssignments = activeAssignments.filter((item) => item.businessRole.code === 'COORDINATOR')
+  const leadershipAssignments = activeAssignments.filter((item) => item.businessRole.code === 'LEADERSHIP')
   const activeAliases = city.aliases.filter((alias) => alias.status !== 'INACTIVE')
   return {
     id: city.id,
@@ -132,11 +135,31 @@ export function toMacroCoverageRow(city: MacroCityInput) {
     region: city.parent?.name ?? 'Região não informada',
     uniqueArticulators: new Set(articulatorAssignments.map((item) => item.personId)).size,
     articulatorCityRelations: new Set(articulatorAssignments.map((item) => item.personId)).size,
+    uniqueCoordinators: new Set(coordinatorAssignments.map((item) => item.personId)).size,
+    uniqueLeaderships: new Set(leadershipAssignments.map((item) => item.personId)).size,
     uniqueAssignments: new Set(activeAssignments.map((item) => item.id)).size,
     uniqueAlliances: new Set(city.alliances.filter((item) => item.status !== 'INACTIVE').map((item) => item.id)).size,
     observedVariants: [...new Set(activeAliases.map((alias) => alias.value))],
     pendingAliasCount: city.aliases.filter((alias) => alias.status === 'PENDING_REVIEW').length,
   }
+}
+
+type MacroCoverageFilters = CoverageMacroFilters
+
+const sortKeys = new Set<MacroCoverageFilters['sortBy']>([
+  'city',
+  'region',
+  'articulatorCityRelations',
+  'uniqueArticulators',
+  'uniqueCoordinators',
+  'uniqueLeaderships',
+  'uniqueAssignments',
+  'uniqueAlliances',
+  'pendingAliasCount',
+])
+
+function normalizedSearch(value?: string) {
+  return value?.trim().toLocaleLowerCase('pt-BR') ?? ''
 }
 
 export const coverageRepository = {
@@ -170,12 +193,12 @@ export const coverageRepository = {
     })
   },
 
-  async listMacro(regionId?: string) {
+  async listMacro(filters: MacroCoverageFilters = { aliasStatus: 'ALL', sortBy: 'city', sortDirection: 'asc' }) {
     const cities = await prisma.locality.findMany({
       where: {
         type: 'CITY',
         status: { not: 'INACTIVE' },
-        ...(regionId ? { parentId: regionId } : {}),
+        ...(filters.regionId ? { parentId: filters.regionId } : {}),
       },
       include: {
         parent: true,
@@ -186,7 +209,31 @@ export const coverageRepository = {
       orderBy: { name: 'asc' },
     })
 
-    return cities.map(toMacroCoverageRow)
+    const search = normalizedSearch(filters.search)
+    const rows = cities.map(toMacroCoverageRow).filter((row, index) => {
+      const city = cities[index]
+      if (!city) return false
+      const activeAssignments = city.assignments.filter((item) => item.status !== 'INACTIVE')
+      const activeAlliances = city.alliances.filter((item) => item.status !== 'INACTIVE')
+      const hasRole = filters.role ? activeAssignments.some((item) => item.businessRole.code === filters.role) : true
+      const hasAlliance = filters.allianceId ? activeAlliances.some((item) => item.id === filters.allianceId) : true
+      const hasPendingAlias = row.pendingAliasCount > 0
+      const matchesAliasStatus = filters.aliasStatus === 'PENDING' ? hasPendingAlias : filters.aliasStatus === 'CLEAR' ? !hasPendingAlias : true
+      const matchesSearch = search.length === 0 || [row.city, row.region, row.canonicalKey].some((value) => normalizedSearch(value).includes(search))
+      return hasRole && hasAlliance && matchesAliasStatus && matchesSearch
+    })
+
+    const sortBy = sortKeys.has(filters.sortBy) ? filters.sortBy : 'city'
+    const direction = filters.sortDirection === 'desc' ? -1 : 1
+    return rows.sort((left, right) => {
+      const leftValue = left[sortBy]
+      const rightValue = right[sortBy]
+      const leftComparable = typeof leftValue === 'string' ? leftValue.toLocaleLowerCase('pt-BR') : leftValue
+      const rightComparable = typeof rightValue === 'string' ? rightValue.toLocaleLowerCase('pt-BR') : rightValue
+      const comparison = leftComparable < rightComparable ? -1 : leftComparable > rightComparable ? 1 : 0
+      if (comparison !== 0) return comparison * direction
+      return left.city.localeCompare(right.city, 'pt-BR')
+    })
   },
 
   async listTree(stateId?: string): Promise<CoverageTreeRegion[]> {

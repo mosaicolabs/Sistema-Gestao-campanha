@@ -18,9 +18,9 @@ Use **Pessoas** para criar uma entidade uma vez e relacionar contatos, papel, lo
 
 ## Cobertura territorial
 
-Use **Cobertura** para abrir **Regiões e cidades** na sidebar. A árvore começa no estado do Rio de Janeiro e agrupa as cidades pelas regiões ativas da base; a contagem principal representa relações articulador–cidade. Selecione uma cidade para abrir o diálogo acessível com articuladores, coordenadores, lideranças, contatos e dobradas relacionadas. O selo **Informação ausente** significa que a base não informou o campo; ele não afirma que não existe atuação naquele local.
+Use **Cobertura** para abrir **Regiões e cidades** na sidebar. A árvore começa no estado do Rio de Janeiro e agrupa as cidades pelas regiões ativas da base. Na área principal, busque por cidade ou região e use os filtros de região, papel, dobrador e situação dos aliases; a ordenação pode ser alterada pela lista ou pelos cabeçalhos da tabela. Os filtros permanecem na URL para que a consulta possa ser recarregada sem perder o contexto. A tabela mantém cidade, região, relações articulador–cidade, articuladores, coordenadores, lideranças, atribuições, dobradas, variações observadas e aliases pendentes. Os três cards agregados usados como indicadores técnicos foram removidos. Selecione uma cidade para abrir o diálogo acessível com articuladores, coordenadores, lideranças, contatos e dobradas relacionadas. O selo **Informação ausente** significa que a base não informou o campo; ele não afirma que não existe atuação naquele local.
 
-Na seção **Dobradores / Deputados apoiados**, selecione uma Alliance para consultar sua visão agrupada por região e cidade, com as pessoas separadas por papel. Vínculos sem localidade aparecem como **Localidade não informada**. Use **Voltar para a árvore** para retornar à visão territorial.
+Na seção **Dobradores / Deputados apoiados**, selecione uma Alliance para consultar sua visão tabular agrupada por região e cidade, com as pessoas separadas por papel. Em telas pequenas, expanda a linha para ver todos os nomes. Vínculos sem localidade aparecem como **Localidade não informada**. Use **Voltar para a árvore** para retornar à visão territorial.
 
 ## Tarefas
 

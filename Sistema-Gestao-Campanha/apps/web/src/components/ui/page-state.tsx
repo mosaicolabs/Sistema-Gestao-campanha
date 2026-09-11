@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import { WarningCircleIcon, TrayIcon } from '@phosphor-icons/react'
 import { Skeleton } from '@/components/ui/skeleton'
 
@@ -9,12 +10,13 @@ export function LoadingState({ rows = 3 }: { rows?: number }) {
   )
 }
 
-export function EmptyState({ title, description }: { title: string; description: string }) {
+export function EmptyState({ title, description, children }: { title: string; description: string; children?: ReactNode }) {
   return (
     <div className="empty-state">
       <TrayIcon size={30} weight="duotone" aria-hidden />
       <strong>{title}</strong>
       <p>{description}</p>
+      {children}
     </div>
   )
 }
