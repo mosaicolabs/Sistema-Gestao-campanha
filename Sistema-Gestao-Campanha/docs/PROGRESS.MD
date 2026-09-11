@@ -57,7 +57,7 @@ Este é o ponto de retomada do projeto. Depois de cada plano implementado, regis
 
 ### Plan 005 — Filtros, ordenações e reorganização da tela de Cobertura
 
-- Estado: implementado e validado localmente; commit/push desta execução serão registrados após a revisão final do diff.
+- Estado: implementado, validado e commitado localmente em `a1d25fe` (`feat: reorganizar cobertura com filtros e tabela`); publicação da branch em andamento.
 - Entregas: filtros por busca, região, papel, dobrador e situação de alias; ordenação por cidade, região e métricas; estado persistido na query string; tabela principal com todas as métricas por cidade; detalhe de cidade preservado; visão por dobrador reorganizada em tabela; os três cards técnicos removidos.
 - API: `GET /api/coverage/macro` mantém `coverage:read`, valida os novos parâmetros com Zod e aplica filtros/ordenação sobre a visão macro existente sem migration Prisma.
 - UX: desktop usa tabela com cabeçalhos ordenáveis; mobile usa tabela semântica com expansão por linha e `Sheet` para os filtros; a contagem de resultados aparece como contexto textual, sem card KPI.
@@ -113,4 +113,4 @@ Destino: Product manager, arquiteto, frontend, backend, QA e redator técnico
 Objetivo: executar `plan-005-filtros-ordenacoes-cobertura.md` em etapas revisáveis  
 Evidências: builds Docker da API/web concluídos; containers saudáveis; filtros e ordenação conferidos na tela em execução; cards agregados ausentes; endpoint sem JWT retornando `401`.  
 Pendências: revisar candidatos fora das 17 abas de dobradores, decidir DP-006/RBAC e executar revisão final de idempotência em banco limpo.  
-Próximo passo: revisar o diff do plan 005, criar o commit somente com os arquivos desta tarefa e publicar a branch `normalizacao-localidades`.
+Próximo passo: publicar a branch `normalizacao-localidades` e manter os arquivos anteriores do working tree fora deste commit.
