@@ -248,6 +248,7 @@
   .coverage-data-table [data-slot="table-head"].coverage-sticky-column { z-index: 2; background: var(--brand-soft); }
   .coverage-sort-button { display: inline-flex; align-items: center; gap: 0.3rem; border: 0; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; }
   .coverage-sort-button:focus-visible { border-radius: 5px; outline: 2px solid var(--brand-primary); outline-offset: 2px; }
+  .coverage-data-table tbody tr[tabindex="0"]:focus-visible { outline: 2px solid var(--brand-primary); outline-offset: -2px; }
   .coverage-city-cell { display: flex; min-width: 150px; align-items: flex-start; gap: 0.5rem; }
   .coverage-city-cell > svg { flex: 0 0 auto; color: var(--brand-primary); }
   .coverage-city-cell > div { display: grid; min-width: 0; gap: 0.18rem; }

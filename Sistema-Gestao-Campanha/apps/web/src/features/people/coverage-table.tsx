@@ -98,7 +98,12 @@ export function CoverageTable({ data, filters, onSortChange, onOpenCity }: Props
             })}</TableRow>)}
           </TableHeader>
           <TableBody>
-            {table.getRowModel().rows.map((row) => <TableRow key={row.id}>{row.getVisibleCells().map((cell) => <TableCell key={cell.id} className={cell.column.id === 'city' ? 'coverage-sticky-column' : undefined}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</TableCell>)}</TableRow>)}
+            {table.getRowModel().rows.map((row) => <TableRow key={row.id} tabIndex={0} aria-label={`Abrir detalhes de ${row.original.city}`} onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault()
+                onOpenCity(row.original.id)
+              }
+            }}>{row.getVisibleCells().map((cell) => <TableCell key={cell.id} className={cell.column.id === 'city' ? 'coverage-sticky-column' : undefined}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</TableCell>)}</TableRow>)}
           </TableBody>
         </Table>
       </div>
