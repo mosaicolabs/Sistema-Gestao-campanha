@@ -97,6 +97,14 @@ export const coverageAllianceParamSchema = z.object({
   allianceId: entityId,
 })
 
+export const materializationBatchParamSchema = z.object({
+  batchId: entityId,
+})
+
+export const materializationApplySchema = z.object({
+  acknowledgePending: z.boolean().default(false),
+})
+
 export const createTaskSchema = z.object({
   boardId: entityId,
   columnId: entityId,

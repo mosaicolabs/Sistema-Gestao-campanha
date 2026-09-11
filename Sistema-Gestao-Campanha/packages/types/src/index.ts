@@ -160,3 +160,33 @@ export type CoverageAllianceDetail = {
   alliance: { id: string; name: string }
   rows: CoverageAllianceRow[]
 }
+
+export type MaterializationPreview = {
+  batchId: string
+  status: string
+  sourceRows: number
+  territorialRows: number
+  allianceRows: number
+  eligibleRows: number
+  partialRows: number
+  blockedRows: number
+  rejectedRows: number
+  people: { newCandidates: number; reusableCandidates: number; ambiguousCandidates: number }
+  contacts: { present: number; eligible: number; blocked: number }
+  assignments: number
+  alliances: number
+  allianceRelations: number
+  manualIndexes: { territorial: number | null; alliance: number | null }
+  observedTotals: { territorial: number; alliance: number }
+  duplicateOccurrences: { blockRows: number; exactAdditionalRows: number }
+  indexControls: Array<{ scope: string; sourceLabel: string; manualCount: number; observedCount: number | null; difference: number | null }>
+  issuesBySeverity: { INFO: number; WARNING: number; CRITICAL: number }
+  openIssueCount: number
+  blockingIssueCount: number
+  notes: string[]
+}
+
+export type MaterializationApplyResult = MaterializationPreview & {
+  applied: boolean
+  materializedAt: string | null
+}

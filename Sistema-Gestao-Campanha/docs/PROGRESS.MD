@@ -21,6 +21,7 @@ Este é o ponto de retomada do projeto. Depois de cada plano implementado, regis
 | UI de visão macro hierárquica | Implementada | `CoverageNavigation`, acordeão de regiões/cidades e seção de dobradores na sidebar desktop e mobile |
 | Modal de pessoas por cidade | Implementada | `CoverageCityDialog`, tabela responsiva e consulta sob demanda por cidade |
 | Visão por dobrador | Implementada | `CoverageAllianceView`, agrupamento por região/cidade/papel e retorno para a árvore |
+| Carga da visão macro (plan 004) | Implementada em ambiente local | Lote `cmtvnvn9j0046sg36jjbrsn1o`, 1.420 ocorrências, materialização transacional concluída |
 
 ## Planos e commits
 
@@ -43,13 +44,27 @@ Este é o ponto de retomada do projeto. Depois de cada plano implementado, regis
 - Validação: `docker compose build api` e `docker compose build web` concluídos; containers PostgreSQL, API e web saudáveis; `/health` `200`; árvore autenticada `200`; rota sem JWT `401`; token sem `coverage:read` `403`; cidade inválida `422`; cidade válida `200`; dobrador inexistente `404`.
 - Pendências: as seis suposições de apresentação continuam explicitamente marcadas no plano para confirmação do gestor; nenhuma decisão histórica da base foi resolvida.
 
+### Plan 004 — Carga de dados da planilha na visão macro
+
+- Estado: implementado na branch `normalizacao-localidades`; documentação e revisão técnica finais pendentes.
+- Entregas: fingerprint semântico versionado; migration aditiva para artefatos, controles e estado de materialização; parser nomeado para abas, índices e colunas; detector de divergências sem hash fixo; persistência de 1.420 `SourceOccurrence`; dry-run e aplicação transacional; CLI e runbook; prévia de materialização na tela de Importações.
+- Lote validado: 80 abas, 681 ocorrências territoriais, 739 ocorrências de dobradas, índices manuais 672/591, 148 duplicidades preservadas e um bloco adicional identificado; 80 controles de índice com observado/diferença; status `COMPLETED` após aplicação.
+- Materialização atual: 843 pessoas e 843 atribuições vinculadas ao lote no primeiro apply; 30 entidades de dobrador observadas foram materializadas, enquanto nomes fora das 17 abas conhecidas permanecem como candidatos `PENDING_REVIEW`. A base global contém registros adicionais de tentativas anteriores e deve ser revisada antes de produção.
+- Validação: `docker compose build api`, `docker compose build web`, migration aplicada, seed idempotente, healthchecks saudáveis, dry-run e apply autenticados executados no container. A geração local do Prisma/TypeScript foi substituída pela validação no Docker por lentidão do CLI no host.
+- Observação: a aplicação foi corrigida para reutilizar a pessoa já ligada à ocorrência e ao papel. Não executar novas cargas em produção antes de revisar os candidatos criados no ensaio local.
+
 ## Decisões confirmadas
 
 - DP-021: diferenças de maiúsculas, acentos e espaços são aliases seguros; os seis pares de cidade usam o nome canônico correto; métrica principal é relação articulador–cidade.
+- DP-001: as 148 ocorrências são mantidas como evidência.
+- DP-002: índices manuais e contagens observadas são armazenados e exibidos juntos.
+- DP-005: a mesma pessoa pode ter múltiplos papéis, cidades e vínculos conforme a origem.
+- DP-007: grafias/identidades de dobradores e casos Paraty/Serfiotis/Barra do Piraí foram confirmados.
+- DP-015: religião permanece somente como evidência de origem restrita.
 
 ## Decisões ainda abertas
 
-- DP-001 a DP-020 continuam pendentes conforme `docs/decisoes-pendentes.md`.
+- DP-003, DP-004, DP-006, DP-008 a DP-014 e DP-016 a DP-020 continuam pendentes conforme `docs/decisoes-pendentes.md`.
 - O plano 003 adiciona decisões de apresentação e escopo da árvore, contatos, dobradores e vínculos sem localidade. Elas devem ser confirmadas antes do aceite final.
 
 ## Validações e comandos de retomada
@@ -71,13 +86,20 @@ Para normalização de um lote:
 npm run normalize:localities -w @campanha/api -- --batch-id "id-do-lote" --manifest packages/database/prisma/data/campanha-ea-2026-locality-manifest.json --dry-run
 ```
 
+Para importar a planilha e revisar a materialização:
+
+```bash
+npm run import:campaign -w @campanha/api -- --file "/caminho/Campanha_EA_2026_REV-006.xlsx" --dry-run
+npm run import:campaign -w @campanha/api -- --batch-id "id-do-lote" --apply --acknowledge-pending --actor-user-id "id-do-usuario"
+```
+
 Antes de concluir o plan 003, validar manualmente em 375px e desktop: sidebar → Cobertura → Região → Cidade → diálogo com pessoas → dobrador → retorno à árvore.
 
 ## Handoff
 
 Origem: planejamento Superpowers + documentação do projeto  
 Destino: Product manager, arquiteto, frontend, backend, QA e redator técnico  
-Objetivo: executar `plan-003-visao-macro-cobertura-regioes-pessoas.md` em etapas revisáveis  
-Evidências: commit `bc6e848`; builds Docker da API/web concluídos; containers saudáveis; smoke HTTP com 401/403/404/422/200; `git diff --check` sem apontamentos
-Pendências: decisões de raiz geográfica, rótulo Alliance/Dobrador, vínculos sem cidade, linhas por papel, política de contatos e posição do acordeão de dobradores  
-Próximo passo: confirmar as decisões de apresentação com o gestor e abrir a revisão visual em 375px e desktop
+Objetivo: executar `plan-004-carga-dados-planilha-visao-macro.md` em etapas revisáveis  
+Evidências: builds Docker da API/web concluídos; migration e seed aplicados; lote com 1.420 ocorrências e materialização `COMPLETED`; dry-run/apply executados no container.  
+Pendências: revisar candidatos fora das 17 abas de dobradores, decidir DP-006/RBAC e executar revisão final de idempotência em banco limpo.  
+Próximo passo: revisar este diff, executar smoke HTTP das rotas de materialização e fazer o commit da carga sem incluir o arquivo XLSX.

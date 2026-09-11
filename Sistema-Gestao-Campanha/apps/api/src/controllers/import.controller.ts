@@ -1,5 +1,6 @@
 import type { Request, Response } from 'express'
 import { importService } from '../services/import.service.js'
+import { importMaterializationService } from '../services/import-materialization.service.js'
 import { AppError } from '../utils/app-error.js'
 
 export const importController = {
@@ -18,5 +19,11 @@ export const importController = {
   },
   async decide(request: Request, response: Response) {
     response.status(201).json(await importService.decide(String(request.params.id), request.auth!.userId, request.body))
+  },
+  async materializationPreview(request: Request, response: Response) {
+    response.json(await importMaterializationService.preview(String(request.params.batchId)))
+  },
+  async materializationApply(request: Request, response: Response) {
+    response.status(201).json(await importMaterializationService.apply(String(request.params.batchId), request.auth!.userId, request.body))
   },
 }

@@ -23,6 +23,14 @@ function normalizedCellValue(value: unknown) {
   return text.length ? canonicalize(text) : null
 }
 
+function safeCellText(cell: ExcelJS.Cell) {
+  try {
+    return cell.text
+  } catch {
+    return null
+  }
+}
+
 function canonicalWorkbook(workbook: ExcelJS.Workbook) {
   return {
     parserVersion: WORKBOOK_PARSER_VERSION,
@@ -31,7 +39,7 @@ function canonicalWorkbook(workbook: ExcelJS.Workbook) {
       const rows: Array<{ row: number; cells: Array<string | null> }> = []
       worksheet.eachRow({ includeEmpty: true }, (row, rowNumber) => {
         if (category !== 'GENERAL_INDEX' && category !== 'REGIONAL_INDEX' && rowNumber <= 2) return
-        const cells = Array.from({ length: 8 }, (_, index) => normalizedCellValue(row.getCell(index + 1).text))
+        const cells = Array.from({ length: 8 }, (_, index) => normalizedCellValue(safeCellText(row.getCell(index + 1))))
         if (cells.some(Boolean)) rows.push({ row: rowNumber, cells })
       })
 
@@ -45,14 +53,18 @@ export type WorkbookFingerprint = {
   parserVersion: string
 }
 
-export async function fingerprintWorkbook(buffer: Buffer): Promise<WorkbookFingerprint> {
-  const workbook = new ExcelJS.Workbook()
-  await workbook.xlsx.load(buffer as unknown as ExcelJS.Buffer)
+export function fingerprintWorkbookInstance(workbook: ExcelJS.Workbook): WorkbookFingerprint {
   const serialized = JSON.stringify(canonicalWorkbook(workbook))
   return {
     semanticHash: createHash('sha256').update(serialized).digest('hex'),
     parserVersion: WORKBOOK_PARSER_VERSION,
   }
+}
+
+export async function fingerprintWorkbook(buffer: Buffer): Promise<WorkbookFingerprint> {
+  const workbook = new ExcelJS.Workbook()
+  await workbook.xlsx.load(buffer as unknown as ExcelJS.Buffer)
+  return fingerprintWorkbookInstance(workbook)
 }
 
 export const computeWorkbookFingerprint = fingerprintWorkbook

@@ -10,17 +10,17 @@ audience: Gestores, analistas, designers e desenvolvedores.
 
 # Revisar decisões pendentes do produto
 
-DP-001 a DP-020 são decisões abertas que o sistema exibe e persiste como `PENDING`. DP-021 foi confirmada pelo gestor em 10/09/2026 e passa a ser uma regra executável do fluxo de localidades.
+DP-003, DP-004, DP-006, DP-008 a DP-014 e DP-016 a DP-020 continuam abertas e são persistidas como `PENDING`. DP-001, DP-002, DP-005, DP-007 e DP-015 foram confirmadas para a carga atual; DP-021 foi confirmada em 10/09/2026 e é regra executável do fluxo de localidades.
 
-| ID | Decisão | Impacto |
-| --- | --- | --- |
-| DP-001 | Destino dos quatro blocos de 37 linhas | Define vínculos, correções ou rejeições das 148 ocorrências |
-| DP-002 | Fonte que prevalece após a revisão | Define a reconciliação de 672 versus 681 e 591 versus 739 |
+| ID | Decisão | Impacto | Estado |
+| --- | --- | --- | --- |
+| DP-001 | Destino dos quatro blocos de 37 linhas | Define vínculos, correções ou rejeições das 148 ocorrências | Confirmada: manter evidência |
+| DP-002 | Fonte que prevalece após a revisão | Define a reconciliação de 672 versus 681 e 591 versus 739 | Confirmada: preservar ambos |
 | DP-003 | Identidade e grafia de Levi Carnela ou Levi Carnella | Impede criar identidade não confirmada |
 | DP-004 | Significado de “API do WhatsApp” | Define fornecedor e arquitetura da possibilidade |
-| DP-005 | Cardinalidade de papéis, localidades e dobradas | Define validações de atribuições |
+| DP-005 | Cardinalidade de papéis, localidades e dobradas | Define validações de atribuições | Confirmada |
 | DP-006 | Titularidade dos campos de contato | Define a pessoa dona de cada telefone |
-| DP-007 | Correção de Paraty e Serfiotis | Define valores publicados para campos divergentes |
+| DP-007 | Correção de Paraty e Serfiotis | Define valores publicados para campos divergentes | Confirmada |
 | DP-008 | Significado de mapa e níveis territoriais | Define cartografia ou visão organizada |
 | DP-009 | Papéis RBAC e escopos | Define consulta, cadastro, alteração, exclusão e exportação |
 | DP-010 | Política de sessão e recuperação de acesso | Define token de renovação (refresh token), recuperação, autenticação multifator (MFA) e encerramento |
@@ -28,7 +28,7 @@ DP-001 a DP-020 são decisões abertas que o sistema exibe e persiste como `PEND
 | DP-012 | Fluxo definitivo do Kanban | Define campos, status, responsáveis e visibilidade |
 | DP-013 | Escopo de materiais e entregas | Define solicitações, estoque e rotas |
 | DP-014 | Etapa e gatilhos de WhatsApp | Define destinatários e eventos de alerta |
-| DP-015 | Finalidade e retenção do campo religião | Define migração, visibilidade ou remoção |
+| DP-015 | Finalidade e retenção do campo religião | Define migração, visibilidade ou remoção | Confirmada: somente evidência |
 | DP-016 | Plataforma mobile | Define PWA, aplicativo nativo ou web responsiva |
 | DP-017 | Biblioteca e indicadores de gráficos | Define gráficos além do diagnóstico |
 | DP-018 | Prazo, usuários, orçamento e prioridade | Define capacidade e sequência dos módulos |
@@ -56,4 +56,4 @@ Registre a decisão com data, responsável, contexto, regra escolhida, dados afe
 
 ## Itens que bloqueiam automação
 
-DP-001 e DP-002 bloqueiam consolidação das ocorrências duplicadas e reconciliação dos índices. DP-003 bloqueia identidade de pessoa ou usuário. DP-004 e DP-014 bloqueiam alertas de WhatsApp. DP-016 bloqueia a escolha de uma aplicação mobile separada.
+DP-001 e DP-002 não bloqueiam a preservação/materialização controlada da carga atual, mas continuam exigindo rastreabilidade e não autorizam apagar ou substituir valores. DP-003 bloqueia identidade de pessoa ou usuário. DP-004 e DP-014 bloqueiam alertas de WhatsApp. DP-016 bloqueia a escolha de uma aplicação mobile separada. DP-006 continua pendente: os contatos deslocados ficam fora da materialização operacional até a política ser definida.

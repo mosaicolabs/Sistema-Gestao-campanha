@@ -15,6 +15,8 @@ import {
   createUserSchema,
   updateUserStatusSchema,
   updateEventSchema,
+  materializationBatchParamSchema,
+  materializationApplySchema,
 } from '@campanha/validation'
 import { importController } from '../controllers/import.controller.js'
 import { operationsController } from '../controllers/operations.controller.js'
@@ -63,6 +65,9 @@ protectedRoutes.get('/imports', requirePermission('imports', 'read'), importCont
 protectedRoutes.post('/imports', requirePermission('imports', 'create'), upload.single('file'), importController.upload)
 protectedRoutes.get('/reconciliation-issues', requirePermission('imports', 'read'), importController.issues)
 protectedRoutes.post('/reconciliation-issues/:id/decisions', requirePermission('imports', 'reconcile'), validate(reconciliationDecisionSchema), importController.decide)
+protectedRoutes.get('/imports/:batchId/materialization/preview', requirePermission('imports', 'read'), validate(materializationBatchParamSchema, 'params'), importController.materializationPreview)
+protectedRoutes.post('/imports/:batchId/materialization/preview', requirePermission('imports', 'read'), validate(materializationBatchParamSchema, 'params'), importController.materializationPreview)
+protectedRoutes.post('/imports/:batchId/materialization/apply', requirePermission('imports', 'reconcile'), validate(materializationBatchParamSchema, 'params'), validate(materializationApplySchema), importController.materializationApply)
 protectedRoutes.get('/product-decisions', requirePermission('imports', 'read'), importController.decisions)
 
 protectedRoutes.get('/audit-logs', requirePermission('audit', 'read'), operationsController.audit)

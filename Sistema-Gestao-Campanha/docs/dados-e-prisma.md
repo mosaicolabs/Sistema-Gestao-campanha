@@ -21,7 +21,7 @@ O banco usa PostgreSQL e o schema vive em `packages/database/prisma/schema.prism
 | Atuação | `BusinessRole`, `PersonAssignment` | Papel e vínculo com localidade |
 | Dobradas | `Alliance`, `PersonAlliance` | Alianças e vínculos revisáveis |
 | Acesso | `User`, `AccessRole`, `Permission`, junções | Conta, RBAC e escopo |
-| Origem | `ImportBatch`, `SourceOccurrence`, `ImportIssue` | Lote, aba, linha e pendência |
+| Origem | `ImportBatch`, `ImportArtifact`, `SourceOccurrence`, `ImportIndexControl`, `ImportIssue` | Revisão lógica, artefato, aba, linha, controles e pendência |
 | Conciliação | `ReconciliationDecision`, `EntitySource` | Decisão e rastreabilidade |
 | Operação | `KanbanBoard`, `KanbanColumn`, `Task` | Tarefas e responsáveis |
 | Agenda | `CalendarEvent`, `EventParticipant`, `ShareLink` | Compromissos e compartilhamento |
@@ -31,6 +31,8 @@ O banco usa PostgreSQL e o schema vive em `packages/database/prisma/schema.prism
 ## Cadastro único
 
 `Person` guarda uma pessoa uma vez. `PersonAlias` registra grafias alternativas, `Contact` guarda valor bruto e valor normalizado, `PersonAssignment` liga a pessoa a papel e localidade, e `PersonAlliance` registra a dobrada com status de revisão.
+
+`ImportBatch.semanticHash` identifica a revisão lógica do conteúdo; `ImportArtifact.fileHash` identifica cada arquivo recebido. `ImportIndexControl` preserva o rótulo, célula, índice manual, contagem observada e diferença de cada controle geral, regional, de cidade e de dobrador. `MaterializationStatus` registra o ciclo de prévia, execução, conclusão ou falha.
 
 O importador cria `SourceOccurrence` para cada aba e linha, sem transformar automaticamente cada ocorrência em `Person`. `EntitySource` liga uma entidade aceita à ocorrência que a originou; esse vínculo permite auditar a decisão sem perder o valor original.
 
@@ -70,4 +72,4 @@ Não edite uma migration já aplicada. Revise o SQL gerado, confira chaves estra
 
 ## Dado sensível
 
-O modelo atual não inclui um campo operacional para religião. A finalidade, retenção e eventual migração desse dado permanecem na decisão DP-015; não adicione filtros ou classificações antes da confirmação.
+O modelo atual não inclui um campo operacional para religião. O texto bruto fica somente em `SourceOccurrence.rawValues` como evidência restrita, conforme DP-015; não adicione filtros ou classificações antes de uma decisão específica.

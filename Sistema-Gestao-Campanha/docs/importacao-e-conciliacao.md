@@ -24,7 +24,7 @@ Confirme que o arquivo é `.xlsx` e tem no máximo 25 MB. O importador espera a 
 4. Compare abas, ocorrências, índices manuais e pendências
 5. Abra uma pendência e registre decisão com justificativa
 
-O mesmo arquivo não cria lote duplicado: o servidor calcula SHA-256 e retorna o lote existente quando o hash já foi processado.
+O mesmo arquivo não cria lote duplicado: o servidor calcula SHA-256 e retorna o lote existente quando o hash já foi processado. `semanticHash` e `parserVersion` também identificam a revisão lógica quando o pacote XLSX muda sem alterar as células.
 
 ## Classificação de abas
 
@@ -58,6 +58,12 @@ Os índices manuais permanecem como controle histórico. A tela explica a difere
 ## Pendências conhecidas
 
 O lote conhecido registra as 148 linhas duplicadas de dobradas, o par repetido em Wellington José, candidatos por liderança e localidade, telefones repetidos, campos possivelmente deslocados em Paraty, divergências em Serfiotis e Barra do Piraí, liderança ausente no Rio de Janeiro, grafias de localidades e hiperlink quebrado em Mendes.
+
+## Materialização da visão macro
+
+Depois do dry-run, consulte a prévia em `GET /api/imports/:batchId/materialization/preview` ou pela seção **Cadastro único** da tela. Ela mostra linhas elegíveis/parciais, candidatos de pessoa, contatos bloqueados, relações com dobradores e os controles manual/observado. A aplicação exige `imports:reconcile` e mantém as ocorrências originais; use o CLI documentado no [runbook de carga](runbook-carga-planilha.md) para uma execução reproduzível.
+
+As 148 ocorrências são mantidas conforme DP-001. Os índices 672/591 e 681/739 permanecem separados conforme DP-002. A aplicação marca entidades sem identificação suficiente como `PENDING_REVIEW`; nomes de dobradores fora das 17 abas conhecidas também ficam nessa fila.
 
 ## Registrar uma decisão
 

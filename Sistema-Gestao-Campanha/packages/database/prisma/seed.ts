@@ -49,6 +49,15 @@ const pendingDecisions = [
   ['DP-021', 'Grafias de cidades e aliases canônicos', 'Define quais aproximações do relatório podem virar LocalityAlias ativo e qual rótulo será exibido.'],
 ] as const
 
+const confirmedDecisionNotes = new Map<string, string>([
+  ['DP-001', 'As 148 ocorrências dos quatro blocos serão preservadas como evidência.'],
+  ['DP-002', 'Índices manuais e contagens observadas serão preservados separadamente.'],
+  ['DP-005', 'Uma pessoa pode ter múltiplos papéis, cidades e vínculos conforme a origem.'],
+  ['DP-007', 'As correções confirmadas podem ser materializadas sem apagar a grafia de origem.'],
+  ['DP-015', 'Religião permanece somente em SourceOccurrence como evidência restrita.'],
+  ['DP-021', 'Aliases seguros e nomes canônicos de cidades seguem a regra aprovada.'],
+])
+
 async function main() {
   const permissions = await Promise.all(
     permissionPairs.map(([resource, action]) =>
@@ -170,20 +179,41 @@ async function main() {
   }
 
   for (const [id, title, impact] of pendingDecisions) {
+    const confirmedNote = confirmedDecisionNotes.get(id)
     await prisma.productDecision.upsert({
       where: { id },
-      update: { title, impact, status: id === 'DP-021' ? 'CONFIRMED' : 'PENDING' },
-      create: { id, title, impact, source: 'PRD seção 9', status: id === 'DP-021' ? 'CONFIRMED' : 'PENDING' },
+      update: {
+        title,
+        impact,
+        status: confirmedNote ? 'CONFIRMED' : 'PENDING',
+        notes: confirmedNote,
+        decidedBy: confirmedNote ? 'gestor' : null,
+      },
+      create: {
+        id,
+        title,
+        impact,
+        source: 'PRD seção 9',
+        status: confirmedNote ? 'CONFIRMED' : 'PENDING',
+        notes: confirmedNote,
+        decidedBy: confirmedNote ? 'gestor' : null,
+      },
     })
   }
 
   const diagnosticBatch = await prisma.importBatch.upsert({
     where: { fileHash: 'a04f4117cb5fcf07cb2f5bd4a8cdefd17fe58ef2c0bfcd06afc487b1ea9534f0' },
-    update: {},
+    update: {
+      semanticHash: 'd83aa3b24bf2bef09166f632f7463950a1ce6749f6b0c5cf724e9f30f568b5e1',
+      parserVersion: 'campaign-v2',
+    },
     create: {
       filename: 'Campanha_EA_2026_REV-006.xlsx',
       fileHash: 'a04f4117cb5fcf07cb2f5bd4a8cdefd17fe58ef2c0bfcd06afc487b1ea9534f0',
+      semanticHash: 'd83aa3b24bf2bef09166f632f7463950a1ce6749f6b0c5cf724e9f30f568b5e1',
+      parserVersion: 'campaign-v2',
       status: 'REVIEW_REQUIRED',
+      materializationStatus: 'NOT_STARTED',
       workbookTabs: 80,
       territorialOccurrences: 681,
       allianceOccurrences: 739,
@@ -191,6 +221,19 @@ async function main() {
       manualAllianceIndex: 591,
       createdById: admin.id,
       finishedAt: new Date(),
+    },
+  })
+
+  await prisma.importArtifact.upsert({
+    where: { fileHash: diagnosticBatch.fileHash },
+    update: {
+      importBatchId: diagnosticBatch.id,
+      filename: diagnosticBatch.filename,
+    },
+    create: {
+      importBatchId: diagnosticBatch.id,
+      filename: diagnosticBatch.filename,
+      fileHash: diagnosticBatch.fileHash,
     },
   })
 
@@ -214,6 +257,30 @@ async function main() {
         data: { importBatchId: diagnosticBatch.id, type, severity, title, details },
       })
     }
+  }
+
+  if (
+    (await prisma.sourceOccurrence.count({ where: { importBatchId: diagnosticBatch.id } })) === 0
+    && (await prisma.importIssue.count({
+      where: {
+        importBatchId: diagnosticBatch.id,
+        title: 'Ocorrências de origem ainda não persistidas',
+      },
+    })) === 0
+  ) {
+    await prisma.importIssue.create({
+      data: {
+        importBatchId: diagnosticBatch.id,
+        type: 'OTHER',
+        severity: 'WARNING',
+        title: 'Ocorrências de origem ainda não persistidas',
+        details: {
+          expectedTerritorialOccurrences: diagnosticBatch.territorialOccurrences,
+          expectedAllianceOccurrences: diagnosticBatch.allianceOccurrences,
+          persistedOccurrences: 0,
+        },
+      },
+    })
   }
 
   const board = await prisma.kanbanBoard.upsert({

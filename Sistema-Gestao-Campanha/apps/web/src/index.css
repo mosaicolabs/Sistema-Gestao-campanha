@@ -173,6 +173,11 @@
   .metric-strip strong { font-size: 1.7rem; font-variant-numeric: tabular-nums; }
   .dashboard-split { display: grid; gap: 1rem; }
   .data-panel, .schedule-panel, .reconciliation-summary { border: 1px solid var(--border); border-radius: 18px; background: white; padding: 1rem; box-shadow: var(--shadow-card); }
+  .materialization-panel { display: grid; gap: .75rem; margin-top: 1rem; padding: .9rem; border: 1px solid color-mix(in srgb, var(--primary) 20%, var(--border)); border-radius: 14px; background: color-mix(in srgb, var(--primary) 4%, white); }
+  .materialization-panel h3 { margin: .15rem 0; }
+  .materialization-panel p { margin: 0; color: var(--muted-foreground); }
+  .materialization-metrics { display: flex; flex-wrap: wrap; gap: .5rem; font-size: .78rem; color: var(--muted-foreground); }
+  .materialization-metrics span { padding: .25rem .5rem; border-radius: 999px; background: white; border: 1px solid var(--border); }
   .chart-wrap { margin-top: 0.6rem; }
   .data-note { display: flex; align-items: center; gap: 0.55rem; border-radius: 10px; background: #fff2ee; padding: 0.7rem 0.8rem; color: #7d3928; font-size: 0.78rem; font-weight: 650; }
   .schedule-panel { display: flex; flex-direction: column; gap: 1rem; }

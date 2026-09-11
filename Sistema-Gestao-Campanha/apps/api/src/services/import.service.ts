@@ -1,34 +1,14 @@
 import { createHash } from 'node:crypto'
 import ExcelJS from 'exceljs'
-import type { ImportCategory, IssueSeverity, IssueType, Prisma } from '@campanha/database'
+import type { ImportCategory, Prisma } from '@campanha/database'
 import { auditRepository } from '../repositories/audit.repository.js'
 import { importRepository } from '../repositories/import.repository.js'
 import { localityNormalizationService } from './locality-normalization.service.js'
 import { AppError } from '../utils/app-error.js'
 import { canonicalize } from '../utils/normalization.js'
-import { fingerprintWorkbook, type WorkbookFingerprint } from './workbook-fingerprint.js'
-
-const KNOWN_FILE_HASH = 'a04f4117cb5fcf07cb2f5bd4a8cdefd17fe58ef2c0bfcd06afc487b1ea9534f0'
-
-const ALLIANCE_SHEETS = new Set([
-  'Dani Cunha',
-  'Coronel Henrique',
-  'Hugo Leal',
-  'Wellington José',
-  'Eloi Ramalho',
-  'Áureo Ribeiro',
-  'Júnior Trovão',
-  'Serfiotis',
-  'Vinicius Farah',
-  'Marta Rocha',
-  'Sostenes',
-  'Abraão',
-  'Luciano Vieira',
-  'Talita Galhardo',
-  'Altineu Côrtes',
-  'Gutembertg Reis',
-  'Luizinho',
-])
+import { fingerprintWorkbookInstance, type WorkbookFingerprint } from './workbook-fingerprint.js'
+import { classifyCampaignSheet, extractIndexControls, parseSourceFields, type ParsedIndexControl } from './campaign-workbook-parser.js'
+import { detectImportIssues } from './import-issue-detector.js'
 
 type ParsedOccurrence = {
   sheetName: string
@@ -49,19 +29,21 @@ export type WorkbookAnalysis = {
   occurrences: ParsedOccurrence[]
   semanticHash: string
   parserVersion: string
-}
-
-function classifySheet(name: string): ImportCategory {
-  if (name === '>>RIO DE JANEIRO<<') return 'GENERAL_INDEX'
-  if (name.startsWith('>>') && name.endsWith('<<')) return 'REGIONAL_INDEX'
-  if (ALLIANCE_SHEETS.has(name)) return 'ALLIANCE'
-  return 'TERRITORIAL'
+  indexControls: ParsedIndexControl[]
 }
 
 function cellValue(value: unknown) {
   if (value === null || value === undefined) return null
   const text = String(value).trim()
   return text.length ? text : null
+}
+
+function safeCellText(cell: ExcelJS.Cell) {
+  try {
+    return cell.text
+  } catch {
+    return null
+  }
 }
 
 export async function analyzeWorkbook(buffer: Buffer): Promise<WorkbookAnalysis> {
@@ -72,32 +54,36 @@ export async function analyzeWorkbook(buffer: Buffer): Promise<WorkbookAnalysis>
 
   for (const worksheet of workbook.worksheets) {
     const sheetName = worksheet.name
-    const category = classifySheet(sheetName)
+    const category = classifyCampaignSheet(sheetName)
     if (category === 'GENERAL_INDEX' || category === 'REGIONAL_INDEX') continue
     worksheet.eachRow({ includeEmpty: true }, (row, rowNumber) => {
       if (rowNumber <= 2) return
-      const values = Array.from({ length: 8 }, (_, index) => cellValue(row.getCell(index + 1).text))
+      const values = Array.from({ length: 8 }, (_, index) => cellValue(safeCellText(row.getCell(index + 1))))
       if (!values.some(Boolean)) {
         ignoredRows += 1
         return
       }
-      const normalized = values.map((value) => (value ? canonicalize(value) : null))
+      const normalized = values.map((value, index) => (index === 7 ? null : value ? canonicalize(value) : null))
+      const namedFields = parseSourceFields({ sheetName, category, cells: values })
       occurrences.push({
         sheetName,
         rowNumber,
         category,
         rawValues: { cells: values },
-        normalizedValues: { cells: normalized },
+        normalizedValues: namedFields ? { cells: normalized, ...namedFields } : { cells: normalized },
         rowHash: createHash('sha256').update(JSON.stringify([sheetName, rowNumber, normalized])).digest('hex'),
       })
     })
   }
 
   const indexSheet = workbook.getWorksheet('>>RIO DE JANEIRO<<')
-  const manualTerritorialIndex = indexSheet ? Number(indexSheet.getCell('B11').text) : undefined
-  const manualAllianceIndex = indexSheet ? Number(indexSheet.getCell('B30').text) : undefined
+  const territorialIndexText = indexSheet ? safeCellText(indexSheet.getCell('B11')) : null
+  const allianceIndexText = indexSheet ? safeCellText(indexSheet.getCell('B30')) : null
+  const manualTerritorialIndex = territorialIndexText ? Number(territorialIndexText) : undefined
+  const manualAllianceIndex = allianceIndexText ? Number(allianceIndexText) : undefined
 
-  const fingerprint: WorkbookFingerprint = await fingerprintWorkbook(buffer)
+  const fingerprint: WorkbookFingerprint = fingerprintWorkbookInstance(workbook)
+  const indexControls = extractIndexControls(workbook)
   return {
     workbookTabs: workbook.worksheets.length,
     territorialOccurrences: occurrences.filter((item) => item.category === 'TERRITORIAL').length,
@@ -108,32 +94,21 @@ export async function analyzeWorkbook(buffer: Buffer): Promise<WorkbookAnalysis>
     occurrences,
     semanticHash: fingerprint.semanticHash,
     parserVersion: fingerprint.parserVersion,
+    indexControls,
   }
 }
-
-const knownIssues: Array<{ type: IssueType; severity: IssueSeverity; title: string; details: Prisma.InputJsonValue }> = [
-  {
-    type: 'DUPLICATE_BLOCK',
-    severity: 'CRITICAL',
-    title: '148 linhas de dobradas aguardam decisão',
-    details: { affectedRows: 148, blockSize: 37, sourceSheet: 'Vinicius Farah', repeatedIn: ['Marta Rocha', 'Sostenes', 'Abraão', 'Luciano Vieira'], decision: 'DP-001' },
-  },
-  { type: 'DUPLICATE_RECORD', severity: 'WARNING', title: 'Par repetido em Wellington José', details: { range: 'Wellington José!A11:H12', pairs: 1 } },
-  { type: 'DUPLICATE_CANDIDATE', severity: 'WARNING', title: 'Candidatos por liderança e localidade', details: { candidatePairs: 13 } },
-  { type: 'REPEATED_PHONE', severity: 'WARNING', title: 'Telefones repetidos entre linhas territoriais', details: { groups: 5, affectedRows: 11 } },
-  { type: 'SHIFTED_FIELDS', severity: 'CRITICAL', title: 'Campos possivelmente deslocados em Paraty', details: { affectedRows: 4 } },
-  { type: 'SHIFTED_FIELDS', severity: 'WARNING', title: 'Divergência de campos em Serfiotis e Barra do Piraí', details: { sheets: ['Serfiotis', 'Barra do Piraí'] } },
-  { type: 'MISSING_FIELD', severity: 'WARNING', title: 'Liderança não identificada no Rio de Janeiro', details: { range: 'Rio de Janeiro!A94:H94' } },
-  { type: 'LOCALITY_ALIAS', severity: 'INFO', title: 'Grafias de localidade aguardam normalização', details: { unmatchedOccurrences: 8 } },
-  { type: 'BROKEN_LINK', severity: 'INFO', title: 'Hiperlink quebrado preservado como evidência', details: { cell: 'Mendes!I2' } },
-]
 
 export const importService = {
   async process(file: Express.Multer.File, userId: string) {
     const fileHash = createHash('sha256').update(file.buffer).digest('hex')
     const analysis = await analyzeWorkbook(file.buffer)
-    const existing = await importRepository.findByHash(fileHash)
-    if (existing && existing._count.occurrences > 0) return { batch: existing, fileHash, semanticHash: analysis.semanticHash, parserVersion: analysis.parserVersion, idempotent: true }
+    const existingArtifact = await importRepository.findByHash(fileHash)
+    const existingLogicalBatch = await importRepository.findBySemanticHash(analysis.semanticHash)
+    const existing = existingArtifact ?? existingLogicalBatch
+    if (existing && existing._count.occurrences > 0) {
+      if (!existingArtifact) await importRepository.createArtifact({ importBatchId: existing.id, filename: file.originalname, fileHash })
+      return { batch: existing, fileHash, semanticHash: analysis.semanticHash, parserVersion: analysis.parserVersion, idempotent: true }
+    }
     const batch =
       existing ??
       (await importRepository.createBatch({
@@ -143,12 +118,15 @@ export const importService = {
       }))
 
     if (existing) await importRepository.resetBatch(existing.id)
+    await importRepository.createArtifact({ importBatchId: batch.id, filename: file.originalname, fileHash })
 
     await importRepository.createOccurrences(
       analysis.occurrences.map((occurrence) => ({ ...occurrence, importBatchId: batch.id })),
     )
+    await importRepository.createIndexControls(batch.id, analysis.indexControls)
+    await importRepository.updateIndexControlObservations(batch.id, analysis)
 
-    const issues = fileHash === KNOWN_FILE_HASH ? [...knownIssues] : []
+    const issues = detectImportIssues(analysis)
     if (analysis.manualTerritorialIndex !== undefined && analysis.manualTerritorialIndex !== analysis.territorialOccurrences) {
       issues.push({
         type: 'COUNT_MISMATCH',
@@ -179,6 +157,8 @@ export const importService = {
       ignoredRows: analysis.ignoredRows,
       manualTerritorialIndex: analysis.manualTerritorialIndex,
       manualAllianceIndex: analysis.manualAllianceIndex,
+      semanticHash: analysis.semanticHash,
+      parserVersion: analysis.parserVersion,
       finishedAt: new Date(),
     })
     await auditRepository.record({ userId, action: 'IMPORT', entityType: 'ImportBatch', entityId: batch.id, afterData: { fileHash, workbookTabs: analysis.workbookTabs, territorialOccurrences: analysis.territorialOccurrences, allianceOccurrences: analysis.allianceOccurrences } })

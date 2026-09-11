@@ -54,6 +54,9 @@ O seed marca a conta inicial para troca obrigatória. Enquanto `mustChangePasswo
 | `POST` | `/deliveries` | `deliveries:create` |
 | `GET` | `/imports` | `imports:read` |
 | `POST` | `/imports` | `imports:create` |
+| `GET` | `/imports/:batchId/materialization/preview` | `imports:read` |
+| `POST` | `/imports/:batchId/materialization/preview` | `imports:read` |
+| `POST` | `/imports/:batchId/materialization/apply` | `imports:reconcile` |
 | `GET` | `/reconciliation-issues` | `imports:read` |
 | `POST` | `/reconciliation-issues/:id/decisions` | `imports:reconcile` |
 | `GET` | `/product-decisions` | `imports:read` |
@@ -94,7 +97,9 @@ Authorization: Bearer your_access_token_here
 
 ## Importação de planilha
 
-Envie a planilha como `multipart/form-data`, no campo `file`. O servidor aceita `.xlsx` de até 25 MB, calcula SHA-256 e retorna o lote; uma reimportação com o mesmo hash é idempotente.
+Envie a planilha como `multipart/form-data`, no campo `file`. O servidor aceita `.xlsx` de até 25 MB, calcula SHA-256 e retorna o lote; uma reimportação com o mesmo hash é idempotente. O `semanticHash` representa a revisão lógica mesmo quando o empacotamento XLSX muda.
+
+`GET /imports/:batchId/materialization/preview` retorna o dry-run da visão macro, incluindo linhas de origem, candidatos, relações, controles manual/observado, duplicidades e issues por severidade. `POST /imports/:batchId/materialization/apply` materializa o cadastro único de modo transacional, exige `imports:reconcile` e registra auditoria; pendências críticas retornam `409` até serem reconhecidas pelo operador.
 
 ## Visão macro e aliases
 

@@ -47,6 +47,29 @@ enum ImportStatus {
   FAILED
 }
 
+enum MaterializationStatus {
+  NOT_STARTED
+  READY
+  RUNNING
+  REVIEW_REQUIRED
+  COMPLETED
+  FAILED
+}
+
+enum IndexControlScope {
+  TERRITORIAL_TOTAL
+  REGION
+  CITY
+  ALLIANCE_TOTAL
+  ALLIANCE
+}
+
+enum AllianceRelationType {
+  SUPPORTS
+  ARTICULATES_FOR
+  COORDINATES_FOR
+}
+
 enum IssueType {
   DUPLICATE_BLOCK
   DUPLICATE_RECORD
@@ -251,6 +274,8 @@ model PersonAlliance {
   allianceId           String
   localityId           String?
   sourceOccurrenceId   String?
+  relationType         AllianceRelationType
+  relationKey          String                @unique(map: "PersonAlliance_relationKey_key")
   startsAt             DateTime?
   endsAt               DateTime?
   status               RecordStatus      @default(PENDING_REVIEW)
@@ -328,7 +353,12 @@ model ImportBatch {
   id                         String             @id @default(cuid())
   filename                   String
   fileHash                   String             @unique
+  semanticHash               String?            @unique(map: "ImportBatch_semanticHash_key")
+  parserVersion              String?
   status                     ImportStatus       @default(PROCESSING)
+  materializationStatus      MaterializationStatus @default(NOT_STARTED)
+  materializedAt             DateTime?
+  materializationError       String?
   workbookTabs               Int                @default(0)
   territorialOccurrences     Int                @default(0)
   allianceOccurrences        Int                @default(0)
@@ -344,8 +374,38 @@ model ImportBatch {
   createdBy                  User?              @relation("ImportCreator", fields: [createdById], references: [id], onDelete: SetNull)
   occurrences                SourceOccurrence[]
   issues                     ImportIssue[]
+  artifacts                  ImportArtifact[]
+  indexControls              ImportIndexControl[]
 
   @@index([createdAt])
+}
+
+model ImportArtifact {
+  id            String      @id @default(cuid())
+  importBatchId String
+  filename      String
+  fileHash      String      @unique(map: "ImportArtifact_fileHash_key")
+  observedAt    DateTime    @default(now())
+  importBatch   ImportBatch @relation(fields: [importBatchId], references: [id], onDelete: Cascade, map: "ImportArtifact_importBatchId_fkey")
+
+  @@index([importBatchId, observedAt], map: "ImportArtifact_importBatchId_observedAt_idx")
+}
+
+model ImportIndexControl {
+  id            String            @id @default(cuid())
+  importBatchId String
+  scope         IndexControlScope
+  sourceSheet   String
+  sourceCell    String
+  sourceLabel   String
+  normalizedKey String
+  manualCount   Int
+  observedCount Int?
+  difference    Int?
+  importBatch   ImportBatch       @relation(fields: [importBatchId], references: [id], onDelete: Cascade, map: "ImportIndexControl_importBatchId_fkey")
+
+  @@unique([importBatchId, scope, sourceSheet, sourceCell], map: "ImportIndexControl_source_key")
+  @@index([importBatchId, normalizedKey], map: "ImportIndexControl_batch_normalizedKey_idx")
 }
 
 model SourceOccurrence {

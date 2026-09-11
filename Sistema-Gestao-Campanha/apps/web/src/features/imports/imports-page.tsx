@@ -17,7 +17,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Textarea } from '@/components/ui/textarea'
 import { api, apiErrorMessage } from '@/lib/api'
-import type { ImportBatch, ImportIssue } from '@/lib/types'
+import type { ImportBatch, ImportIssue, MaterializationPreview } from '@/lib/types'
 import { LocalityAliasReview } from './locality-alias-review'
 
 type ProductDecision = { id: string; title: string; impact: string; status: 'PENDING' | 'CONFIRMED'; source: string }
@@ -35,6 +35,11 @@ export function ImportsPage() {
   const issues = useQuery({ queryKey: ['issues'], queryFn: async () => (await api.get<ImportIssue[]>('/reconciliation-issues')).data })
   const decisions = useQuery({ queryKey: ['product-decisions'], queryFn: async () => (await api.get<ProductDecision[]>('/product-decisions')).data })
   const latest = batches.data?.[0]
+  const materialization = useQuery({
+    queryKey: ['materialization-preview', latest?.id],
+    enabled: Boolean(latest?.id),
+    queryFn: async () => (await api.get<MaterializationPreview>(`/imports/${latest!.id}/materialization/preview`)).data,
+  })
   const form = useForm<DecisionForm>({ resolver: zodResolver(reconciliationDecisionSchema), defaultValues: { decision: 'KEEP', reason: '' } })
 
   const uploadMutation = useMutation({
@@ -65,6 +70,20 @@ export function ImportsPage() {
     },
   })
 
+  const materializationMutation = useMutation({
+    mutationFn: async () => {
+      if (!latest) throw new Error('Nenhum lote disponível.')
+      return (await api.post(`/imports/${latest.id}/materialization/apply`, { acknowledgePending: true })).data as MaterializationPreview
+    },
+    onSuccess: () => {
+      toast.success('Cadastro único materializado com rastreabilidade.')
+      queryClient.invalidateQueries({ queryKey: ['imports'] })
+      queryClient.invalidateQueries({ queryKey: ['materialization-preview', latest?.id] })
+      queryClient.invalidateQueries({ queryKey: ['coverage-macro'] })
+      queryClient.invalidateQueries({ queryKey: ['coverage-tree'] })
+    },
+  })
+
   return (
     <div className="page-stack">
       <section className="page-intro">
@@ -88,6 +107,14 @@ export function ImportsPage() {
             <article><span>Ocorrências rastreadas</span><strong>{latest._count?.occurrences ?? 0}</strong><small>{latest._count?.issues ?? 0} pendências registradas</small></article>
           </div>
           <Alert><Warning aria-hidden /><AlertTitle>As contagens medem ocorrências</AlertTitle><AlertDescription>681 e 739 não são quantidades de pessoas únicas. Os índices 672 e 591 continuam como controles históricos.</AlertDescription></Alert>
+          {materialization.isLoading ? <LoadingState rows={2} /> : materialization.isError ? <Alert variant="destructive"><AlertTitle>Prévia indisponível</AlertTitle><AlertDescription>{apiErrorMessage(materialization.error)}</AlertDescription></Alert> : materialization.data ? (
+            <div className="materialization-panel" aria-live="polite">
+              <div><p className="context-label">Cadastro único</p><h3>{materialization.data.status === 'COMPLETED' ? 'Materialização concluída' : 'Prévia da materialização'}</h3><p>{materialization.data.people.newCandidates} candidatos de pessoa, {materialization.data.assignments} atribuições e {materialization.data.allianceRelations} relações com dobradores.</p></div>
+              <div className="materialization-metrics"><span>{materialization.data.eligibleRows} elegíveis</span><span>{materialization.data.partialRows} parciais</span><span>{materialization.data.blockingIssueCount} bloqueios críticos</span></div>
+              <Button disabled={materializationMutation.isPending || materialization.data.status === 'COMPLETED'} onClick={() => materializationMutation.mutate()}>{materializationMutation.isPending ? 'Materializando...' : materialization.data.status === 'COMPLETED' ? 'Já materializado' : 'Materializar cadastro'}</Button>
+              {materializationMutation.isError ? <p className="field-error">{apiErrorMessage(materializationMutation.error)}</p> : null}
+            </div>
+          ) : null}
         </section>
       ) : null}
 

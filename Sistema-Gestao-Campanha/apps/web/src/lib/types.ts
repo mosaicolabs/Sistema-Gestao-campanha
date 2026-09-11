@@ -6,6 +6,7 @@ export type {
   CoveragePersonRow,
   CoverageTreeCity,
   CoverageTreeRegion,
+  MaterializationPreview,
 } from '@campanha/types'
 
 export type ReferenceData = {
@@ -81,6 +82,13 @@ export type ImportBatch = {
   allianceOccurrences: number
   manualTerritorialIndex?: number
   manualAllianceIndex?: number
+  semanticHash?: string
+  parserVersion?: string
+  materializationStatus?: string
+  materializedAt?: string
+  consolidatedPeople?: number
+  consolidatedAssignments?: number
+  consolidatedAlliances?: number
   createdAt: string
   _count?: { issues: number; occurrences: number }
 }
