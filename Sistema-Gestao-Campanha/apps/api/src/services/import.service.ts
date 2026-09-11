@@ -6,6 +6,7 @@ import { importRepository } from '../repositories/import.repository.js'
 import { localityNormalizationService } from './locality-normalization.service.js'
 import { AppError } from '../utils/app-error.js'
 import { canonicalize } from '../utils/normalization.js'
+import { fingerprintWorkbook, type WorkbookFingerprint } from './workbook-fingerprint.js'
 
 const KNOWN_FILE_HASH = 'a04f4117cb5fcf07cb2f5bd4a8cdefd17fe58ef2c0bfcd06afc487b1ea9534f0'
 
@@ -46,6 +47,8 @@ export type WorkbookAnalysis = {
   manualTerritorialIndex?: number
   manualAllianceIndex?: number
   occurrences: ParsedOccurrence[]
+  semanticHash: string
+  parserVersion: string
 }
 
 function classifySheet(name: string): ImportCategory {
@@ -94,6 +97,7 @@ export async function analyzeWorkbook(buffer: Buffer): Promise<WorkbookAnalysis>
   const manualTerritorialIndex = indexSheet ? Number(indexSheet.getCell('B11').text) : undefined
   const manualAllianceIndex = indexSheet ? Number(indexSheet.getCell('B30').text) : undefined
 
+  const fingerprint: WorkbookFingerprint = await fingerprintWorkbook(buffer)
   return {
     workbookTabs: workbook.worksheets.length,
     territorialOccurrences: occurrences.filter((item) => item.category === 'TERRITORIAL').length,
@@ -102,6 +106,8 @@ export async function analyzeWorkbook(buffer: Buffer): Promise<WorkbookAnalysis>
     manualTerritorialIndex: Number.isFinite(manualTerritorialIndex) ? manualTerritorialIndex : undefined,
     manualAllianceIndex: Number.isFinite(manualAllianceIndex) ? manualAllianceIndex : undefined,
     occurrences,
+    semanticHash: fingerprint.semanticHash,
+    parserVersion: fingerprint.parserVersion,
   }
 }
 
@@ -125,10 +131,9 @@ const knownIssues: Array<{ type: IssueType; severity: IssueSeverity; title: stri
 export const importService = {
   async process(file: Express.Multer.File, userId: string) {
     const fileHash = createHash('sha256').update(file.buffer).digest('hex')
-    const existing = await importRepository.findByHash(fileHash)
-    if (existing && existing._count.occurrences > 0) return { batch: existing, idempotent: true }
-
     const analysis = await analyzeWorkbook(file.buffer)
+    const existing = await importRepository.findByHash(fileHash)
+    if (existing && existing._count.occurrences > 0) return { batch: existing, fileHash, semanticHash: analysis.semanticHash, parserVersion: analysis.parserVersion, idempotent: true }
     const batch =
       existing ??
       (await importRepository.createBatch({
@@ -177,7 +182,7 @@ export const importService = {
       finishedAt: new Date(),
     })
     await auditRepository.record({ userId, action: 'IMPORT', entityType: 'ImportBatch', entityId: batch.id, afterData: { fileHash, workbookTabs: analysis.workbookTabs, territorialOccurrences: analysis.territorialOccurrences, allianceOccurrences: analysis.allianceOccurrences } })
-    return { batch: updated, idempotent: false, openIssues: issues.length + normalization.writes.issues, normalization }
+    return { batch: updated, fileHash, semanticHash: analysis.semanticHash, parserVersion: analysis.parserVersion, idempotent: false, openIssues: issues.length + normalization.writes.issues, normalization }
   },
 
   listBatches: () => importRepository.listBatches(),

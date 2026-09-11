@@ -25,5 +25,7 @@ describe('analyzeWorkbook', () => {
     expect(result.manualTerritorialIndex).toBe(2)
     expect(result.manualAllianceIndex).toBe(1)
     expect(result.occurrences.every((item) => item.rowHash.length === 64)).toBe(true)
+    expect(result.semanticHash).toMatch(/^[a-f0-9]{64}$/)
+    expect(result.parserVersion).toBe('campaign-v2')
   })
 })
