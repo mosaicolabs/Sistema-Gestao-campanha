@@ -1,6 +1,6 @@
 # Progresso do Sistema de Gestão da Campanha
 
-Última atualização: 10/09/2026  
+Última atualização: 11/09/2026  
 Branch de trabalho: `normalizacao-localidades`  
 Commit da implementação do plan 004: `2ed09db feat: carregar dados da planilha na visao macro`
 Branch publicada: `origin/normalizacao-localidades`
@@ -57,11 +57,11 @@ Este é o ponto de retomada do projeto. Depois de cada plano implementado, regis
 
 ### Plan 005 — Filtros, ordenações e reorganização da tela de Cobertura
 
-- Estado: implementado, validado e commitado localmente em `a1d25fe` (`feat: reorganizar cobertura com filtros e tabela`); publicação da branch em andamento.
+- Estado: implementado, validado e publicado na branch `normalizacao-localidades` (`a1d25fe` + `a37f665`).
 - Entregas: filtros por busca, região, papel, dobrador e situação de alias; ordenação por cidade, região e métricas; estado persistido na query string; tabela principal com todas as métricas por cidade; detalhe de cidade preservado; visão por dobrador reorganizada em tabela; os três cards técnicos removidos.
 - API: `GET /api/coverage/macro` mantém `coverage:read`, valida os novos parâmetros com Zod e aplica filtros/ordenação sobre a visão macro existente sem migration Prisma.
 - UX: desktop usa tabela com cabeçalhos ordenáveis; mobile usa tabela semântica com expansão por linha e `Sheet` para os filtros; a contagem de resultados aparece como contexto textual, sem card KPI.
-- Validação: `npm run typecheck -w @campanha/validation`, `npm run typecheck -w @campanha/api`, `npm run typecheck -w @campanha/web` e `docker compose build api web` concluídos; containers API, web e PostgreSQL saudáveis; `/health` `200`; rota de cobertura sem autenticação `401`; frontend conferido em execução com busca `Barra Mansa`, URL sincronizada e resultado único; console sem erros.
+- Validação: `npm run typecheck -w @campanha/validation`, `npm run typecheck -w @campanha/api`, `npm run typecheck -w @campanha/web` e `docker compose build api web` concluídos; containers API, web e PostgreSQL saudáveis; `/health` `200`; rota de cobertura sem autenticação `401`; frontend conferido em execução com busca `Barra Mansa`, URL sincronizada, resultado único, ausência dos cards agregados e console sem erros; linhas desktop agora recebem foco e abrem com Enter/Espaço.
 - Observação: o teste automatizado completo e o build Vite no host foram interrompidos por lentidão do ambiente local; o build oficial no Docker concluiu API e web sem erro. A execução segue sem TDD conforme decisão do gestor.
 
 ## Decisões confirmadas
@@ -113,4 +113,4 @@ Destino: Product manager, arquiteto, frontend, backend, QA e redator técnico
 Objetivo: executar `plan-005-filtros-ordenacoes-cobertura.md` em etapas revisáveis  
 Evidências: builds Docker da API/web concluídos; containers saudáveis; filtros e ordenação conferidos na tela em execução; cards agregados ausentes; endpoint sem JWT retornando `401`.  
 Pendências: revisar candidatos fora das 17 abas de dobradores, decidir DP-006/RBAC e executar revisão final de idempotência em banco limpo.  
-Próximo passo: publicar a branch `normalizacao-localidades` e manter os arquivos anteriores do working tree fora deste commit.
+Próximo passo: revisar os pontos de decisão ainda abertos do projeto; os arquivos anteriores do working tree permanecem fora dos commits desta tarefa.
